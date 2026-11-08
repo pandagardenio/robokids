@@ -99,6 +99,12 @@ Your kid trains AI models by showing examples; the robot acts on what the model 
 | 49 | [Dream Robot Build](phase-5-robots-that-learn/week-49-dream-robot/README.md) | Design thinking |
 | 50 | [Grand Finale: Robot Expo](phase-5-robots-that-learn/week-50-grand-finale-expo/README.md) | Celebrate the year |
 
+## Bonus projects
+
+| Project | Fits after | Skill |
+| --- | --- | --- |
+| [Robot Mouse](bonus/robot-mouse/README.md) | Week 37 | Touch sensors, behaviors, signal strength |
+
 ## Before you start
 
 - [Materials and shopping list](MATERIALS.md)

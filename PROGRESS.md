@@ -66,3 +66,7 @@ Tick each week when done. Edit this file on GitHub or locally.
 - [ ] Week 48: Talking Robot
 - [ ] Week 49: Dream Robot Build
 - [ ] Week 50: Grand Finale: Robot Expo
+
+## Bonus
+
+- [ ] Robot Mouse
