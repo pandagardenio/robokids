@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robot AI Bridge</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Lexend:wght@400;600&display=swap" rel="stylesheet">
+<!-- Teachable Machine runtimes (pinned versions from Teachable Machine's own export snippets) -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.5/dist/teachablemachine-image.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands@0.4.0/dist/speech-commands.min.js"></script>
+<style>
+:root{
+  --paper:#EAF1F7; --grid:#D3E0EC; --ink:#1B2A41; --muted:#5A6B82;
+  --signal:#FFC93C; --go:#2E9E6A; --stop:#D94848; --card:#FFFFFF;
+}
+@media (prefers-color-scheme: dark){
+  :root{--paper:#14202F; --grid:#1D2C3F; --ink:#E8EFF7; --muted:#9BB0C7; --card:#1A2738;}
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Lexend,system-ui,sans-serif;color:var(--ink);
+  background:var(--paper);
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px;min-height:100vh}
+main{max-width:920px;margin:0 auto;padding:24px 16px 48px;display:grid;gap:20px;
+  grid-template-columns:1fr; }
+@media(min-width:760px){main{grid-template-columns:320px 1fr}}
+h1{font-family:"Baloo 2",sans-serif;font-weight:800;font-size:2rem;margin:0;grid-column:1/-1;line-height:1}
+h1 small{display:block;font-family:Lexend;font-weight:400;font-size:.95rem;color:var(--muted);margin-top:6px}
+.panel{background:var(--card);border:2px solid var(--ink);border-radius:14px;padding:18px;display:grid;gap:14px;align-content:start}
+label{font-size:.85rem;color:var(--muted);display:grid;gap:6px}
+input[type=text],select{font:inherit;padding:10px;border:2px solid var(--grid);border-radius:8px;background:var(--paper);color:var(--ink);width:100%}
+button{font:600 1rem Lexend,sans-serif;padding:12px 14px;border-radius:10px;border:2px solid var(--ink);background:var(--card);color:var(--ink);cursor:pointer}
+button.primary{background:var(--ink);color:var(--card)}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--signal);outline-offset:2px}
+button:disabled{opacity:.45;cursor:not-allowed}
+.status{font-size:.85rem;display:flex;gap:8px;align-items:center}
+.dot{width:12px;height:12px;border-radius:50%;background:var(--stop)}
+.dot.on{background:var(--go)}
+.stage{display:grid;gap:16px;align-content:start}
+.readout{background:var(--signal);color:#1B2A41;border:2px solid var(--ink);border-radius:14px;
+  padding:20px;text-align:center;min-height:180px;display:grid;place-content:center}
+.readout .word{font-family:"Baloo 2",sans-serif;font-weight:800;font-size:clamp(3rem,12vw,6rem);line-height:1;word-break:break-word}
+.readout .conf{font-size:1rem;margin-top:6px}
+#cam{display:flex;justify-content:center}
+#cam canvas{border-radius:12px;border:2px solid var(--ink);max-width:100%}
+.bars{display:grid;gap:6px}
+.bar{display:grid;grid-template-columns:110px 1fr 44px;gap:8px;align-items:center;font-size:.85rem}
+.bar i{display:block;height:14px;background:var(--grid);border-radius:7px;overflow:hidden}
+.bar i b{display:block;height:100%;background:var(--ink)}
+.log{font-size:.8rem;color:var(--muted);max-height:120px;overflow:auto;white-space:pre-wrap}
+.row{display:flex;gap:8px}
+.row input{flex:1}
+@media (prefers-reduced-motion: no-preference){ .bar i b{transition:width .15s} }
+</style>
+</head>
+<body>
+<main>
+  <h1>Robot AI Bridge<small>Teachable Machine sees and hears. The micro:bit acts. This page connects them.</small></h1>
+
+  <section class="panel" aria-label="Setup">
+    <label>1. Model type
+      <select id="mode"><option value="image">Image (webcam)</option><option value="audio">Audio (microphone)</option><option value="none">No model (talking robot only)</option></select>
+    </label>
+    <label>2. Teachable Machine link
+      <input id="url" type="text" placeholder="https://teachablemachine.withgoogle.com/models/abc123/">
+    </label>
+    <label>3. Only send when the AI is at least this sure: <span id="thv">80%</span>
+      <input id="th" type="range" min="50" max="99" value="80">
+    </label>
+    <button id="connect">Connect micro:bit</button>
+    <div class="status"><span class="dot" id="dot"></span><span id="stat">micro:bit not connected</span></div>
+    <button id="start" class="primary">Start AI</button>
+    <label>Test without AI: send a label
+      <div class="row"><input id="manual" type="text" placeholder="go"><button id="send">Send</button></div>
+    </label>
+    <div class="log" id="log" aria-live="polite"></div>
+  </section>
+
+  <section class="stage" aria-label="What the robot sees">
+    <div class="readout"><div class="word" id="word">ready</div><div class="conf" id="conf">Paste a model link and press Start AI</div></div>
+    <div id="cam"></div>
+    <div class="bars" id="bars"></div>
+  </section>
+</main>
+
+<script>
+const $ = id => document.getElementById(id);
+let port = null, writer = null, lastSent = "", running = false;
+
+function log(msg){ const l=$("log"); l.textContent = msg + "\n" + l.textContent.slice(0,2000); }
+$("th").oninput = () => $("thv").textContent = $("th").value + "%";
+
+// ---------- micro:bit over Web Serial ----------
+$("connect").onclick = async () => {
+  if (!("serial" in navigator)) { log("Web Serial needs Chrome or Edge on a computer."); return; }
+  try {
+    port = await navigator.serial.requestPort({ filters: [{ usbVendorId: 0x0d28 }] });
+    await port.open({ baudRate: 115200 });
+    const enc = new TextEncoderStream(); enc.readable.pipeTo(port.writable);
+    writer = enc.writable.getWriter();
+    $("dot").classList.add("on"); $("stat").textContent = "micro:bit connected";
+    readLoop();
+  } catch (e) { log("Could not connect: " + e.message + ". Close MakeCode tabs that use the micro:bit and try again."); }
+};
+
+async function readLoop(){
+  const dec = new TextDecoderStream(); port.readable.pipeTo(dec.writable);
+  const reader = dec.readable.getReader(); let buf = "";
+  while (true) {
+    const { value, done } = await reader.read(); if (done) break;
+    buf += value; let i;
+    while ((i = buf.indexOf("\n")) >= 0) {
+      const line = buf.slice(0, i).trim(); buf = buf.slice(i + 1);
+      if (line.startsWith("say:")) speak(line.slice(4));
+      else if (line) log("micro:bit: " + line);
+    }
+  }
+}
+function speak(text){
+  const u = new SpeechSynthesisUtterance(text); u.pitch = 1.6; u.rate = 0.95;
+  speechSynthesis.speak(u); $("word").textContent = "💬"; $("conf").textContent = text;
+}
+async function send(label){
+  if (!writer) { log("(not connected) would send: " + label); return; }
+  await writer.write(label + "\n"); log("sent: " + label);
+}
+$("send").onclick = () => { const v=$("manual").value.trim(); if (v) send(v); };
+
+// ---------- AI ----------
+function showScores(labels, scores){
+  let best = 0; scores.forEach((s,i)=>{ if (s > scores[best]) best = i; });
+  $("bars").innerHTML = labels.map((l,i)=>`<div class="bar"><span>${l}</span><i><b style="width:${(scores[i]*100).toFixed(0)}%"></b></i><span>${(scores[i]*100).toFixed(0)}%</span></div>`).join("");
+  const sure = scores[best] * 100 >= +$("th").value;
+  const label = sure ? labels[best] : "unsure";
+  $("word").textContent = label;
+  $("conf").textContent = sure ? `${(scores[best]*100).toFixed(0)}% sure` : "The robot is not sure yet";
+  if (label !== lastSent) { lastSent = label; send(label); }
+}
+
+$("start").onclick = async () => {
+  if (running) return;
+  const mode = $("mode").value;
+  if (mode === "none") { $("conf").textContent = "Talking robot mode: press buttons on the micro:bit"; return; }
+  let url = $("url").value.trim();
+  if (!url) { $("conf").textContent = "Paste the model link from Teachable Machine (Export → Upload)"; return; }
+  if (!url.endsWith("/")) url += "/";
+  running = true; $("start").disabled = true; $("word").textContent = "loading";
+  try {
+    if (mode === "image") {
+      const model = await tmImage.load(url + "model.json", url + "metadata.json");
+      const labels = model.getClassLabels();
+      const cam = new tmImage.Webcam(260, 260, true); await cam.setup(); await cam.play();
+      $("cam").replaceChildren(cam.canvas);
+      let last = 0;
+      const loop = async t => {
+        cam.update();
+        if (t - last > 150) { last = t; const p = await model.predict(cam.canvas); showScores(labels, p.map(x=>x.probability)); }
+        requestAnimationFrame(loop);
+      };
+      requestAnimationFrame(loop);
+    } else {
+      const rec = speechCommands.create("BROWSER_FFT", undefined, url + "model.json", url + "metadata.json");
+      await rec.ensureModelLoaded();
+      const labels = rec.wordLabels();
+      rec.listen(r => { showScores(labels, Array.from(r.scores)); }, { includeSpectrogram:false, probabilityThreshold:0.5, invokeCallbackOnNoiseAndUnknown:true, overlapFactor:0.5 });
+    }
+    log("AI started.");
+  } catch (e) {
+    running = false; $("start").disabled = false; $("word").textContent = "error";
+    $("conf").textContent = "Could not load the model. Check the link and the model type.";
+    log(e.message);
+  }
+};
+</script>
+</body>
+</html>
