@@ -12,4 +12,6 @@ Buy each phase's items when you get there. Prices are rough estimates in euros. 
 
 **Shopping shortcut:** a micro:bit V2 "Go" kit and a second bare micro:bit (both from an [official reseller](https://microbit.org/buy/)), a [Cutebot](https://shop.elecfreaks.com/products/elecfreaks-micro-bit-smart-cutebot-kit-without-micro-bit-board) and a basic electronics starter pack cover the whole year.
 
-**Other car kits:** [Kitronik Move:mini](https://kitronik.co.uk/products/5624-move-mini-buggy-kit-excl-microbit), [DFRobot Maqueen](https://www.dfrobot.com/product-1783.html) or [Elecfreaks Cutebot Pro](https://shop.elecfreaks.com/search?q=cutebot+pro) all work. Rewrite the kit adapter at the top of each car file; line and distance sensor calls may differ.
+**Other car kit:** [DFRobot Maqueen](https://www.dfrobot.com/product-1783.html) also works. Rewrite the kit adapter at the top of each car file; line and distance sensor calls may differ.
+
+**Want to go deeper?** The [Elecfreaks Cutebot Pro](https://shop.elecfreaks.com/search?q=cutebot+pro) is a pricier upgrade with encoder motors for precise distances and turns, and 4 line sensors instead of 2. It uses its own `cutebot-pro` extension, so rewrite the kit adapter the same way.
