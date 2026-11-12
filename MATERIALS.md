@@ -14,4 +14,4 @@ Buy each phase's items when you get there. Prices are rough estimates in euros. 
 
 **Other car kit:** [DFRobot Maqueen](https://www.dfrobot.com/product-1783.html) also works. Rewrite the kit adapter at the top of each car file; line and distance sensor calls may differ.
 
-**Want to go deeper?** The [Elecfreaks Cutebot Pro](https://shop.elecfreaks.com/search?q=cutebot+pro) is a pricier upgrade with encoder motors for precise distances and turns, and 4 line sensors instead of 2. It uses its own `cutebot-pro` extension, so rewrite the kit adapter the same way.
+**Want to go deeper?** The [Elecfreaks Cutebot Pro](https://shop.elecfreaks.com/products/elecfreaks-smart-cutebot-pro-v2-programming-robot-car-for-micro-bit) is a pricier upgrade with encoder motors for precise distances and turns, and 4 line sensors instead of 2. It uses its own `cutebot-pro` extension, so rewrite the kit adapter the same way.
