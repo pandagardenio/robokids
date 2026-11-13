@@ -190,6 +190,8 @@ Say "great, we found a bug!" and check in this order: **batteries → cable → 
 | **Class** | One thing the AI learns to recognize, like "thumbs up". |
 | **AI bridge** | The page in this project that connects the AI to the micro:bit. |
 
+Words from the projects themselves (circuit, sensor, servo, model…) are explained on each week's page under **Words this week**, and all together in the [glossary](GLOSSARY.md).
+
 ---
 
 [← Back to the calendar](README.md)

@@ -41,6 +41,15 @@ Each program goes on a different micro:bit. Load them one at a time, with that m
 
 First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Radio** | micro:bits can send short messages to each other through the air, no wires needed, across a house. | Invisible messages through the air. |
+| **Accelerometer** | The sensor that feels movement: shaking, tilting, falling. | It feels when you shake or tip the robot. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

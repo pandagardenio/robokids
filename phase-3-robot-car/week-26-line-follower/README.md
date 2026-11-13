@@ -37,6 +37,16 @@ Program: [`main.ts`](main.ts) · needs the **Cutebot** extension
 
 First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **If / else** | The program checks something: IF it's true, do one thing, ELSE (otherwise) do another. | If it rains, take an umbrella, else take sunglasses. |
+| **Line sensor** | Two small sensors under the car that see whether the floor below is dark or light. | The robot's eyes looking at the floor. |
+| **Code** | Another word for the program: the instructions the robot follows. | The robot's instructions. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

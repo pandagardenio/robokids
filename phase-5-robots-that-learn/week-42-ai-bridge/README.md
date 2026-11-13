@@ -43,6 +43,18 @@ In Teachable Machine, name the classes exactly like this, lowercase: `thumbsup`,
 
 Keep this micro:bit plugged into the laptop with its USB cable.
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **AI** | Artificial intelligence: a computer program that learns from examples instead of following rules someone wrote. | A computer that learns by looking at examples. |
+| **AI bridge** | A page from this project that passes what the AI sees or hears to the micro:bit. See the [AI bridge guide](../../ai/README.md). | The messenger between the AI and the robot. |
+| **USB** | The cable between the laptop and the micro:bit. It carries messages, not just power. | The cable that lets the laptop talk to the robot. |
+| **Model** | What the AI ends up with after training: its 'memory' of what it learned. Exporting it gives you a link. | The AI's memory. |
+| **Export** | In Teachable Machine: saving the trained model online so you get a link to paste into the AI bridge. | Sending the AI's memory to the internet so the robot can use it. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

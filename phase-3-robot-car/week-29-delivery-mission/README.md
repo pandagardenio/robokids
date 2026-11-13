@@ -37,6 +37,16 @@ Program: [`main.ts`](main.ts) · needs the **Cutebot** extension
 
 First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **List** | A set of items in order. The program goes through them one by one. | Like a shopping list for the robot. |
+| **Code** | Another word for the program: the instructions the robot follows. | The robot's instructions. |
+| **Bug** | A mistake that makes a robot do the wrong thing. Finding and fixing it is called debugging. | A mistake we get to find and fix. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

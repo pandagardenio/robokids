@@ -33,6 +33,17 @@ Program: [`main.ts`](main.ts)
 
 First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Sequence** | Things done in a fixed order. Change the order and you get a different result. | First this, then that. |
+| **V2** | The newer micro:bit, with a speaker, a microphone and a touch-sensitive logo. This project needs it. | The newer micro:bit that can hear and talk. |
+| **Code** | Another word for the program: the instructions the robot follows. | The robot's instructions. |
+| **Accelerometer** | The sensor that feels movement: shaking, tilting, falling. | It feels when you shake or tip the robot. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

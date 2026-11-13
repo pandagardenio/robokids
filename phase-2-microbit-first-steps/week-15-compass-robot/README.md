@@ -35,6 +35,17 @@ Program: [`main.ts`](main.ts)
 
 First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Compass** | The micro:bit has a sensor that feels the Earth's magnetism, like a compass needle, so it knows where north is. | It always knows which way is north. |
+| **Sensor** | A part that lets the robot notice the world: light, heat, distance, sound, movement. | The robot's eyes, ears and skin. |
+| **Accelerometer** | The sensor that feels movement: shaking, tilting, falling. | It feels when you shake or tip the robot. |
+| **Calibration** | Setting up a sensor so it measures correctly. The compass asks for it the first time. | Teaching the sensor where things are. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

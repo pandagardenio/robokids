@@ -33,6 +33,15 @@ Program: [`main.ts`](main.ts)
 
 First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Random** | Picked by chance, so nobody (not even the robot) knows what comes next. | Like rolling a dice. |
+| **Accelerometer** | The sensor that feels movement: shaking, tilting, falling. | It feels when you shake or tip the robot. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

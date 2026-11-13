@@ -37,6 +37,17 @@ Program: [`main.ts`](main.ts) · needs the **Cutebot** extension
 
 First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Servo** | A motor that turns to an exact angle and holds still there, instead of spinning round and round. | A motor that points instead of spins. |
+| **Cutebot** | The robot car kit this project uses. The micro:bit slots in as its brain. | Our robot car. |
+| **S1** | A socket on the Cutebot labeled S1 where you plug in a servo. | The servo's plug spot. |
+| **Servo horn** | The small plastic arm that clips onto the servo and moves with it. | The servo's little arm. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

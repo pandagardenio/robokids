@@ -30,6 +30,17 @@ Make robot art. Frame the best one in the Robot Journal.
 
 Move the cork to the center. What changes in the drawing?
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Off-center** | Weight that isn't in the middle of something spinning, which makes it wobble and shake. | Lopsided, so it wobbles. |
+| **DC motor** | A motor that spins when connected to a battery. Swap its two wires and it spins the other way. | A spinner that runs on batteries. |
+| **Volts (V)** | How hard a battery pushes electricity. One AA battery is 1.5 V; two make 3 V. | How strong the battery's push is. |
+| **Shaft** | The metal rod that sticks out of a motor and spins. | The motor's spinning nose. |
+
+All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

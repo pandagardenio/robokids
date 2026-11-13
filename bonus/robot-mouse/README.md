@@ -107,6 +107,36 @@ Real mice use their whiskers to feel their way in the dark, just like this robot
 - `s > -48`: how close counts as "found the cheese". Lower it (e.g. `-55`) if it never finds it.
 - `lightLevel() < 15`: how dark before it sleeps.
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Sensor** | A part that lets the robot notice the world: light, heat, distance, sound, movement. | The robot's eyes, ears and skin. |
+| **Behavior** | One thing the robot does in response to something, like 'back away when it's loud'. | Something the robot does when something happens. |
+| **Radio** | micro:bits can send short messages to each other through the air, no wires needed, across a house. | Invisible messages through the air. |
+| **Signal strength** | How strong a radio message is when it arrives. Closer usually means stronger. | Louder when close, quieter when far. |
+| **Whisker sensor** | A springy wire that touches another wire when it bends, closing a circuit the micro:bit can feel. A homemade touch sensor. | When the whisker bumps something, the robot feels it. |
+| **Cutebot** | The robot car kit this project uses. The micro:bit slots in as its brain. | Our robot car. |
+| **Chassis** | The base of a vehicle that everything else is attached to. | The robot's skeleton. |
+| **Ultrasonic sensor** | The two round 'eyes' on the front of the Cutebot. They send out a sound too high to hear and time the echo to measure distance. | The robot squeaks and listens for the echo, like a bat. |
+| **V2** | The newer micro:bit, with a speaker, a microphone and a touch-sensitive logo. This project needs it. | The newer micro:bit that can hear and talk. |
+| **Servo** | A motor that turns to an exact angle and holds still there, instead of spinning round and round. | A motor that points instead of spins. |
+| **S1** | A socket on the Cutebot labeled S1 where you plug in a servo. | The servo's plug spot. |
+| **Motor driver board** | A board that gives motors enough power, with the micro:bit telling it what to do. | The muscles helper for the motors. |
+| **Gear motor** | A motor with gears inside: slower but stronger, good for turning wheels. | A slow, strong motor for wheels. |
+| **RPM** | Revolutions per minute: how many full turns a motor makes in one minute. | How fast a wheel spins. |
+| **Volts (V)** | How hard a battery pushes electricity. One AA battery is 1.5 V; two make 3 V. | How strong the battery's push is. |
+| **Ball caster** | A small ball in a holder that lets the front of a robot slide in any direction. | A rolling ball foot. |
+| **Switch** | Something that opens or closes a gap in a circuit, to turn things off and on. | A little door for electricity: open means off, closed means on. |
+| **Jumper wire** | A short wire for connecting parts, often with clips or pins on the ends. | A short connecting wire. |
+| **Alligator clip** | A wire with a spring clip at each end, for connecting parts without tools. | A wire with crocodile teeth. |
+| **Servo horn** | The small plastic arm that clips onto the servo and moves with it. | The servo's little arm. |
+| **Shaft** | The metal rod that sticks out of a motor and spins. | The motor's spinning nose. |
+| **Balance** | How weight is spread out. Low and heavy robots are harder to tip over. | Low and heavy is hard to push over. |
+| **Pins (P1, P2, GND)** | The metal strips along the micro:bit's bottom edge. P1 and P2 can feel when they're connected to GND (the minus side). | The micro:bit's fingers along the bottom. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw the mouse and the cheese. Where was the best hiding place?

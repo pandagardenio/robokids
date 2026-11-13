@@ -35,6 +35,16 @@ Program: [`main.ts`](main.ts) · needs the **Cutebot** extension
 
 First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **State** | The mode the robot is in right now, like sleeping, guarding or alarm. It acts differently in each. | The robot's mood right now. |
+| **Armed** | Switched on and watching, ready to sound the alarm. | On guard. |
+| **Ultrasonic sensor** | The two round 'eyes' on the front of the Cutebot. They send out a sound too high to hear and time the echo to measure distance. | The robot squeaks and listens for the echo, like a bat. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

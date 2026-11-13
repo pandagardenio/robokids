@@ -27,6 +27,18 @@ Kid drives through a cardboard maze using only the two switches.
 
 Reverse one motor's wires. Can you spin on the spot?
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **DC motor** | A motor that spins when connected to a battery. Swap its two wires and it spins the other way. | A spinner that runs on batteries. |
+| **Gear motor** | A motor with gears inside: slower but stronger, good for turning wheels. | A slow, strong motor for wheels. |
+| **Switch** | Something that opens or closes a gap in a circuit, to turn things off and on. | A little door for electricity: open means off, closed means on. |
+| **Chassis** | The base of a vehicle that everything else is attached to. | The robot's skeleton. |
+| **Ball caster** | A small ball in a holder that lets the front of a robot slide in any direction. | A rolling ball foot. |
+
+All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

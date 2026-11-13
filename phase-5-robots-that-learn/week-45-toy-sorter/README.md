@@ -42,6 +42,18 @@ In Teachable Machine, name the classes exactly like this, lowercase: `teddy`, `c
 
 Keep this micro:bit plugged into the laptop with its USB cable.
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **USB** | The cable between the laptop and the micro:bit. It carries messages, not just power. | The cable that lets the laptop talk to the robot. |
+| **Training** | Showing the AI lots of examples so it learns to tell things apart. | Teaching the AI by showing it. |
+| **Class** | One of the things the AI learns to tell apart, like `thumbsup` or `teddy`. Names must match the week's page exactly. | One thing the AI learns to spot. |
+| **Icon** | A small picture shown on the LED screen, like a heart or a smiley. | A tiny picture made of lights. |
+| **AI** | Artificial intelligence: a computer program that learns from examples instead of following rules someone wrote. | A computer that learns by looking at examples. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

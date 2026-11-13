@@ -27,6 +27,18 @@ Distance contest: mark the floor with tape every 50 cm. Who can tweak the car to
 
 Flip the motor wires. What happens?
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Chassis** | The base of a vehicle that everything else is attached to. | The robot's skeleton. |
+| **Axle** | The rod that wheels turn on. | The stick the wheels spin on. |
+| **DC motor** | A motor that spins when connected to a battery. Swap its two wires and it spins the other way. | A spinner that runs on batteries. |
+| **Propeller** | Spinning blades that push air one way, so the vehicle moves the other way. | Spinning blades that push air. |
+| **Switch** | Something that opens or closes a gap in a circuit, to turn things off and on. | A little door for electricity: open means off, closed means on. |
+
+All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

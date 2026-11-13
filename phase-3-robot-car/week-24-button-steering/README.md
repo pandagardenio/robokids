@@ -34,6 +34,16 @@ Program: [`main.ts`](main.ts) · needs the **Cutebot** extension
 
 First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Event** | Something that happens, like a button press or a shake, and the instructions that run when it does. | When this happens, do that. |
+| **Accelerometer** | The sensor that feels movement: shaking, tilting, falling. | It feels when you shake or tip the robot. |
+| **V2** | The newer micro:bit, with a speaker, a microphone and a touch-sensitive logo. This project needs it. | The newer micro:bit that can hear and talk. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

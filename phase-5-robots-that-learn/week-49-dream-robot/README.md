@@ -37,6 +37,18 @@ Program: [`main.ts`](main.ts) · needs the **Cutebot** extension
 
 First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Sensor** | A part that lets the robot notice the world: light, heat, distance, sound, movement. | The robot's eyes, ears and skin. |
+| **Template** | A ready-made program with empty slots to fill in. | A robot program with blanks to fill. |
+| **Accelerometer** | The sensor that feels movement: shaking, tilting, falling. | It feels when you shake or tip the robot. |
+| **Behavior** | One thing the robot does in response to something, like 'back away when it's loud'. | Something the robot does when something happens. |
+| **AI** | Artificial intelligence: a computer program that learns from examples instead of following rules someone wrote. | A computer that learns by looking at examples. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

@@ -47,6 +47,21 @@ Then open the [AI bridge](https://pandagardenio.github.io/robokids/ai/bridge.htm
 
 In Teachable Machine, name the classes exactly like this, lowercase: `go`, `left`, `right`, `dance` (plus `nothing`).
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **AI** | Artificial intelligence: a computer program that learns from examples instead of following rules someone wrote. | A computer that learns by looking at examples. |
+| **Radio** | micro:bits can send short messages to each other through the air, no wires needed, across a house. | Invisible messages through the air. |
+| **Relay** | A micro:bit in the middle that passes messages on: it gets them from the laptop by USB and sends them to the car by radio. | A messenger in the middle. |
+| **Training** | Showing the AI lots of examples so it learns to tell things apart. | Teaching the AI by showing it. |
+| **Class** | One of the things the AI learns to tell apart, like `thumbsup` or `teddy`. Names must match the week's page exactly. | One thing the AI learns to spot. |
+| **USB** | The cable between the laptop and the micro:bit. It carries messages, not just power. | The cable that lets the laptop talk to the robot. |
+| **AI bridge** | A page from this project that passes what the AI sees or hears to the micro:bit. See the [AI bridge guide](../../ai/README.md). | The messenger between the AI and the robot. |
+| **Confidence** | How sure the AI is about its guess. The bridge only tells the robot when the AI is sure enough. | How sure the AI is. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

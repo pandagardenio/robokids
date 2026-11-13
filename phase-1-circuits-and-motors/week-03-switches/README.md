@@ -26,6 +26,16 @@
 
 Make a switch that turns on when the card is opened, like a magic greeting card.
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Switch** | Something that opens or closes a gap in a circuit, to turn things off and on. | A little door for electricity: open means off, closed means on. |
+| **Circuit** | A complete loop that electricity travels around: out of the battery, through the parts, and back in. Any gap stops everything. | A round trip for electricity. If the path is broken, nothing works. |
+| **Copper tape** | Sticky metal tape that electricity can travel along, like a flat wire. | Sticky tape that electricity can walk on. |
+
+All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

@@ -34,6 +34,17 @@ Program: [`main.ts`](main.ts) · needs the **Cutebot** extension
 
 First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Microphone** | The micro:bit V2 can measure how loud it is. It hears loudness, not words. | The robot's ear. It hears loud and quiet, not words. |
+| **Sensor** | A part that lets the robot notice the world: light, heat, distance, sound, movement. | The robot's eyes, ears and skin. |
+| **V2** | The newer micro:bit, with a speaker, a microphone and a touch-sensitive logo. This project needs it. | The newer micro:bit that can hear and talk. |
+| **LED** | A tiny light. It only works one way round: the long leg goes to plus (+). | A tiny light that only works the right way round. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

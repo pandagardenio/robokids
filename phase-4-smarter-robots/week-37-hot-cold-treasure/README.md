@@ -39,6 +39,16 @@ Each program goes on a different micro:bit. Load them one at a time, with that m
 
 First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Signal strength** | How strong a radio message is when it arrives. Closer usually means stronger. | Louder when close, quieter when far. |
+| **Beacon** | A micro:bit that keeps sending the same radio message so another one can find it. | A hidden micro:bit that keeps calling 'I'm here!'. |
+| **LED screen** | The 25 little lights on the front of the micro:bit that show pictures, numbers and letters. | The robot's face. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

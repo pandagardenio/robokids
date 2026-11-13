@@ -41,6 +41,17 @@ In Teachable Machine, name the classes exactly like this, lowercase: `teddy`, `c
 
 Keep this micro:bit plugged into the laptop with its USB cable.
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Training** | Showing the AI lots of examples so it learns to tell things apart. | Teaching the AI by showing it. |
+| **Model** | What the AI ends up with after training: its 'memory' of what it learned. Exporting it gives you a link. | The AI's memory. |
+| **Examples / data** | The photos or sounds you show the AI. More, varied examples make a smarter AI; few or similar ones make a confused one. | The pictures we show the AI to learn from. |
+| **Class** | One of the things the AI learns to tell apart, like `thumbsup` or `teddy`. Names must match the week's page exactly. | One thing the AI learns to spot. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

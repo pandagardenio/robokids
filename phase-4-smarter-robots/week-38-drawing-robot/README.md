@@ -36,6 +36,15 @@ Program: [`main.ts`](main.ts) · needs the **Cutebot** extension
 
 First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Geometry** | The maths of shapes. A full turn is 360°; a square has four turns of 90°. | Shapes and turns. |
+| **Loop** | Instructions that repeat. *Forever* repeats until the power goes off; *repeat 4* does it four times. | Do it again, and again, and again. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

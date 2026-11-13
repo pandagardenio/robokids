@@ -113,6 +113,7 @@ Your kid trains AI models by showing examples; the robot acts on what the model 
 ## Before you start
 
 - [Start here: set up your laptop, no coding needed](START-HERE.md)
+- [Glossary: every technical word, in plain language](GLOSSARY.md)
 - [Materials and shopping list](MATERIALS.md)
 - [Parent guide: code, AI and how much to hand over](PARENT-GUIDE.md)
 - [Safety](SAFETY.md)

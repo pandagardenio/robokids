@@ -27,6 +27,17 @@ Turn off the room lights and let the robot 'look around' the house. Flip one LED
 
 Try different colors. Does a red LED and a blue LED look different in the dark?
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **LED** | A tiny light. It only works one way round: the long leg goes to plus (+). | A tiny light that only works the right way round. |
+| **Circuit** | A complete loop that electricity travels around: out of the battery, through the parts, and back in. Any gap stops everything. | A round trip for electricity. If the path is broken, nothing works. |
+| **Coin cell (CR2032)** | A flat, round battery the size of a big button. Dangerous if swallowed: grown-ups handle it (see [Safety](../../SAFETY.md)). | A flat battery. Only grown-ups hold it. |
+| **Plus (+) and minus (−)** | The two ends of a battery. Electricity leaves from one end and has to find its way back to the other. | The battery's way out and way back in. |
+
+All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

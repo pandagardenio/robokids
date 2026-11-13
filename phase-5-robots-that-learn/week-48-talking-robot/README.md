@@ -39,6 +39,20 @@ Then open the [AI bridge](https://pandagardenio.github.io/robokids/ai/bridge.htm
 
 Keep this micro:bit plugged into the laptop with its USB cable.
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Speech** | The laptop reads text out loud with a computer voice. | The laptop reads the robot's words out loud. |
+| **Output** | Something the robot does: lights, sounds, moving. | What the robot does. |
+| **USB** | The cable between the laptop and the micro:bit. It carries messages, not just power. | The cable that lets the laptop talk to the robot. |
+| **AI** | Artificial intelligence: a computer program that learns from examples instead of following rules someone wrote. | A computer that learns by looking at examples. |
+| **AI bridge** | A page from this project that passes what the AI sees or hears to the micro:bit. See the [AI bridge guide](../../ai/README.md). | The messenger between the AI and the robot. |
+| **Model** | What the AI ends up with after training: its 'memory' of what it learned. Exporting it gives you a link. | The AI's memory. |
+| **Accelerometer** | The sensor that feels movement: shaking, tilting, falling. | It feels when you shake or tip the robot. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

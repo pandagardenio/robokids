@@ -37,6 +37,17 @@ Program: [`main.ts`](main.ts) · needs the **Cutebot** extension
 
 First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **AI** | Artificial intelligence: a computer program that learns from examples instead of following rules someone wrote. | A computer that learns by looking at examples. |
+| **AI assistant** | A chat tool like Claude or ChatGPT. At this age, the parent types and reads. | A computer helper that writes words. |
+| **List** | A set of items in order. The program goes through them one by one. | Like a shopping list for the robot. |
+| **Code** | Another word for the program: the instructions the robot follows. | The robot's instructions. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

@@ -35,6 +35,15 @@ Program: [`main.ts`](main.ts) · needs the **Cutebot** extension
 
 First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Loop** | Instructions that repeat. *Forever* repeats until the power goes off; *repeat 4* does it four times. | Do it again, and again, and again. |
+| **Timing** | How long the robot waits or does something. In programs it's often in milliseconds: 1000 = 1 second. | How long it waits. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

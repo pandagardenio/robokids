@@ -35,6 +35,16 @@ Program: [`main.ts`](main.ts) · needs the **Cutebot** extension
 
 First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Motor speed** | How fast the wheels turn, from 0 (stopped) to 100 (full speed). Negative numbers drive backwards. | How fast the wheels spin. |
+| **Timing** | How long the robot waits or does something. In programs it's often in milliseconds: 1000 = 1 second. | How long it waits. |
+| **Code** | Another word for the program: the instructions the robot follows. | The robot's instructions. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

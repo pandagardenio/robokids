@@ -36,6 +36,20 @@ Program: [`main.ts`](main.ts)
 
 First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Input** | Something that goes into the robot: a button press, a shake, light, sound. | What the robot feels. |
+| **Output** | Something the robot does: lights, sounds, moving. | What the robot does. |
+| **V2** | The newer micro:bit, with a speaker, a microphone and a touch-sensitive logo. This project needs it. | The newer micro:bit that can hear and talk. |
+| **USB** | The cable between the laptop and the micro:bit. It carries messages, not just power. | The cable that lets the laptop talk to the robot. |
+| **LED screen** | The 25 little lights on the front of the micro:bit that show pictures, numbers and letters. | The robot's face. |
+| **Accelerometer** | The sensor that feels movement: shaking, tilting, falling. | It feels when you shake or tip the robot. |
+| **Icon** | A small picture shown on the LED screen, like a heart or a smiley. | A tiny picture made of lights. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

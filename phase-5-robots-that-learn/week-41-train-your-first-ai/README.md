@@ -29,6 +29,18 @@ Add a third class: `nothing` (empty background). Does it get better?
 
 Nothing to load this week, only training. Keep the model: you'll use it next week.
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Training** | Showing the AI lots of examples so it learns to tell things apart. | Teaching the AI by showing it. |
+| **AI** | Artificial intelligence: a computer program that learns from examples instead of following rules someone wrote. | A computer that learns by looking at examples. |
+| **Examples / data** | The photos or sounds you show the AI. More, varied examples make a smarter AI; few or similar ones make a confused one. | The pictures we show the AI to learn from. |
+| **Teachable Machine** | A free Google website where you teach an AI by showing it examples with the webcam or microphone. | The website where we teach the computer. |
+| **Class** | One of the things the AI learns to tell apart, like `thumbsup` or `teddy`. Names must match the week's page exactly. | One thing the AI learns to spot. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.
