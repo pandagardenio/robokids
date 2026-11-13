@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Start here · A Year of Robots</title>
+<meta name="description" content="A 50-week electronics and robotics calendar for a parent and a curious 6-year-old.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🤖%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+
+</head>
+<body class="">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-bot" aria-hidden="true">🤖</span> A Year of Robots</a>
+  <nav aria-label="Main"><a href="index.html#calendar"><span aria-hidden="true">🗓️</span> Weeks</a><a href="start-here.html"><span aria-hidden="true">👋</span> Start here</a><a href="print/index.html"><span aria-hidden="true">🖨️</span> Printables</a><a href="parent-guide.html"><span aria-hidden="true">🧑‍🧒</span> Grown-ups</a></nav>
+</header>
+<main id="main">
+<article class="doc card"><p class="doc-actions"><button type="button" class="btn btn-ghost" data-print>🖨️ Print this page</button></p><h1 id="start-here">👋 Start here</h1>
+<p><strong>You don't need to know how to code.</strong> Every program in this project is ready to use. You copy it into a free website, press a button, and it goes onto your robot. Your kid then changes the numbers and pictures to make it their own.</p>
+<p>This page gets your laptop ready in about 15 minutes. You do it once.</p>
+<blockquote>
+<p><strong>Weeks 1–10 don't need a laptop at all</strong> (just LEDs, batteries and motors). You can start <a href="phase-1-circuits-and-motors/week-01-led-robot-eyes/index.html">week 1</a> today and come back here before week 11.</p>
+</blockquote>
+<h2 id="what-you-need">What you need</h2>
+<ul>
+<li>A laptop or desktop: <strong>Windows 10/11, Mac, Linux or Chromebook</strong>. Phones and tablets won't work for loading programs.</li>
+<li><strong>Google Chrome or Microsoft Edge.</strong> Safari and Firefox can't talk to the micro:bit.</li>
+<li>A <strong>BBC micro:bit V2</strong> with its USB cable (see <a href="materials.html">Materials</a>).</li>
+<li>Internet.</li>
+</ul>
+<p>Nothing else to install. Everything happens in the browser.</p>
+<h2 id="the-steps">The steps</h2>
+<ol>
+<li><a href="#get-your-ai-helper-ready">Get your AI helper ready</a> (optional but recommended)</li>
+<li><a href="#get-the-right-browser">Get the right browser</a></li>
+<li><a href="#linux-only-allow-the-microbit">Linux only: allow the micro:bit</a></li>
+<li><a href="#plug-in-the-microbit">Plug in the micro:bit</a></li>
+<li><a href="#connect-the-microbit-to-makecode">Connect the micro:bit to MakeCode</a></li>
+<li><a href="#load-a-program">Load a program</a> (this is what you'll do every week)</li>
+<li><a href="#later-the-robot-car-week-21">Later: the robot car (week 21)</a></li>
+<li><a href="#later-the-ai-weeks-week-41">Later: the AI weeks (week 41)</a></li>
+</ol>
+<p>Stuck? See <a href="#when-something-goes-wrong">When something goes wrong</a> and the <a href="#word-list">word list</a>.</p>
+<hr />
+<h2 id="get-your-ai-helper-ready">Get your AI helper ready</h2>
+<p>If you use Claude, ChatGPT or another AI assistant, it can walk you through any step, one click at a time. Copy this message, fill in the brackets and send it:</p>
+<pre><code class="language-text">I'm a parent with no coding experience. My 6-year-old and I are doing
+&quot;A Year of Robots&quot;: https://github.com/pandagardenio/robokids
+Please read START-HERE.md and the page for week [NUMBER].
+My computer is [Windows / Mac / Linux / Chromebook] and I use [Chrome / Edge].
+Guide me one small step at a time, in plain words with no jargon.
+Wait until I say &quot;done&quot; before giving me the next step.
+</code></pre>
+<p>If your assistant says it can't open links, open the week's page, select all the text (<strong>Ctrl+A</strong>, or <strong>Cmd+A</strong> on a Mac), copy it and paste it under your message.</p>
+<p><strong>Other useful things to ask:</strong></p>
+<ul>
+<li>"The micro:bit shows [describe what you see]. What does it mean and what do I do?"</li>
+<li>"My kid wants the robot to [go faster / play a different song / show a cat]. Which number or block do we change?" (paste the program too)</li>
+<li>"Turn this week's page into a one-page printable activity card for a 6-year-old."</li>
+<li>"Translate this week's page into [language]."</li>
+<li>"I have a [DFRobot Maqueen / other car] instead of a Cutebot. Change this MakeCode program so it works with it." (paste the program too)</li>
+</ul>
+<h2 id="get-the-right-browser">Get the right browser</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Your computer</th>
+<th>What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Windows</strong></td>
+<td>Microsoft Edge is already installed. Use it, or install <a href="https://www.google.com/chrome/" target="_blank" rel="noopener">Google Chrome</a>.</td>
+</tr>
+<tr>
+<td><strong>Mac</strong></td>
+<td>Install <a href="https://www.google.com/chrome/" target="_blank" rel="noopener">Google Chrome</a> (or <a href="https://www.microsoft.com/edge" target="_blank" rel="noopener">Edge</a>). Safari won't work.</td>
+</tr>
+<tr>
+<td><strong>Linux</strong></td>
+<td>Install <a href="https://www.google.com/chrome/" target="_blank" rel="noopener">Google Chrome</a> from its website (pick the <code>.deb</code> file for Ubuntu/Mint/Debian, <code>.rpm</code> for Fedora). Chromium from an app store "snap" often can't see USB devices.</td>
+</tr>
+<tr>
+<td><strong>Chromebook</strong></td>
+<td>Chrome is already there. Nothing to do.</td>
+</tr>
+</tbody>
+</table></div>
+<p>From now on, open every link in this project with that browser.</p>
+<h2 id="linux-only-allow-the-microbit">Linux only: allow the micro:bit</h2>
+<p>Skip this on Windows, Mac and Chromebook.</p>
+<p>Linux blocks websites from talking to USB devices until you allow it, once. Open the <strong>Terminal</strong> app, paste these lines (right-click → Paste), press <strong>Enter</strong> and type your computer password when asked (nothing shows while you type; that's normal):</p>
+<pre><code class="language-bash">echo 'SUBSYSTEM==&quot;usb&quot;, ATTR{idVendor}==&quot;0d28&quot;, MODE=&quot;0666&quot;
+KERNEL==&quot;ttyACM*&quot;, ATTRS{idVendor}==&quot;0d28&quot;, MODE=&quot;0666&quot;' | sudo tee /etc/udev/rules.d/50-microbit.rules
+sudo udevadm control --reload-rules &amp;&amp; sudo udevadm trigger
+</code></pre>
+<p>Then unplug and replug the micro:bit. You never need to do this again.</p>
+<h2 id="plug-in-the-microbit">Plug in the micro:bit</h2>
+<ol>
+<li>Connect the micro:bit to the laptop with its USB cable. A small yellow light on the back turns on.</li>
+<li>A new drive called <strong>MICROBIT</strong> appears, like a USB stick:
+   - <strong>Windows:</strong> File Explorer → <em>This PC</em>.
+   - <strong>Mac:</strong> Finder, in the sidebar (or on the desktop).
+   - <strong>Linux:</strong> the Files app, in the sidebar.
+   - <strong>Chromebook:</strong> the Files app, in the sidebar.</li>
+</ol>
+<p>If no light turns on or no MICROBIT drive appears, <strong>try another cable</strong>. Many phone cables only charge and can't carry data. The cable in the micro:bit box works.</p>
+<h2 id="connect-the-microbit-to-makecode">Connect the micro:bit to MakeCode</h2>
+<p><a href="https://makecode.microbit.org" target="_blank" rel="noopener">MakeCode</a> is the free website where programs are loaded and where your kid will drag colorful blocks. You connect it once per browser; after that, one click sends a program to the micro:bit.</p>
+<ol>
+<li>Open <a href="https://makecode.microbit.org" target="_blank" rel="noopener">makecode.microbit.org</a> and click <strong>New Project</strong>. Name it <code>Test</code> and click <strong>Create</strong>.</li>
+<li>Next to the purple <strong>Download</strong> button at the bottom left, click the <strong>⋯</strong> (three dots) button and choose <strong>Connect device</strong>.</li>
+<li>Follow the on-screen steps. When the browser shows a list, pick <strong>BBC micro:bit CMSIS-DAP</strong> and click <strong>Connect</strong>.</li>
+<li>The Download button now shows a little USB icon. You're connected.</li>
+</ol>
+<p>If connecting doesn't work, that's fine: you can always use the <a href="#the-drag-and-drop-way">drag-and-drop way</a> instead. It does the same thing.</p>
+<h2 id="load-a-program">Load a program</h2>
+<p>This is what you do every week from week 11 on. Each week's page has a <strong>Load the program</strong> section with these same steps and a link to that week's program.</p>
+<ol>
+<li><strong>Copy the program.</strong> On the week's page, scroll to <strong>Load the program</strong> and click the green <strong>📋 Copy</strong> button on the program.</li>
+<li><strong>Make a new project.</strong> Go to <a href="https://makecode.microbit.org" target="_blank" rel="noopener">makecode.microbit.org</a>, click <strong>New Project</strong> and name it after the week (for example <code>Week 11</code>).</li>
+<li><strong>Car weeks only: add the Cutebot blocks.</strong> If the week page says so, see <a href="#later-the-robot-car-week-21">the robot car</a> below.</li>
+<li><strong>Paste it.</strong> At the top of MakeCode, click <strong>JavaScript</strong>. Click inside the text, select everything (<strong>Ctrl+A</strong> / <strong>Cmd+A</strong>) and paste (<strong>Ctrl+V</strong> / <strong>Cmd+V</strong>). The old text is replaced.</li>
+<li><strong>See the blocks.</strong> Click <strong>Blocks</strong> at the top. Now you see the colorful version. This is where your kid changes numbers, pictures and sounds.</li>
+<li><strong>Send it.</strong> Click <strong>Download</strong>.
+   - If you <a href="#connect-the-microbit-to-makecode">connected the micro:bit</a>, the program goes straight onto it. Done!
+   - If not, use <a href="#the-drag-and-drop-way">the drag-and-drop way</a>.</li>
+</ol>
+<p>You can try the program on the <strong>picture of a micro:bit on the left</strong> of MakeCode before sending it. Click its buttons with the mouse.</p>
+<h3 id="the-drag-and-drop-way">The drag-and-drop way</h3>
+<p>When you click <strong>Download</strong> without a connected micro:bit, MakeCode saves a file whose name ends in <code>.hex</code> (for example <code>microbit-Week-11.hex</code>) to your <strong>Downloads</strong> folder.</p>
+<ol>
+<li>Open your <strong>Downloads</strong> folder (Windows: File Explorer; Mac and Linux: Finder / Files; Chromebook: Files).</li>
+<li>Drag the <code>.hex</code> file onto the <strong>MICROBIT</strong> drive.</li>
+<li>The yellow light blinks for a few seconds, then the program starts.</li>
+</ol>
+<p>All normal: the MICROBIT drive disappears and comes back, the file doesn't stay on it, and a Mac may say the disk "wasn't ejected properly". Ignore those.</p>
+<h3 id="changing-things-the-knobs">Changing things (the knobs)</h3>
+<p>Every program has a few numbers at the top: speed, time, distance, sounds. These are your kid's <strong>knobs</strong>. In <strong>Blocks</strong>, click a number, type a new one, then click <strong>Download</strong> again. That's all "coding" means at this age.</p>
+<h3 id="unplugging">Unplugging</h3>
+<p>The program stays on the micro:bit after you unplug the USB cable. Plug in the battery pack and it runs anywhere.</p>
+<h3 id="finding-old-projects">Finding old projects</h3>
+<p>MakeCode saves every project inside your browser. Its home page shows them under <strong>My Projects</strong>. Use the same browser on the same laptop each time, and don't clear the browser's data, or you'll lose them. Since the programs live here in this project, you can always copy them again.</p>
+<h2 id="later-the-robot-car-week-21">Later: the robot car (week 21)</h2>
+<p>The car (Elecfreaks <strong>Cutebot</strong>) needs extra blocks in MakeCode, called an <strong>extension</strong>. In car weeks, after making the new project (step 2 above) and <strong>before pasting</strong>:</p>
+<ol>
+<li>In the list of block colors on the left, scroll to the bottom and click <strong>Extensions</strong> (or use the ⚙ menu at the top right → <strong>Extensions</strong>).</li>
+<li>Type <code>cutebot</code> in the search box and press <strong>Enter</strong>.</li>
+<li>Click the <strong>Cutebot</strong> card (not "Cutebot Pro"). You're back in the editor with a new <strong>Cutebot</strong> block color.</li>
+</ol>
+<p>Then paste the program as usual. If you forget this, the pasted program shows red underlines and won't download: make a new project and add the extension first.</p>
+<p>To load a program onto the car, take the micro:bit out of the car, plug it into the laptop, load the program, then put it back.</p>
+<h2 id="later-the-ai-weeks-week-41">Later: the AI weeks (week 41)</h2>
+<p>In weeks 41–50 your kid trains a small AI on the laptop, and the robot reacts to it.</p>
+<ul>
+<li><strong>Teachable Machine</strong> (<a href="https://teachablemachine.withgoogle.com" target="_blank" rel="noopener">teachablemachine.withgoogle.com</a>) is the free website where your kid trains the AI. When the browser asks to use the camera or microphone, click <strong>Allow</strong>.</li>
+<li><strong>The AI bridge</strong> (<a href="https://pandagardenio.github.io/robokids/ai/bridge.html" target="_blank" rel="noopener">open it here</a>) is a page from this project that passes what the AI sees to the micro:bit. See the <a href="ai/index.html">AI bridge guide</a> for step-by-step instructions.</li>
+<li>Before opening the bridge, <strong>close the MakeCode tab</strong>. Only one page can talk to the micro:bit at a time.</li>
+</ul>
+<h2 id="when-something-goes-wrong">When something goes wrong</h2>
+<p>Say "great, we found a bug!" and check in this order: <strong>batteries → cable → the right program loaded → ask your AI helper</strong>.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>What you see</th>
+<th>What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No MICROBIT drive, no yellow light</td>
+<td>Try another USB cable (some only charge). Try another USB port.</td>
+</tr>
+<tr>
+<td><strong>Connect device</strong> finds nothing</td>
+<td>Close other MakeCode tabs and the AI bridge, unplug and replug, try again. On Linux, do <a href="#linux-only-allow-the-microbit">the Linux step</a>. Or use <a href="#the-drag-and-drop-way">drag and drop</a>.</td>
+</tr>
+<tr>
+<td>Red underlines after pasting, Download doesn't work</td>
+<td>Car week? Make a new project and <a href="#later-the-robot-car-week-21">add the Cutebot extension</a> <em>before</em> pasting. Otherwise, copy the program again; part of it may be missing.</td>
+</tr>
+<tr>
+<td>Blocks look grey, or the page says it can't convert to Blocks</td>
+<td>The program still works. Click <strong>Download</strong> anyway.</td>
+</tr>
+<tr>
+<td>The micro:bit shows a sad face and numbers</td>
+<td>Write down the numbers and ask your AI helper. Usually the program for a car was loaded onto a micro:bit that isn't in the car, or batteries are low.</td>
+</tr>
+<tr>
+<td>The car doesn't move but the micro:bit screen works</td>
+<td>Turn on the car's power switch and check its 3 AAA batteries.</td>
+</tr>
+<tr>
+<td>Download finished but nothing changed on the micro:bit</td>
+<td>Press the reset button on the back of the micro:bit.</td>
+</tr>
+<tr>
+<td>Week 15 asks you to "tilt to fill the screen"</td>
+<td>That's normal (it's how the compass sets itself up). Tilt until every light is on.</td>
+</tr>
+<tr>
+<td>Programs were lost</td>
+<td>Copy them again from this project. Your kid's changes may be gone; make them again together.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="word-list">Word list</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Word</th>
+<th>Means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>micro:bit</strong></td>
+<td>The small programmable board with 25 lights and two buttons. The robot's brain.</td>
+</tr>
+<tr>
+<td><strong>MakeCode</strong></td>
+<td>The free website where you load programs and your kid edits blocks.</td>
+</tr>
+<tr>
+<td><strong>Program</strong></td>
+<td>Instructions for the micro:bit. In this project they're the files ending in <code>.ts</code>. You never need to read them.</td>
+</tr>
+<tr>
+<td><strong>Load / Download / Flash</strong></td>
+<td>Send a program to the micro:bit. Other guides on the internet often say "flash".</td>
+</tr>
+<tr>
+<td><strong>Blocks / JavaScript</strong></td>
+<td>Two views of the same program in MakeCode. You paste into JavaScript; your kid plays in Blocks.</td>
+</tr>
+<tr>
+<td><strong><code>.hex</code> file</strong></td>
+<td>What MakeCode downloads. Drag it onto the MICROBIT drive to load it.</td>
+</tr>
+<tr>
+<td><strong>Extension</strong></td>
+<td>Extra blocks for a specific gadget, like the Cutebot car.</td>
+</tr>
+<tr>
+<td><strong>Knobs</strong></td>
+<td>The numbers at the top of a program that your kid changes.</td>
+</tr>
+<tr>
+<td><strong>Teachable Machine</strong></td>
+<td>Free website where your kid teaches an AI by showing examples.</td>
+</tr>
+<tr>
+<td><strong>Class</strong></td>
+<td>One thing the AI learns to recognize, like "thumbs up".</td>
+</tr>
+<tr>
+<td><strong>AI bridge</strong></td>
+<td>The page in this project that connects the AI to the micro:bit.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Words from the projects themselves (circuit, sensor, servo, model…) are explained on each week's page under <strong>Words this week</strong>, and all together in the <a href="glossary.html">glossary</a>.</p></article>
+</main>
+<footer class="footer">
+  <p>A Year of Robots · Code: MIT · Activity text: CC BY 4.0 · <a href="https://github.com/pandagardenio/robokids" target="_blank" rel="noopener">Source on GitHub</a></p>
+  <p class="footer-note">Your ticks and drawings are saved only in this browser.</p>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Week 43: Gesture-Controlled Car · A Year of Robots</title>
+<meta name="description" content="Week 43 of A Year of Robots: Gesture-Controlled Car. Skill: AI → action.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🤖%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../../assets/style.css">
+
+</head>
+<body class="phase-5">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <a class="brand" href="../../index.html"><span class="brand-bot" aria-hidden="true">🤖</span> A Year of Robots</a>
+  <nav aria-label="Main"><a href="../../index.html#calendar"><span aria-hidden="true">🗓️</span> Weeks</a><a href="../../start-here.html"><span aria-hidden="true">👋</span> Start here</a><a href="../../print/index.html"><span aria-hidden="true">🖨️</span> Printables</a><a href="../../parent-guide.html"><span aria-hidden="true">🧑‍🧒</span> Grown-ups</a></nav>
+</header>
+<main id="main">
+
+<article class="week" data-week="w43">
+  <header class="week-head">
+    <div class="week-badge" aria-hidden="true">43</div>
+    <div>
+      <p class="week-chips"><a class="chip" href="../index.html">🧠 Phase 5 · Robots That Learn</a></p>
+      <h1><span class="week-label">Week 43</span> Gesture-Controlled Car</h1>
+      <p class="week-meta"><span>⏱️ ~45 min build + short play sessions during the week</span> <span>🎯 <b>Skill:</b> AI → action</span></p>
+      <div class="week-actions">
+        <button type="button" class="btn btn-done" data-done="w43" aria-pressed="false"><span class="done-off">☐ Mark as done</span><span class="done-on">✅ Done! Great job</span></button>
+        <button type="button" class="btn btn-ghost" data-print>🖨️ Print this week</button>
+      </div>
+    </div>
+  </header>
+  
+  <section class="sec sec-you-need" aria-labelledby="you-need">
+  <h2 id="you-need"><span class="sec-icon" aria-hidden="true">🧰</span> You need </h2>
+  <ul>
+<li>Laptop + webcam</li>
+<li>Robot car</li>
+<li>Second micro:bit plugged into the laptop as radio relay</li>
+</ul>
+</section>
+<section class="sec sec-build-together" aria-labelledby="build-together">
+  <h2 id="build-together"><span class="sec-icon" aria-hidden="true">🔧</span> Build together <span class="sec-tag">Together</span></h2>
+  <ol>
+<li>Train classes <code>go</code>, <code>stop</code>, <code>left</code>, <code>right</code>, <code>nothing</code> (hand gestures the kid invents).</li>
+<li>Load <code>relay.ts</code> onto the USB micro:bit, <code>main.ts</code> to the car.</li>
+<li>Bridge → relay → radio → car.</li>
+</ol>
+</section>
+<section class="sec sec-play" aria-labelledby="play">
+  <h2 id="play"><span class="sec-icon" aria-hidden="true">🎮</span> Play <span class="sec-tag">Kid time</span></h2>
+  <p>Drive the car through the maze using only hand gestures.</p>
+</section>
+<section class="sec sec-talk-about-it" aria-labelledby="talk-about-it">
+  <h2 id="talk-about-it"><span class="sec-icon" aria-hidden="true">💬</span> Talk about it <span class="sec-tag">Together</span></h2>
+  <blockquote>
+<p>What happens when the AI is unsure?</p>
+</blockquote>
+</section>
+<section class="sec sec-level-up" aria-labelledby="level-up">
+  <h2 id="level-up"><span class="sec-icon" aria-hidden="true">⭐</span> Level up <span class="sec-tag">Kid time</span></h2>
+  <p>Add a <code>dance</code> gesture.</p>
+</section>
+<section class="sec sec-load-the-program" aria-labelledby="load-the-program">
+  <h2 id="load-the-program"><span class="sec-icon" aria-hidden="true">💻</span> Load the program <span class="sec-tag">Grown-up job</span></h2>
+  <p>Each program goes on a different micro:bit. Load them one at a time, with that micro:bit plugged in.</p>
+<table>
+<thead>
+<tr>
+<th>Program</th>
+<th>Goes on</th>
+<th>Extension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#program-relay-ts"><code>relay.ts</code></a></td>
+<td>the micro:bit that stays plugged into the laptop</td>
+<td>none</td>
+</tr>
+<tr>
+<td><a href="#program-main-ts"><code>main.ts</code></a></td>
+<td>the car</td>
+<td>Cutebot</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Click the green <strong>📋 Copy</strong> button on the program (below these steps).</li>
+<li>Go to <a href="https://makecode.microbit.org" target="_blank" rel="noopener">makecode.microbit.org</a>, click <strong>New Project</strong> and name it after the week and program (for example <code>Week 43 relay</code>).</li>
+<li>Click <strong>Extensions</strong> at the bottom of the block list, search <code>cutebot</code> and click <strong>Cutebot</strong> (only for programs that need it).</li>
+<li>Click <strong>JavaScript</strong> at the top, select all the text (<strong>Ctrl+A</strong>, Mac: <strong>Cmd+A</strong>) and paste (<strong>Ctrl+V</strong>, Mac: <strong>Cmd+V</strong>).</li>
+<li>Click <strong>Blocks</strong> to see the colorful version your kid can change, then click <strong>Download</strong>.</li>
+</ol>
+<p>First time, or something went wrong? See <a href="../../start-here.html#load-a-program">Start here</a>.</p>
+<p>Then open the <a href="https://pandagardenio.github.io/robokids/ai/bridge.html" target="_blank" rel="noopener">AI bridge</a> in Chrome or Edge and follow the <a href="../../ai/index.html">AI bridge guide</a>. Close MakeCode first.</p>
+<p>In Teachable Machine, name the classes exactly like this, lowercase: <code>go</code>, <code>left</code>, <code>right</code>, <code>dance</code> (plus <code>nothing</code>).</p>
+<figure class="program" id="program-main-ts">
+  <figcaption>
+    <span class="program-name">📄 main.ts</span>
+    <span class="program-lines">20 lines</span>
+    <button type="button" class="btn btn-copy" data-copy="program-main-ts-code">📋 Copy</button>
+  </figcaption>
+  <pre><code id="program-main-ts-code"><span class="tok-comment">// ---- Kit adapter: Elecfreaks Cutebot (add extension &quot;cutebot&quot;) ----</span>
+<span class="tok-comment">// Using another car kit? Only change these three functions.</span>
+<span class="tok-keyword">function</span> drive(left: number, right: number) { cuteBot.motors(left, right) }
+<span class="tok-keyword">function</span> halt() { cuteBot.stopcar() }
+<span class="tok-keyword">function</span> lights(color: number) { cuteBot.colorLight(cuteBot.RGBLights.ALL, color) }
+<span class="tok-keyword">function</span> distanceCm(): number {
+    <span class="tok-keyword">let</span> d = cuteBot.ultrasonic(cuteBot.SonarUnit.Centimeters)
+    <span class="tok-keyword">return</span> d == <span class="tok-number">0</span> ? <span class="tok-number">999</span> : d   <span class="tok-comment">// 0 means &quot;no echo&quot; = nothing in front</span>
+}
+<span class="tok-comment">// ---------------------------------------------------------------------</span>
+
+<span class="tok-comment">// Week 43 · Gesture-Controlled Car (CAR side). Class names must match exactly.</span>
+radio.setGroup(<span class="tok-number">43</span>)
+radio.onReceivedString((label) =&gt; {
+    <span class="tok-keyword">if</span> (label == <span class="tok-string">&quot;go&quot;</span>) { drive(<span class="tok-number">45</span>, <span class="tok-number">45</span>); basic.showArrow(ArrowNames.North) }
+    <span class="tok-keyword">else</span> <span class="tok-keyword">if</span> (label == <span class="tok-string">&quot;left&quot;</span>) { drive(-<span class="tok-number">35</span>, <span class="tok-number">35</span>); basic.showArrow(ArrowNames.West) }
+    <span class="tok-keyword">else</span> <span class="tok-keyword">if</span> (label == <span class="tok-string">&quot;right&quot;</span>) { drive(<span class="tok-number">35</span>, -<span class="tok-number">35</span>); basic.showArrow(ArrowNames.East) }
+    <span class="tok-keyword">else</span> <span class="tok-keyword">if</span> (label == <span class="tok-string">&quot;dance&quot;</span>) { <span class="tok-keyword">for</span> (<span class="tok-keyword">let</span> i = <span class="tok-number">0</span>; i &lt; <span class="tok-number">4</span>; i++) { drive(<span class="tok-number">50</span>, -<span class="tok-number">50</span>); basic.pause(<span class="tok-number">200</span>); drive(-<span class="tok-number">50</span>, <span class="tok-number">50</span>); basic.pause(<span class="tok-number">200</span>) } halt() }
+    <span class="tok-keyword">else</span> { halt(); basic.showIcon(IconNames.Square) }   <span class="tok-comment">// stop, nothing, or unsure</span>
+})
+</code></pre>
+  <p class="program-tip">Numbers in <span class="tok-number">orange</span> near the top are your kid's <b>knobs</b>: change them in MakeCode's Blocks view.</p>
+</figure>
+<figure class="program" id="program-relay-ts">
+  <figcaption>
+    <span class="program-name">📄 relay.ts</span>
+    <span class="program-lines">9 lines</span>
+    <button type="button" class="btn btn-copy" data-copy="program-relay-ts-code">📋 Copy</button>
+  </figcaption>
+  <pre><code id="program-relay-ts-code"><span class="tok-comment">// Week 43/44 · USB RELAY: micro:bit plugged into the laptop, forwards AI labels by radio</span>
+serial.setBaudRate(BaudRate.BaudRate115200)
+radio.setGroup(<span class="tok-number">43</span>)
+serial.onDataReceived(serial.delimiters(Delimiters.NewLine), () =&gt; {
+    <span class="tok-keyword">let</span> label = serial.readUntil(serial.delimiters(Delimiters.NewLine)).trim()
+    radio.sendString(label)
+    basic.showString(label.charAt(<span class="tok-number">0</span>))
+})
+basic.showIcon(IconNames.Pitchfork)
+</code></pre>
+  <p class="program-tip">Numbers in <span class="tok-number">orange</span> near the top are your kid's <b>knobs</b>: change them in MakeCode's Blocks view.</p>
+</figure>
+</section>
+<section class="sec sec-words-this-week" aria-labelledby="words-this-week">
+  <h2 id="words-this-week"><span class="sec-icon" aria-hidden="true">📖</span> Words this week <span class="sec-tag">For grown-ups</span></h2>
+  <table>
+<thead>
+<tr>
+<th>Word</th>
+<th>What it means</th>
+<th>Say it to your kid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AI</strong></td>
+<td>Artificial intelligence: a computer program that learns from examples instead of following rules someone wrote.</td>
+<td>A computer that learns by looking at examples.</td>
+</tr>
+<tr>
+<td><strong>Radio</strong></td>
+<td>micro:bits can send short messages to each other through the air, no wires needed, across a house.</td>
+<td>Invisible messages through the air.</td>
+</tr>
+<tr>
+<td><strong>Relay</strong></td>
+<td>A micro:bit in the middle that passes messages on: it gets them from the laptop by USB and sends them to the car by radio.</td>
+<td>A messenger in the middle.</td>
+</tr>
+<tr>
+<td><strong>Training</strong></td>
+<td>Showing the AI lots of examples so it learns to tell things apart.</td>
+<td>Teaching the AI by showing it.</td>
+</tr>
+<tr>
+<td><strong>Class</strong></td>
+<td>One of the things the AI learns to tell apart, like <code>thumbsup</code> or <code>teddy</code>. Names must match the week's page exactly.</td>
+<td>One thing the AI learns to spot.</td>
+</tr>
+<tr>
+<td><strong>USB</strong></td>
+<td>The cable between the laptop and the micro:bit. It carries messages, not just power.</td>
+<td>The cable that lets the laptop talk to the robot.</td>
+</tr>
+<tr>
+<td><strong>AI bridge</strong></td>
+<td>A page from this project that passes what the AI sees or hears to the micro:bit. See the <a href="../../ai/index.html">AI bridge guide</a>.</td>
+<td>The messenger between the AI and the robot.</td>
+</tr>
+<tr>
+<td><strong>Confidence</strong></td>
+<td>How sure the AI is about its guess. The bridge only tells the robot when the AI is sure enough.</td>
+<td>How sure the AI is.</td>
+</tr>
+</tbody>
+</table>
+<p>Loading words like <em>micro:bit</em>, <em>MakeCode</em>, <em>extension</em> and <em>Blocks</em> are in the <a href="../../start-here.html#word-list">Start here word list</a>. All words: <a href="../../glossary.html">glossary</a>.</p>
+</section>
+<section class="sec sec-robot-journal" aria-labelledby="robot-journal">
+  <h2 id="robot-journal"><span class="sec-icon" aria-hidden="true">✏️</span> Robot Journal <span class="sec-tag">Kid time</span></h2>
+  <p>Draw this week's robot. Write (or dictate) one thing it can do.</p><div class="journal-pad" data-key="w43"></div><div class="print-draw-box" aria-hidden="true"></div>
+</section>
+  <p class="print-only print-url">Programs and more: https://pandagardenio.github.io/robokids/web/phase-5-robots-that-learn/week-43-gesture-car/</p>
+  <nav class="pager" aria-label="Weeks"><a class="pager-link prev" href="../week-42-ai-bridge/index.html"><small>← Previous</small><span>Week 42: The AI Bridge</span></a><a class="pager-link next" href="../week-44-clap-and-whistle-ai/index.html"><small>Next →</small><span>Week 44: Clap and Whistle AI</span></a></nav>
+</article>
+</main>
+<footer class="footer">
+  <p>A Year of Robots · Code: MIT · Activity text: CC BY 4.0 · <a href="https://github.com/pandagardenio/robokids" target="_blank" rel="noopener">Source on GitHub</a></p>
+  <p class="footer-note">Your ticks and drawings are saved only in this browser.</p>
+</footer>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

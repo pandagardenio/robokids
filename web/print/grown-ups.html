@@ -1,0 +1,893 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grown-ups handbook · A Year of Robots</title>
+<meta name="description" content="Start here, parent guide, materials, safety, AI bridge and glossary.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🤖%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/printables.css">
+</head>
+<body>
+<div class="screen-bar">
+  <a href="index.html">← Printables</a>
+  <span>Grown-ups handbook</span>
+  <button type="button" onclick="window.print()">🖨️ Print</button>
+</div>
+<section class="sheet cover small-cover">
+  <svg class="mascot" viewBox="0 0 120 140" role="img" aria-label="A friendly robot waving">
+  <line x1="60" y1="8" x2="60" y2="26" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="60" cy="8" r="7" fill="var(--p5)"/>
+  <rect x="22" y="24" width="76" height="56" rx="18" fill="var(--p3)"/>
+  <rect x="32" y="34" width="56" height="36" rx="12" fill="#fff"/>
+  <circle cx="47" cy="50" r="6" fill="#2b2340"/><circle cx="73" cy="50" r="6" fill="#2b2340"/>
+  <circle cx="49" cy="48" r="2" fill="#fff"/><circle cx="75" cy="48" r="2" fill="#fff"/>
+  <path d="M50 61 q10 8 20 0" stroke="#2b2340" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <circle cx="16" cy="52" r="6" fill="var(--p1)"/><circle cx="104" cy="52" r="6" fill="var(--p1)"/>
+  <rect x="32" y="84" width="56" height="40" rx="12" fill="var(--p2)"/>
+  <path d="M60 112 l-9 -9 a5.5 5.5 0 0 1 9 -6 a5.5 5.5 0 0 1 9 6 z" fill="var(--p5)"/>
+  <path d="M32 94 q-14 -4 -18 -20" stroke="var(--p2)" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M88 94 q12 6 14 20" stroke="var(--p2)" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <rect x="40" y="124" width="12" height="12" rx="4" fill="var(--p4)"/><rect x="68" y="124" width="12" height="12" rx="4" fill="var(--p4)"/>
+</svg>
+  <h1>A Year of Robots</h1>
+  <p class="cover-sub">Grown-ups handbook</p>
+  <p class="cover-foot">Setup, materials, safety and every word explained · https://pandagardenio.github.io/robokids/web/</p>
+</section><section class="sheet doc-sheet"><h1 id="start-here">👋 Start here</h1>
+<p><strong>You don't need to know how to code.</strong> Every program in this project is ready to use. You copy it into a free website, press a button, and it goes onto your robot. Your kid then changes the numbers and pictures to make it their own.</p>
+<p>This page gets your laptop ready in about 15 minutes. You do it once.</p>
+<blockquote>
+<p><strong>Weeks 1–10 don't need a laptop at all</strong> (just LEDs, batteries and motors). You can start week 1 today and come back here before week 11.</p>
+</blockquote>
+<h2 id="what-you-need">What you need</h2>
+<ul>
+<li>A laptop or desktop: <strong>Windows 10/11, Mac, Linux or Chromebook</strong>. Phones and tablets won't work for loading programs.</li>
+<li><strong>Google Chrome or Microsoft Edge.</strong> Safari and Firefox can't talk to the micro:bit.</li>
+<li>A <strong>BBC micro:bit V2</strong> with its USB cable (see Materials).</li>
+<li>Internet.</li>
+</ul>
+<p>Nothing else to install. Everything happens in the browser.</p>
+<h2 id="the-steps">The steps</h2>
+<ol>
+<li>Get your AI helper ready (optional but recommended)</li>
+<li>Get the right browser</li>
+<li>Linux only: allow the micro:bit</li>
+<li>Plug in the micro:bit</li>
+<li>Connect the micro:bit to MakeCode</li>
+<li>Load a program (this is what you'll do every week)</li>
+<li>Later: the robot car (week 21)</li>
+<li>Later: the AI weeks (week 41)</li>
+</ol>
+<p>Stuck? See When something goes wrong and the word list.</p>
+<hr />
+<h2 id="get-your-ai-helper-ready">Get your AI helper ready</h2>
+<p>If you use Claude, ChatGPT or another AI assistant, it can walk you through any step, one click at a time. Copy this message, fill in the brackets and send it:</p>
+<pre><code class="language-text">I'm a parent with no coding experience. My 6-year-old and I are doing
+&quot;A Year of Robots&quot;: https://github.com/pandagardenio/robokids
+Please read START-HERE.md and the page for week [NUMBER].
+My computer is [Windows / Mac / Linux / Chromebook] and I use [Chrome / Edge].
+Guide me one small step at a time, in plain words with no jargon.
+Wait until I say &quot;done&quot; before giving me the next step.
+</code></pre>
+<p>If your assistant says it can't open links, open the week's page, select all the text (<strong>Ctrl+A</strong>, or <strong>Cmd+A</strong> on a Mac), copy it and paste it under your message.</p>
+<p><strong>Other useful things to ask:</strong></p>
+<ul>
+<li>"The micro:bit shows [describe what you see]. What does it mean and what do I do?"</li>
+<li>"My kid wants the robot to [go faster / play a different song / show a cat]. Which number or block do we change?" (paste the program too)</li>
+<li>"Turn this week's page into a one-page printable activity card for a 6-year-old."</li>
+<li>"Translate this week's page into [language]."</li>
+<li>"I have a [DFRobot Maqueen / other car] instead of a Cutebot. Change this MakeCode program so it works with it." (paste the program too)</li>
+</ul>
+<h2 id="get-the-right-browser">Get the right browser</h2>
+<table>
+<thead>
+<tr>
+<th>Your computer</th>
+<th>What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Windows</strong></td>
+<td>Microsoft Edge is already installed. Use it, or install <a href="https://www.google.com/chrome/" target="_blank" rel="noopener">Google Chrome</a>.</td>
+</tr>
+<tr>
+<td><strong>Mac</strong></td>
+<td>Install <a href="https://www.google.com/chrome/" target="_blank" rel="noopener">Google Chrome</a> (or <a href="https://www.microsoft.com/edge" target="_blank" rel="noopener">Edge</a>). Safari won't work.</td>
+</tr>
+<tr>
+<td><strong>Linux</strong></td>
+<td>Install <a href="https://www.google.com/chrome/" target="_blank" rel="noopener">Google Chrome</a> from its website (pick the <code>.deb</code> file for Ubuntu/Mint/Debian, <code>.rpm</code> for Fedora). Chromium from an app store "snap" often can't see USB devices.</td>
+</tr>
+<tr>
+<td><strong>Chromebook</strong></td>
+<td>Chrome is already there. Nothing to do.</td>
+</tr>
+</tbody>
+</table>
+<p>From now on, open every link in this project with that browser.</p>
+<h2 id="linux-only-allow-the-microbit">Linux only: allow the micro:bit</h2>
+<p>Skip this on Windows, Mac and Chromebook.</p>
+<p>Linux blocks websites from talking to USB devices until you allow it, once. Open the <strong>Terminal</strong> app, paste these lines (right-click → Paste), press <strong>Enter</strong> and type your computer password when asked (nothing shows while you type; that's normal):</p>
+<pre><code class="language-bash">echo 'SUBSYSTEM==&quot;usb&quot;, ATTR{idVendor}==&quot;0d28&quot;, MODE=&quot;0666&quot;
+KERNEL==&quot;ttyACM*&quot;, ATTRS{idVendor}==&quot;0d28&quot;, MODE=&quot;0666&quot;' | sudo tee /etc/udev/rules.d/50-microbit.rules
+sudo udevadm control --reload-rules &amp;&amp; sudo udevadm trigger
+</code></pre>
+<p>Then unplug and replug the micro:bit. You never need to do this again.</p>
+<h2 id="plug-in-the-microbit">Plug in the micro:bit</h2>
+<ol>
+<li>Connect the micro:bit to the laptop with its USB cable. A small yellow light on the back turns on.</li>
+<li>A new drive called <strong>MICROBIT</strong> appears, like a USB stick:
+   - <strong>Windows:</strong> File Explorer → <em>This PC</em>.
+   - <strong>Mac:</strong> Finder, in the sidebar (or on the desktop).
+   - <strong>Linux:</strong> the Files app, in the sidebar.
+   - <strong>Chromebook:</strong> the Files app, in the sidebar.</li>
+</ol>
+<p>If no light turns on or no MICROBIT drive appears, <strong>try another cable</strong>. Many phone cables only charge and can't carry data. The cable in the micro:bit box works.</p>
+<h2 id="connect-the-microbit-to-makecode">Connect the micro:bit to MakeCode</h2>
+<p><a href="https://makecode.microbit.org" target="_blank" rel="noopener">MakeCode</a> is the free website where programs are loaded and where your kid will drag colorful blocks. You connect it once per browser; after that, one click sends a program to the micro:bit.</p>
+<ol>
+<li>Open <a href="https://makecode.microbit.org" target="_blank" rel="noopener">makecode.microbit.org</a> and click <strong>New Project</strong>. Name it <code>Test</code> and click <strong>Create</strong>.</li>
+<li>Next to the purple <strong>Download</strong> button at the bottom left, click the <strong>⋯</strong> (three dots) button and choose <strong>Connect device</strong>.</li>
+<li>Follow the on-screen steps. When the browser shows a list, pick <strong>BBC micro:bit CMSIS-DAP</strong> and click <strong>Connect</strong>.</li>
+<li>The Download button now shows a little USB icon. You're connected.</li>
+</ol>
+<p>If connecting doesn't work, that's fine: you can always use the drag-and-drop way instead. It does the same thing.</p>
+<h2 id="load-a-program">Load a program</h2>
+<p>This is what you do every week from week 11 on. Each week's page has a <strong>Load the program</strong> section with these same steps and a link to that week's program.</p>
+<ol>
+<li><strong>Copy the program.</strong> On the week's page, scroll to <strong>Load the program</strong> and click the green <strong>📋 Copy</strong> button on the program.</li>
+<li><strong>Make a new project.</strong> Go to <a href="https://makecode.microbit.org" target="_blank" rel="noopener">makecode.microbit.org</a>, click <strong>New Project</strong> and name it after the week (for example <code>Week 11</code>).</li>
+<li><strong>Car weeks only: add the Cutebot blocks.</strong> If the week page says so, see the robot car below.</li>
+<li><strong>Paste it.</strong> At the top of MakeCode, click <strong>JavaScript</strong>. Click inside the text, select everything (<strong>Ctrl+A</strong> / <strong>Cmd+A</strong>) and paste (<strong>Ctrl+V</strong> / <strong>Cmd+V</strong>). The old text is replaced.</li>
+<li><strong>See the blocks.</strong> Click <strong>Blocks</strong> at the top. Now you see the colorful version. This is where your kid changes numbers, pictures and sounds.</li>
+<li><strong>Send it.</strong> Click <strong>Download</strong>.
+   - If you connected the micro:bit, the program goes straight onto it. Done!
+   - If not, use the drag-and-drop way.</li>
+</ol>
+<p>You can try the program on the <strong>picture of a micro:bit on the left</strong> of MakeCode before sending it. Click its buttons with the mouse.</p>
+<h3 id="the-drag-and-drop-way">The drag-and-drop way</h3>
+<p>When you click <strong>Download</strong> without a connected micro:bit, MakeCode saves a file whose name ends in <code>.hex</code> (for example <code>microbit-Week-11.hex</code>) to your <strong>Downloads</strong> folder.</p>
+<ol>
+<li>Open your <strong>Downloads</strong> folder (Windows: File Explorer; Mac and Linux: Finder / Files; Chromebook: Files).</li>
+<li>Drag the <code>.hex</code> file onto the <strong>MICROBIT</strong> drive.</li>
+<li>The yellow light blinks for a few seconds, then the program starts.</li>
+</ol>
+<p>All normal: the MICROBIT drive disappears and comes back, the file doesn't stay on it, and a Mac may say the disk "wasn't ejected properly". Ignore those.</p>
+<h3 id="changing-things-the-knobs">Changing things (the knobs)</h3>
+<p>Every program has a few numbers at the top: speed, time, distance, sounds. These are your kid's <strong>knobs</strong>. In <strong>Blocks</strong>, click a number, type a new one, then click <strong>Download</strong> again. That's all "coding" means at this age.</p>
+<h3 id="unplugging">Unplugging</h3>
+<p>The program stays on the micro:bit after you unplug the USB cable. Plug in the battery pack and it runs anywhere.</p>
+<h3 id="finding-old-projects">Finding old projects</h3>
+<p>MakeCode saves every project inside your browser. Its home page shows them under <strong>My Projects</strong>. Use the same browser on the same laptop each time, and don't clear the browser's data, or you'll lose them. Since the programs live here in this project, you can always copy them again.</p>
+<h2 id="later-the-robot-car-week-21">Later: the robot car (week 21)</h2>
+<p>The car (Elecfreaks <strong>Cutebot</strong>) needs extra blocks in MakeCode, called an <strong>extension</strong>. In car weeks, after making the new project (step 2 above) and <strong>before pasting</strong>:</p>
+<ol>
+<li>In the list of block colors on the left, scroll to the bottom and click <strong>Extensions</strong> (or use the ⚙ menu at the top right → <strong>Extensions</strong>).</li>
+<li>Type <code>cutebot</code> in the search box and press <strong>Enter</strong>.</li>
+<li>Click the <strong>Cutebot</strong> card (not "Cutebot Pro"). You're back in the editor with a new <strong>Cutebot</strong> block color.</li>
+</ol>
+<p>Then paste the program as usual. If you forget this, the pasted program shows red underlines and won't download: make a new project and add the extension first.</p>
+<p>To load a program onto the car, take the micro:bit out of the car, plug it into the laptop, load the program, then put it back.</p>
+<h2 id="later-the-ai-weeks-week-41">Later: the AI weeks (week 41)</h2>
+<p>In weeks 41–50 your kid trains a small AI on the laptop, and the robot reacts to it.</p>
+<ul>
+<li><strong>Teachable Machine</strong> (<a href="https://teachablemachine.withgoogle.com" target="_blank" rel="noopener">teachablemachine.withgoogle.com</a>) is the free website where your kid trains the AI. When the browser asks to use the camera or microphone, click <strong>Allow</strong>.</li>
+<li><strong>The AI bridge</strong> (<a href="https://pandagardenio.github.io/robokids/ai/bridge.html" target="_blank" rel="noopener">open it here</a>) is a page from this project that passes what the AI sees to the micro:bit. See the AI bridge guide for step-by-step instructions.</li>
+<li>Before opening the bridge, <strong>close the MakeCode tab</strong>. Only one page can talk to the micro:bit at a time.</li>
+</ul>
+<h2 id="when-something-goes-wrong">When something goes wrong</h2>
+<p>Say "great, we found a bug!" and check in this order: <strong>batteries → cable → the right program loaded → ask your AI helper</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>What you see</th>
+<th>What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No MICROBIT drive, no yellow light</td>
+<td>Try another USB cable (some only charge). Try another USB port.</td>
+</tr>
+<tr>
+<td><strong>Connect device</strong> finds nothing</td>
+<td>Close other MakeCode tabs and the AI bridge, unplug and replug, try again. On Linux, do the Linux step. Or use drag and drop.</td>
+</tr>
+<tr>
+<td>Red underlines after pasting, Download doesn't work</td>
+<td>Car week? Make a new project and add the Cutebot extension <em>before</em> pasting. Otherwise, copy the program again; part of it may be missing.</td>
+</tr>
+<tr>
+<td>Blocks look grey, or the page says it can't convert to Blocks</td>
+<td>The program still works. Click <strong>Download</strong> anyway.</td>
+</tr>
+<tr>
+<td>The micro:bit shows a sad face and numbers</td>
+<td>Write down the numbers and ask your AI helper. Usually the program for a car was loaded onto a micro:bit that isn't in the car, or batteries are low.</td>
+</tr>
+<tr>
+<td>The car doesn't move but the micro:bit screen works</td>
+<td>Turn on the car's power switch and check its 3 AAA batteries.</td>
+</tr>
+<tr>
+<td>Download finished but nothing changed on the micro:bit</td>
+<td>Press the reset button on the back of the micro:bit.</td>
+</tr>
+<tr>
+<td>Week 15 asks you to "tilt to fill the screen"</td>
+<td>That's normal (it's how the compass sets itself up). Tilt until every light is on.</td>
+</tr>
+<tr>
+<td>Programs were lost</td>
+<td>Copy them again from this project. Your kid's changes may be gone; make them again together.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="word-list">Word list</h2>
+<table>
+<thead>
+<tr>
+<th>Word</th>
+<th>Means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>micro:bit</strong></td>
+<td>The small programmable board with 25 lights and two buttons. The robot's brain.</td>
+</tr>
+<tr>
+<td><strong>MakeCode</strong></td>
+<td>The free website where you load programs and your kid edits blocks.</td>
+</tr>
+<tr>
+<td><strong>Program</strong></td>
+<td>Instructions for the micro:bit. In this project they're the files ending in <code>.ts</code>. You never need to read them.</td>
+</tr>
+<tr>
+<td><strong>Load / Download / Flash</strong></td>
+<td>Send a program to the micro:bit. Other guides on the internet often say "flash".</td>
+</tr>
+<tr>
+<td><strong>Blocks / JavaScript</strong></td>
+<td>Two views of the same program in MakeCode. You paste into JavaScript; your kid plays in Blocks.</td>
+</tr>
+<tr>
+<td><strong><code>.hex</code> file</strong></td>
+<td>What MakeCode downloads. Drag it onto the MICROBIT drive to load it.</td>
+</tr>
+<tr>
+<td><strong>Extension</strong></td>
+<td>Extra blocks for a specific gadget, like the Cutebot car.</td>
+</tr>
+<tr>
+<td><strong>Knobs</strong></td>
+<td>The numbers at the top of a program that your kid changes.</td>
+</tr>
+<tr>
+<td><strong>Teachable Machine</strong></td>
+<td>Free website where your kid teaches an AI by showing examples.</td>
+</tr>
+<tr>
+<td><strong>Class</strong></td>
+<td>One thing the AI learns to recognize, like "thumbs up".</td>
+</tr>
+<tr>
+<td><strong>AI bridge</strong></td>
+<td>The page in this project that connects the AI to the micro:bit.</td>
+</tr>
+</tbody>
+</table>
+<p>Words from the projects themselves (circuit, sensor, servo, model…) are explained on each week's page under <strong>Words this week</strong>, and all together in the glossary.</p></section>
+<section class="sheet doc-sheet"><h1 id="parent-guide">Parent guide</h1>
+<p>Your kid should feel like the inventor. You don't need to know how to code: your job is to get things ready so the session goes to play, not setup. New here? Do Start here once first.</p>
+<h2 id="before-each-session-10-min">Before each session (10 min)</h2>
+<ol>
+<li>Read the week's page and gather the materials.</li>
+<li>Load the program once and check it works (each week's page shows how).</li>
+<li>Find the <strong>knobs</strong>: the numbers at the top of the program in MakeCode's Blocks view (speed, time, distance, sounds). These are what your kid will change.</li>
+</ol>
+<h2 id="how-much-to-hand-over">How much to hand over</h2>
+<table>
+<thead>
+<tr>
+<th>Weeks</th>
+<th>Kid does</th>
+<th>You do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1–10</td>
+<td>Connects clips, tests, decorates, races</td>
+<td>Batteries, motors, hot glue</td>
+</tr>
+<tr>
+<td>11–20</td>
+<td>Chooses icons and numbers in Blocks, presses Download</td>
+<td>Loads the program</td>
+</tr>
+<tr>
+<td>21–30</td>
+<td>Changes speeds and times, plans routes with arrows</td>
+<td>Loads the program, tapes the track</td>
+</tr>
+<tr>
+<td>31–40</td>
+<td>Drags one or two blocks per session</td>
+<td>Loads the program, checks batteries</td>
+</tr>
+<tr>
+<td>41–50</td>
+<td>Trains AI models alone, writes robot lines and stories</td>
+<td>Opens the AI bridge and connects the robot</td>
+</tr>
+</tbody>
+</table>
+<h2 id="getting-the-most-out-of-makecode">Getting the most out of MakeCode</h2>
+<ul>
+<li><strong>Blocks are for your kid.</strong> After loading a program, stay in the <strong>Blocks</strong> view. Your kid clicks numbers, picks pictures from menus and drags blocks around. Nothing they do can damage the micro:bit.</li>
+<li><strong>Try it on screen first.</strong> The picture of a micro:bit on the left of MakeCode runs the program. Click its buttons with the mouse to try ideas at the table before using the real robot.</li>
+<li><strong>Messed it up?</strong> Copy the program again from this project into a new MakeCode project. You always have a clean copy.</li>
+<li><strong>Keep their versions.</strong> MakeCode saves every project under <strong>My Projects</strong>. Name them after the week and what your kid changed ("Week 22 super fast") and you get a nice history of their learning.</li>
+</ul>
+<h2 id="using-an-ai-assistant">Using an AI assistant</h2>
+<p>Claude, ChatGPT and similar assistants are great helpers for you, the parent. Start here has a message you can copy to get step-by-step guidance for any week. You can also ask it to:</p>
+<ul>
+<li>Explain what a program does, in plain words, before the session.</li>
+<li>Tell you which number or block to change for what your kid wants ("make it beep higher").</li>
+<li>Make printable mazes, treasure maps, coding arrow cards and robot coloring pages.</li>
+<li>Write a 5-scene story for week 47 with one robot action per scene.</li>
+<li>Adapt the programs to a different robot car kit.</li>
+</ul>
+<p>At 6, AI is your tool, not their chat partner. You type and filter; turn answers into something physical.</p>
+<h2 id="when-things-go-wrong">When things go wrong</h2>
+<p>Say "great, we found a bug!" and fix it together. Check in this order: batteries, cable and connections, the right program loaded, then ask your AI helper. The troubleshooting table covers the usual problems.</p></section>
+<section class="sheet doc-sheet"><h1 id="materials">Materials</h1>
+<p>Buy each phase's items when you get there. From week 11 you also need a laptop (Windows, Mac, Linux or Chromebook) with Chrome or Edge; see Start here. Prices are rough estimates in euros. Links go to the official manufacturer store or reseller finder; generic parts (LEDs, tape, batteries, SG90 servo) are sold by any electronics shop.</p>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Items</th>
+<th>Approx. cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 · Circuits and Motors</td>
+<td>5 mm LEDs (pack of 50), CR2032 coin cells, conductive copper tape, 2×AA battery holders with switch, alligator clip leads, coin vibration motors, small DC motors (3–6 V), 2 TT gear motors with wheels, propellers, toothbrush heads, paper cups, markers, cardboard</td>
+<td>~30 €</td>
+</tr>
+<tr>
+<td>2 · micro:bit First Steps</td>
+<td>2× <a href="https://microbit.org/buy/bbc-microbit-go/" target="_blank" rel="noopener">BBC micro:bit <strong>V2</strong> Go kit</a> (micro:bit V2 + USB cable + 2×AAA battery pack; needs V2 for speaker, microphone and touch logo). The second one is only needed from week 19 (see note below)</td>
+<td>25–50 €</td>
+</tr>
+<tr>
+<td>3 · The Robot Car</td>
+<td><a href="https://shop.elecfreaks.com/products/elecfreaks-micro-bit-smart-cutebot-kit-without-micro-bit-board" target="_blank" rel="noopener">Elecfreaks Cutebot</a> (includes ultrasonic sensor, line sensors, RGB headlights, servo ports), 3×AAA batteries, black electrical tape</td>
+<td>~45 €</td>
+</tr>
+<tr>
+<td>4 · Smarter Robots</td>
+<td>SG90 micro servo, felt-tip markers, foam/Duplo blocks</td>
+<td>~5 €</td>
+</tr>
+<tr>
+<td>5 · Robots That Learn</td>
+<td>Laptop with webcam and microphone (the same laptop as before). <a href="https://teachablemachine.withgoogle.com" target="_blank" rel="noopener">Teachable Machine</a> is free</td>
+<td>0 €</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Shopping shortcut:</strong> two <a href="https://microbit.org/buy/bbc-microbit-go/" target="_blank" rel="noopener">micro:bit V2 "Go" kits</a>, a <a href="https://shop.elecfreaks.com/products/elecfreaks-micro-bit-smart-cutebot-kit-without-micro-bit-board" target="_blank" rel="noopener">Cutebot</a> and a basic electronics starter pack cover the whole year.</p>
+<p><strong>Why two micro:bits?</strong> In these weeks one micro:bit talks to the other by radio, so you need both:</p>
+<table>
+<thead>
+<tr>
+<th>Week</th>
+<th>What the second micro:bit does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>19 · Secret Radio</td>
+<td>Sends and receives messages</td>
+</tr>
+<tr>
+<td>28 · Tilt Remote</td>
+<td>Hand-held remote for the car</td>
+</tr>
+<tr>
+<td>37 · Hot/Cold Treasure</td>
+<td>Hidden beacon</td>
+</tr>
+<tr>
+<td>39 · Robot Tag</td>
+<td>The tagger</td>
+</tr>
+<tr>
+<td>43 · Gesture Car</td>
+<td>Relay between the laptop and the car</td>
+</tr>
+<tr>
+<td>44 · Clap and Whistle AI</td>
+<td>Relay plugged into the laptop, same as week 43</td>
+</tr>
+</tbody>
+</table>
+<p>Every other week needs just one, so you can buy the second kit later, around week 19.</p>
+<p><strong>Other car kit:</strong> <a href="https://www.dfrobot.com/product-1783.html" target="_blank" rel="noopener">DFRobot Maqueen</a> also works. The programs are written for the Cutebot, so ask your AI assistant to adapt each car program: paste the program and say <em>"Change this MakeCode program so it works with a DFRobot Maqueen instead of a Cutebot."</em></p>
+<p><strong>Want to go deeper?</strong> The <a href="https://shop.elecfreaks.com/products/elecfreaks-smart-cutebot-pro-v2-programming-robot-car-for-micro-bit" target="_blank" rel="noopener">Elecfreaks Cutebot Pro</a> is a pricier upgrade with encoder motors for precise distances and turns, and 4 line sensors instead of 2. It uses its own <strong>Cutebot Pro</strong> extension, so the programs need adapting the same way.</p></section>
+<section class="sheet doc-sheet"><h1 id="safety">Safety</h1>
+<p><strong>Coin cells (CR2032) are the main hazard at this age.</strong> If swallowed they can cause severe internal burns within hours. You hold them, tape them into projects, and store them out of reach. If you suspect one was swallowed, go to the emergency room immediately.</p>
+<ul>
+<li>Adults handle craft knives, hot glue, soldering and stripping wires.</li>
+<li>Never connect battery terminals directly together, and never mix old and new batteries.</li>
+<li>Motors and battery packs can get warm when stalled: switch off when a robot is stuck.</li>
+<li>Keep long hair and loose sleeves away from spinning propellers and wheels.</li>
+<li>Tape down the robot track and cables so nobody trips.</li>
+<li>Screen time: code for 10 minutes, then play away from the screen.</li>
+<li>AI weeks: the parent types prompts and reads AI answers first. Teachable Machine runs in the browser; check its privacy settings before uploading a model with your kid's face.</li>
+</ul></section>
+<section class="sheet doc-sheet"><h1 id="ai-bridge">AI bridge</h1>
+<p>In weeks 42–48 your kid's AI (trained in <a href="https://teachablemachine.withgoogle.com" target="_blank" rel="noopener">Teachable Machine</a>) controls the robot. The <strong>AI bridge</strong> is a page from this project that passes what the AI sees or hears to the micro:bit.</p>
+<pre><code>camera / microphone → your kid's AI → AI bridge page → USB cable → micro:bit
+                                                          └─ radio → robot car (weeks 43–44)
+</code></pre>
+<h2 id="open-the-bridge">Open the bridge</h2>
+<p>👉 <strong><a href="https://pandagardenio.github.io/robokids/ai/bridge.html" target="_blank" rel="noopener">Open the AI bridge</a></strong> in <strong>Chrome or Edge</strong> on a computer. It doesn't work in Safari, Firefox or on phones.</p>
+<div>
+**The link doesn't open? Use a downloaded copy instead**
+
+1. Open [`bridge.html` on GitHub](https://github.com/pandagardenio/robokids/blob/main/ai/bridge.html) and click the **Download raw file** button (an arrow pointing down, top right).
+2. Find `bridge.html` in your Downloads folder, right-click it → **Open with** → **Chrome** (or Edge).
+
+</div>
+
+<h2 id="use-it">Use it</h2>
+<p><strong>Before you start:</strong> load the week's program onto the micro:bit (see the week's page), keep it plugged into the laptop with its USB cable, and <strong>close the MakeCode tab</strong>. Only one page can talk to the micro:bit at a time.</p>
+<ol>
+<li><strong>Get your AI's link.</strong> In Teachable Machine, after training, click <strong>Export Model</strong> → <strong>Upload my model</strong> → <strong>Copy</strong> the link it shows.</li>
+<li><strong>In the bridge,</strong> choose the model type (<em>Image</em> for the camera, <em>Audio</em> for sounds) and paste the link.</li>
+<li>Click <strong>Connect micro:bit</strong>, pick the micro:bit from the list (it may be called <em>BBC micro:bit CMSIS-DAP</em> or <em>mbed Serial Port</em>) and click <strong>Connect</strong>. The dot turns green.</li>
+<li>Click <strong>Start AI</strong> and allow the camera or microphone when the browser asks.</li>
+</ol>
+<p>The big word shows what the AI thinks it sees; the micro:bit reacts to it. You can also type a class name in <strong>Test without AI</strong> and click <strong>Send</strong> to check the robot without the AI.</p>
+<h2 id="tips">Tips</h2>
+<ul>
+<li><strong>Name the classes exactly as the week's page says</strong>, lowercase and without spaces (<code>go</code>, <code>thumbsup</code>). If the names don't match, the robot ignores them.</li>
+<li><strong>Always add a <code>nothing</code> class</strong> (camera models: your kid out of view) or keep <strong>Background Noise</strong> (sound models). It stops the robot doing random things.</li>
+<li><strong>Robot acting jumpy?</strong> Move the "at least this sure" slider to the right. The bridge then only sends a class when the AI is more confident, and sends <code>unsure</code> otherwise.</li>
+<li><strong>Privacy:</strong> "Upload my model" stores the trained model (not your photos) on Google's servers so the link works. Read Teachable Machine's privacy notes before uploading a model trained on your kid's face.</li>
+</ul>
+<h2 id="not-working">Not working?</h2>
+<table>
+<thead>
+<tr>
+<th>What you see</th>
+<th>What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"Could not connect" or no micro:bit in the list</td>
+<td>Close every MakeCode tab, unplug and replug the micro:bit, try again. On Linux, do the one-time USB step.</td>
+</tr>
+<tr>
+<td>The camera stays black</td>
+<td>Click the camera icon in the address bar and allow the camera. Close other apps using it (video calls).</td>
+</tr>
+<tr>
+<td>The AI works but the robot doesn't react</td>
+<td>Check the class names match the week's page exactly. In weeks 43–44, check the car is switched on and has the week's program.</td>
+</tr>
+<tr>
+<td>"This page only works in Chrome or Edge"</td>
+<td>Open the link in Chrome or Edge on a computer.</td>
+</tr>
+</tbody>
+</table></section>
+<section class="sheet doc-sheet"><h1 id="glossary">Glossary</h1>
+<p>Every technical word used in the weekly projects, in plain language, with a way to say it to your kid. Each week's page also has a <strong>Words this week</strong> table with just the words it uses. Words about loading programs (micro:bit, MakeCode, extension, Blocks) are in the Start here word list.</p>
+<table>
+<thead>
+<tr>
+<th>Word</th>
+<th>What it means</th>
+<th>Say it to your kid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Accelerometer</strong></td>
+<td>The sensor that feels movement: shaking, tilting, falling.</td>
+<td>It feels when you shake or tip the robot.</td>
+</tr>
+<tr>
+<td><strong>AI</strong></td>
+<td>Artificial intelligence: a computer program that learns from examples instead of following rules someone wrote.</td>
+<td>A computer that learns by looking at examples.</td>
+</tr>
+<tr>
+<td><strong>AI assistant</strong></td>
+<td>A chat tool like Claude or ChatGPT. At this age, the parent types and reads.</td>
+<td>A computer helper that writes words.</td>
+</tr>
+<tr>
+<td><strong>AI bridge</strong></td>
+<td>A page from this project that passes what the AI sees or hears to the micro:bit. See the AI bridge guide.</td>
+<td>The messenger between the AI and the robot.</td>
+</tr>
+<tr>
+<td><strong>Alligator clip</strong></td>
+<td>A wire with a spring clip at each end, for connecting parts without tools.</td>
+<td>A wire with crocodile teeth.</td>
+</tr>
+<tr>
+<td><strong>Armed</strong></td>
+<td>Switched on and watching, ready to sound the alarm.</td>
+<td>On guard.</td>
+</tr>
+<tr>
+<td><strong>Axle</strong></td>
+<td>The rod that wheels turn on.</td>
+<td>The stick the wheels spin on.</td>
+</tr>
+<tr>
+<td><strong>Background Noise</strong></td>
+<td>A class of normal room sounds in a Teachable Machine audio project, so the AI knows what 'nothing special' sounds like.</td>
+<td>What quiet sounds like.</td>
+</tr>
+<tr>
+<td><strong>Balance</strong></td>
+<td>How weight is spread out. Low and heavy robots are harder to tip over.</td>
+<td>Low and heavy is hard to push over.</td>
+</tr>
+<tr>
+<td><strong>Ball caster</strong></td>
+<td>A small ball in a holder that lets the front of a robot slide in any direction.</td>
+<td>A rolling ball foot.</td>
+</tr>
+<tr>
+<td><strong>Beacon</strong></td>
+<td>A micro:bit that keeps sending the same radio message so another one can find it.</td>
+<td>A hidden micro:bit that keeps calling 'I'm here!'.</td>
+</tr>
+<tr>
+<td><strong>Behavior</strong></td>
+<td>One thing the robot does in response to something, like 'back away when it's loud'.</td>
+<td>Something the robot does when something happens.</td>
+</tr>
+<tr>
+<td><strong>Bug</strong></td>
+<td>A mistake that makes a robot do the wrong thing. Finding and fixing it is called debugging.</td>
+<td>A mistake we get to find and fix.</td>
+</tr>
+<tr>
+<td><strong>Calibration</strong></td>
+<td>Setting up a sensor so it measures correctly. The compass asks for it the first time.</td>
+<td>Teaching the sensor where things are.</td>
+</tr>
+<tr>
+<td><strong>Chassis</strong></td>
+<td>The base of a vehicle that everything else is attached to.</td>
+<td>The robot's skeleton.</td>
+</tr>
+<tr>
+<td><strong>Circuit</strong></td>
+<td>A complete loop that electricity travels around: out of the battery, through the parts, and back in. Any gap stops everything.</td>
+<td>A round trip for electricity. If the path is broken, nothing works.</td>
+</tr>
+<tr>
+<td><strong>Class</strong></td>
+<td>One of the things the AI learns to tell apart, like <code>thumbsup</code> or <code>teddy</code>. Names must match the week's page exactly.</td>
+<td>One thing the AI learns to spot.</td>
+</tr>
+<tr>
+<td><strong>Code</strong></td>
+<td>Another word for the program: the instructions the robot follows.</td>
+<td>The robot's instructions.</td>
+</tr>
+<tr>
+<td><strong>Coin cell (CR2032)</strong></td>
+<td>A flat, round battery the size of a big button. Dangerous if swallowed: grown-ups handle it (see Safety).</td>
+<td>A flat battery. Only grown-ups hold it.</td>
+</tr>
+<tr>
+<td><strong>Compass</strong></td>
+<td>The micro:bit has a sensor that feels the Earth's magnetism, like a compass needle, so it knows where north is.</td>
+<td>It always knows which way is north.</td>
+</tr>
+<tr>
+<td><strong>Confidence</strong></td>
+<td>How sure the AI is about its guess. The bridge only tells the robot when the AI is sure enough.</td>
+<td>How sure the AI is.</td>
+</tr>
+<tr>
+<td><strong>Copper tape</strong></td>
+<td>Sticky metal tape that electricity can travel along, like a flat wire.</td>
+<td>Sticky tape that electricity can walk on.</td>
+</tr>
+<tr>
+<td><strong>Cutebot</strong></td>
+<td>The robot car kit this project uses. The micro:bit slots in as its brain.</td>
+<td>Our robot car.</td>
+</tr>
+<tr>
+<td><strong>DC motor</strong></td>
+<td>A motor that spins when connected to a battery. Swap its two wires and it spins the other way.</td>
+<td>A spinner that runs on batteries.</td>
+</tr>
+<tr>
+<td><strong>Event</strong></td>
+<td>Something that happens, like a button press or a shake, and the instructions that run when it does.</td>
+<td>When this happens, do that.</td>
+</tr>
+<tr>
+<td><strong>Examples / data</strong></td>
+<td>The photos or sounds you show the AI. More, varied examples make a smarter AI; few or similar ones make a confused one.</td>
+<td>The pictures we show the AI to learn from.</td>
+</tr>
+<tr>
+<td><strong>Export</strong></td>
+<td>In Teachable Machine: saving the trained model online so you get a link to paste into the AI bridge.</td>
+<td>Sending the AI's memory to the internet so the robot can use it.</td>
+</tr>
+<tr>
+<td><strong>Gear motor</strong></td>
+<td>A motor with gears inside: slower but stronger, good for turning wheels.</td>
+<td>A slow, strong motor for wheels.</td>
+</tr>
+<tr>
+<td><strong>Geometry</strong></td>
+<td>The maths of shapes. A full turn is 360°; a square has four turns of 90°.</td>
+<td>Shapes and turns.</td>
+</tr>
+<tr>
+<td><strong>Icon</strong></td>
+<td>A small picture shown on the LED screen, like a heart or a smiley.</td>
+<td>A tiny picture made of lights.</td>
+</tr>
+<tr>
+<td><strong>If / else</strong></td>
+<td>The program checks something: IF it's true, do one thing, ELSE (otherwise) do another.</td>
+<td>If it rains, take an umbrella, else take sunglasses.</td>
+</tr>
+<tr>
+<td><strong>Input</strong></td>
+<td>Something that goes into the robot: a button press, a shake, light, sound.</td>
+<td>What the robot feels.</td>
+</tr>
+<tr>
+<td><strong>Jumper wire</strong></td>
+<td>A short wire for connecting parts, often with clips or pins on the ends.</td>
+<td>A short connecting wire.</td>
+</tr>
+<tr>
+<td><strong>LED</strong></td>
+<td>A tiny light. It only works one way round: the long leg goes to plus (+).</td>
+<td>A tiny light that only works the right way round.</td>
+</tr>
+<tr>
+<td><strong>LED screen</strong></td>
+<td>The 25 little lights on the front of the micro:bit that show pictures, numbers and letters.</td>
+<td>The robot's face.</td>
+</tr>
+<tr>
+<td><strong>Light sensor</strong></td>
+<td>The micro:bit's LED screen can also measure how bright the room is.</td>
+<td>The robot's face can also see light.</td>
+</tr>
+<tr>
+<td><strong>Line sensor</strong></td>
+<td>Two small sensors under the car that see whether the floor below is dark or light.</td>
+<td>The robot's eyes looking at the floor.</td>
+</tr>
+<tr>
+<td><strong>List</strong></td>
+<td>A set of items in order. The program goes through them one by one.</td>
+<td>Like a shopping list for the robot.</td>
+</tr>
+<tr>
+<td><strong>Loop</strong></td>
+<td>Instructions that repeat. <em>Forever</em> repeats until the power goes off; <em>repeat 4</em> does it four times.</td>
+<td>Do it again, and again, and again.</td>
+</tr>
+<tr>
+<td><strong>Microphone</strong></td>
+<td>The micro:bit V2 can measure how loud it is. It hears loudness, not words.</td>
+<td>The robot's ear. It hears loud and quiet, not words.</td>
+</tr>
+<tr>
+<td><strong>Model</strong></td>
+<td>What the AI ends up with after training: its 'memory' of what it learned. Exporting it gives you a link.</td>
+<td>The AI's memory.</td>
+</tr>
+<tr>
+<td><strong>Motor driver board</strong></td>
+<td>A board that gives motors enough power, with the micro:bit telling it what to do.</td>
+<td>The muscles helper for the motors.</td>
+</tr>
+<tr>
+<td><strong>Motor speed</strong></td>
+<td>How fast the wheels turn, from 0 (stopped) to 100 (full speed). Negative numbers drive backwards.</td>
+<td>How fast the wheels spin.</td>
+</tr>
+<tr>
+<td><strong>Off-center</strong></td>
+<td>Weight that isn't in the middle of something spinning, which makes it wobble and shake.</td>
+<td>Lopsided, so it wobbles.</td>
+</tr>
+<tr>
+<td><strong>Output</strong></td>
+<td>Something the robot does: lights, sounds, moving.</td>
+<td>What the robot does.</td>
+</tr>
+<tr>
+<td><strong>Parallel</strong></td>
+<td>Parts connected side by side, each with its own path to the battery. LEDs glow brighter, and one going out doesn't stop the others.</td>
+<td>Everyone gets their own path.</td>
+</tr>
+<tr>
+<td><strong>Pins (P1, P2, GND)</strong></td>
+<td>The metal strips along the micro:bit's bottom edge. P1 and P2 can feel when they're connected to GND (the minus side).</td>
+<td>The micro:bit's fingers along the bottom.</td>
+</tr>
+<tr>
+<td><strong>Plus (+) and minus (−)</strong></td>
+<td>The two ends of a battery. Electricity leaves from one end and has to find its way back to the other.</td>
+<td>The battery's way out and way back in.</td>
+</tr>
+<tr>
+<td><strong>Propeller</strong></td>
+<td>Spinning blades that push air one way, so the vehicle moves the other way.</td>
+<td>Spinning blades that push air.</td>
+</tr>
+<tr>
+<td><strong>Radio</strong></td>
+<td>micro:bits can send short messages to each other through the air, no wires needed, across a house.</td>
+<td>Invisible messages through the air.</td>
+</tr>
+<tr>
+<td><strong>Radio group</strong></td>
+<td>A channel number. Only micro:bits set to the same number hear each other.</td>
+<td>A secret channel number.</td>
+</tr>
+<tr>
+<td><strong>Random</strong></td>
+<td>Picked by chance, so nobody (not even the robot) knows what comes next.</td>
+<td>Like rolling a dice.</td>
+</tr>
+<tr>
+<td><strong>Relay</strong></td>
+<td>A micro:bit in the middle that passes messages on: it gets them from the laptop by USB and sends them to the car by radio.</td>
+<td>A messenger in the middle.</td>
+</tr>
+<tr>
+<td><strong>RGB</strong></td>
+<td>Red, Green, Blue. Mixing these three colors of light makes every other color.</td>
+<td>Three colors that mix into all the others.</td>
+</tr>
+<tr>
+<td><strong>RPM</strong></td>
+<td>Revolutions per minute: how many full turns a motor makes in one minute.</td>
+<td>How fast a wheel spins.</td>
+</tr>
+<tr>
+<td><strong>S1</strong></td>
+<td>A socket on the Cutebot labeled S1 where you plug in a servo.</td>
+<td>The servo's plug spot.</td>
+</tr>
+<tr>
+<td><strong>Sensor</strong></td>
+<td>A part that lets the robot notice the world: light, heat, distance, sound, movement.</td>
+<td>The robot's eyes, ears and skin.</td>
+</tr>
+<tr>
+<td><strong>Sequence</strong></td>
+<td>Things done in a fixed order. Change the order and you get a different result.</td>
+<td>First this, then that.</td>
+</tr>
+<tr>
+<td><strong>Series</strong></td>
+<td>Parts connected one after the other in a single line. They share the battery's push, so LEDs glow dimmer, and if one goes out they all do.</td>
+<td>Holding hands in a line: everyone shares.</td>
+</tr>
+<tr>
+<td><strong>Servo</strong></td>
+<td>A motor that turns to an exact angle and holds still there, instead of spinning round and round.</td>
+<td>A motor that points instead of spins.</td>
+</tr>
+<tr>
+<td><strong>Servo horn</strong></td>
+<td>The small plastic arm that clips onto the servo and moves with it.</td>
+<td>The servo's little arm.</td>
+</tr>
+<tr>
+<td><strong>Shaft</strong></td>
+<td>The metal rod that sticks out of a motor and spins.</td>
+<td>The motor's spinning nose.</td>
+</tr>
+<tr>
+<td><strong>Signal strength</strong></td>
+<td>How strong a radio message is when it arrives. Closer usually means stronger.</td>
+<td>Louder when close, quieter when far.</td>
+</tr>
+<tr>
+<td><strong>Speech</strong></td>
+<td>The laptop reads text out loud with a computer voice.</td>
+<td>The laptop reads the robot's words out loud.</td>
+</tr>
+<tr>
+<td><strong>State</strong></td>
+<td>The mode the robot is in right now, like sleeping, guarding or alarm. It acts differently in each.</td>
+<td>The robot's mood right now.</td>
+</tr>
+<tr>
+<td><strong>Switch</strong></td>
+<td>Something that opens or closes a gap in a circuit, to turn things off and on.</td>
+<td>A little door for electricity: open means off, closed means on.</td>
+</tr>
+<tr>
+<td><strong>Teachable Machine</strong></td>
+<td>A free Google website where you teach an AI by showing it examples with the webcam or microphone.</td>
+<td>The website where we teach the computer.</td>
+</tr>
+<tr>
+<td><strong>Temperature</strong></td>
+<td>How hot or cold something is, in degrees Celsius (°C). A comfy room is about 20 °C.</td>
+<td>How hot or cold.</td>
+</tr>
+<tr>
+<td><strong>Template</strong></td>
+<td>A ready-made program with empty slots to fill in.</td>
+<td>A robot program with blanks to fill.</td>
+</tr>
+<tr>
+<td><strong>Timing</strong></td>
+<td>How long the robot waits or does something. In programs it's often in milliseconds: 1000 = 1 second.</td>
+<td>How long it waits.</td>
+</tr>
+<tr>
+<td><strong>Training</strong></td>
+<td>Showing the AI lots of examples so it learns to tell things apart.</td>
+<td>Teaching the AI by showing it.</td>
+</tr>
+<tr>
+<td><strong>Ultrasonic sensor</strong></td>
+<td>The two round 'eyes' on the front of the Cutebot. They send out a sound too high to hear and time the echo to measure distance.</td>
+<td>The robot squeaks and listens for the echo, like a bat.</td>
+</tr>
+<tr>
+<td><strong>USB</strong></td>
+<td>The cable between the laptop and the micro:bit. It carries messages, not just power.</td>
+<td>The cable that lets the laptop talk to the robot.</td>
+</tr>
+<tr>
+<td><strong>V2</strong></td>
+<td>The newer micro:bit, with a speaker, a microphone and a touch-sensitive logo. This project needs it.</td>
+<td>The newer micro:bit that can hear and talk.</td>
+</tr>
+<tr>
+<td><strong>Vibration motor</strong></td>
+<td>A tiny motor with a lopsided weight that makes it shake, like a phone buzzing.</td>
+<td>A motor that shakes instead of spins.</td>
+</tr>
+<tr>
+<td><strong>Volts (V)</strong></td>
+<td>How hard a battery pushes electricity. One AA battery is 1.5 V; two make 3 V.</td>
+<td>How strong the battery's push is.</td>
+</tr>
+<tr>
+<td><strong>Whisker sensor</strong></td>
+<td>A springy wire that touches another wire when it bends, closing a circuit the micro:bit can feel. A homemade touch sensor.</td>
+<td>When the whisker bumps something, the robot feels it.</td>
+</tr>
+</tbody>
+</table>
+<p>← Back to the calendar</p></section>
+</body>
+</html>

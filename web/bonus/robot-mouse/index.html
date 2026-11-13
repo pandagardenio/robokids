@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bonus: Robot Mouse 🐭 · A Year of Robots</title>
+<meta name="description" content="Bonus of A Year of Robots: Robot Mouse 🐭. Skill: touch sensors, behaviors, radio signal strength.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🤖%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../../assets/style.css">
+
+</head>
+<body class="bonus">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <a class="brand" href="../../index.html"><span class="brand-bot" aria-hidden="true">🤖</span> A Year of Robots</a>
+  <nav aria-label="Main"><a href="../../index.html#calendar"><span aria-hidden="true">🗓️</span> Weeks</a><a href="../../start-here.html"><span aria-hidden="true">👋</span> Start here</a><a href="../../print/index.html"><span aria-hidden="true">🖨️</span> Printables</a><a href="../../parent-guide.html"><span aria-hidden="true">🧑‍🧒</span> Grown-ups</a></nav>
+</header>
+<main id="main">
+
+<article class="week" data-week="bonus-robot-mouse">
+  <header class="week-head">
+    <div class="week-badge week-badge-bonus" aria-hidden="true">★</div>
+    <div>
+      <p class="week-chips"><a class="chip" href="../../index.html#bonus">Bonus project</a> <span class="chip chip-soft">Fits after week 37</span></p>
+      <h1><span class="week-label">Bonus</span> Robot Mouse 🐭</h1>
+      <p class="week-meta"><span>⏱️ 2–3 sessions</span> <span>🎯 <b>Skill:</b> touch sensors, behaviors, radio signal strength</span></p>
+      <div class="week-actions">
+        <button type="button" class="btn btn-done" data-done="bonus-robot-mouse" aria-pressed="false"><span class="done-off">☐ Mark as done</span><span class="done-on">✅ Done! Great job</span></button>
+        <button type="button" class="btn btn-ghost" data-print>🖨️ Print this week</button>
+      </div>
+    </div>
+  </header>
+  <p>A little mouse that scurries around, squeaks when its whiskers touch something, runs away from claps, falls asleep in the dark, and sniffs out a cheese hidden somewhere in the house.</p>
+  <section class="sec sec-pick-your-version" aria-labelledby="pick-your-version">
+  <h2 id="pick-your-version"><span class="sec-icon" aria-hidden="true">🔀</span> Pick your version </h2>
+  <table>
+<thead>
+<tr>
+<th></th>
+<th>Cutebot mouse</th>
+<th>DIY mouse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Difficulty</td>
+<td>Easy: a costume on the car you have</td>
+<td>Medium: you build the chassis</td>
+</tr>
+<tr>
+<td>Time</td>
+<td>1 afternoon</td>
+<td>2–3 weekends</td>
+</tr>
+<tr>
+<td>Whiskers</td>
+<td>Ultrasonic sensor (feels things before touching)</td>
+<td>Real paper-clip whiskers</td>
+</tr>
+<tr>
+<td>Size</td>
+<td>~10 cm</td>
+<td>~12 cm (rat-sized is easier than mouse-sized)</td>
+</tr>
+<tr>
+<td>Extra cost</td>
+<td>~0 €</td>
+<td>~25 €</td>
+</tr>
+<tr>
+<td>Program</td>
+<td><a href="#program-main-ts"><code>main.ts</code></a></td>
+<td><a href="#program-diy-mouse-ts"><code>diy-mouse.ts</code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Both use <a href="#program-cheese-ts"><code>cheese.ts</code></a> on a second micro:bit as the hidden cheese.</p>
+</section>
+<section class="sec sec-you-need" aria-labelledby="you-need">
+  <h2 id="you-need"><span class="sec-icon" aria-hidden="true">🧰</span> You need </h2>
+  <p><strong>Both versions</strong>
+- micro:bit V2 (for the squeak and clap detection)
+- Second micro:bit + battery pack for the cheese
+- Grey or brown felt, a paper cup or yogurt pot for the body, a pipe cleaner or string tail, felt ears, two googly eyes
+- Yellow card for a cardboard cheese wedge</p>
+<p><strong>Cutebot mouse:</strong> your Cutebot. Optional: the SG90 servo from week 31 on S1 as a wagging tail.</p>
+<p><strong>DIY mouse</strong>
+- <a href="https://kitronik.co.uk/products/5620-motor-driver-board-for-the-bbc-micro-bit-v2" target="_blank" rel="noopener">Kitronik Motor Driver Board for micro:bit</a> (or similar)
+- 2 N20 micro gear motors (~100–300 RPM, 3–6 V) with 30–40 mm wheels
+- 1 small ball caster
+- 3×AAA battery holder with switch
+- 2 large paper clips, 3 jumper wires with crocodile clips, a small piece of stiff card for the base
+- Hot glue (parent)</p>
+</section>
+<section class="sec sec-build-cutebot-mouse" aria-labelledby="build-cutebot-mouse">
+  <h2 id="build-cutebot-mouse"><span class="sec-icon" aria-hidden="true">🔧</span> Build: Cutebot mouse <span class="sec-tag">Together</span></h2>
+  <ol>
+<li>Cut a paper cup in half lengthwise and cover it in felt: that's the body.</li>
+<li>Glue on ears and googly eyes at the front, above the ultrasonic sensor (its two "eyes" stay uncovered).</li>
+<li>Tape the shell over the car, leaving the micro:bit screen visible as the mouse's "heart window".</li>
+<li>Optional tail: tape a pipe cleaner to the servo horn on S1.</li>
+<li>Load <code>main.ts</code> with the <strong>Cutebot</strong> extension (see <a href="#load-the-programs">Load the programs</a>).</li>
+</ol>
+</section>
+<section class="sec sec-build-diy-mouse" aria-labelledby="build-diy-mouse">
+  <h2 id="build-diy-mouse"><span class="sec-icon" aria-hidden="true">🔧</span> Build: DIY mouse <span class="sec-tag">Together</span></h2>
+  <ol>
+<li><strong>Base:</strong> cut a 7 × 11 cm card base, rounded at the front. Hot glue the two motors at the back, one on each side, shafts pointing out. Push the wheels on.</li>
+<li><strong>Balance:</strong> glue the ball caster under the front. The mouse should sit level.</li>
+<li><strong>Electronics:</strong> plug the micro:bit into the motor board and glue the board on top. Wire the left motor to Motor 1 and the right motor to Motor 2. Battery pack under or behind the board.</li>
+<li><strong>Whiskers:</strong> bend each paper clip into a long, springy whisker and fix one to each front corner. Connect the left whisker to <strong>P1</strong>, the right to <strong>P2</strong>. Run a bare GND wire across the front, just behind both whiskers, so a bent whisker touches it. (Check your board's labels for where P1, P2 and GND are broken out; crocodile clips on the micro:bit's edge pads also work.)</li>
+<li><strong>Test before decorating:</strong> load <code>diy-mouse.ts</code> with the <strong>Kitronik Motor Driver</strong> extension (see <a href="#load-the-programs">Load the programs</a>). If the mouse spins instead of driving forward, swap one motor's two wires.</li>
+<li><strong>Costume:</strong> felt body over the top, ears, eyes, tail. Keep the whiskers free to move.</li>
+</ol>
+</section>
+<section class="sec sec-cheese" aria-labelledby="cheese">
+  <h2 id="cheese"><span class="sec-icon" aria-hidden="true">🧀</span> Cheese </h2>
+  <p>Load <code>cheese.ts</code> onto the second micro:bit and hide it inside the cardboard cheese wedge.</p>
+</section>
+<section class="sec sec-load-the-programs" aria-labelledby="load-the-programs">
+  <h2 id="load-the-programs"><span class="sec-icon" aria-hidden="true">💻</span> Load the programs <span class="sec-tag">Grown-up job</span></h2>
+  <p>Each program goes on a different micro:bit. Load them one at a time, with that micro:bit plugged in.</p>
+<table>
+<thead>
+<tr>
+<th>Program</th>
+<th>Goes on</th>
+<th>Extension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#program-main-ts"><code>main.ts</code></a></td>
+<td>the Cutebot mouse</td>
+<td>Cutebot</td>
+</tr>
+<tr>
+<td><a href="#program-diy-mouse-ts"><code>diy-mouse.ts</code></a></td>
+<td>the DIY mouse</td>
+<td>Kitronik Motor Driver</td>
+</tr>
+<tr>
+<td><a href="#program-cheese-ts"><code>cheese.ts</code></a></td>
+<td>the hidden cheese</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Click the green <strong>📋 Copy</strong> button on the program (below these steps).</li>
+<li>Go to <a href="https://makecode.microbit.org" target="_blank" rel="noopener">makecode.microbit.org</a>, click <strong>New Project</strong> and name it (for example <code>Mouse</code> or <code>Cheese</code>).</li>
+<li>Mouse only: click <strong>Extensions</strong> at the bottom of the block list, search for the extension in the table (<code>cutebot</code> or <code>kitronik motor driver</code>) and click it.</li>
+<li>Click <strong>JavaScript</strong> at the top, select all the text (<strong>Ctrl+A</strong>, Mac: <strong>Cmd+A</strong>) and paste (<strong>Ctrl+V</strong>, Mac: <strong>Cmd+V</strong>).</li>
+<li>Click <strong>Blocks</strong> to see the colorful version your kid can change, then click <strong>Download</strong>.</li>
+</ol>
+<p>First time, or something went wrong? See <a href="../../start-here.html#load-a-program">Start here</a>.</p>
+<figure class="program" id="program-main-ts">
+  <figcaption>
+    <span class="program-name">📄 main.ts</span>
+    <span class="program-lines">81 lines</span>
+    <button type="button" class="btn btn-copy" data-copy="program-main-ts-code">📋 Copy</button>
+  </figcaption>
+  <pre><code id="program-main-ts-code"><span class="tok-comment">// Bonus · Robot Mouse — CUTEBOT version (extension &quot;cutebot&quot;)</span>
+<span class="tok-comment">// Whiskers = the ultrasonic sensor. Optional servo tail on S1.</span>
+<span class="tok-comment">// ---- Kit adapter ----</span>
+<span class="tok-keyword">let</span> whiskerCm = <span class="tok-number">10</span>
+<span class="tok-keyword">function</span> drive(left: number, right: number) { cuteBot.motors(left, right) }
+<span class="tok-keyword">function</span> halt() { cuteBot.stopcar() }
+<span class="tok-keyword">function</span> tail(angle: number) { cuteBot.setServo(cuteBot.ServoList.S1, angle) }
+<span class="tok-keyword">function</span> near(): boolean {
+    <span class="tok-keyword">let</span> d = cuteBot.ultrasonic(cuteBot.SonarUnit.Centimeters)
+    <span class="tok-keyword">return</span> d &gt; <span class="tok-number">0</span> &amp;&amp; d &lt; whiskerCm
+}
+<span class="tok-keyword">function</span> whiskerLeft(): boolean { <span class="tok-keyword">return</span> near() }
+<span class="tok-keyword">function</span> whiskerRight(): boolean { <span class="tok-keyword">return</span> <span class="tok-keyword">false</span> }
+
+<span class="tok-comment">// ---- Mouse brain (same for both versions) ----</span>
+radio.setGroup(<span class="tok-number">99</span>)
+input.setSoundThreshold(SoundThreshold.Loud, <span class="tok-number">160</span>)
+<span class="tok-keyword">let</span> hunting = <span class="tok-keyword">false</span>          <span class="tok-comment">// button B: hunt for the cheese</span>
+<span class="tok-keyword">let</span> lastSignal = -<span class="tok-number">128</span>
+<span class="tok-keyword">let</span> scared = <span class="tok-keyword">false</span>
+
+<span class="tok-keyword">function</span> squeak() {
+    music.playTone(<span class="tok-number">2093</span>, music.beat(BeatFraction.Sixteenth))
+    music.playTone(<span class="tok-number">2637</span>, music.beat(BeatFraction.Sixteenth))
+}
+<span class="tok-keyword">function</span> wagTail() {
+    <span class="tok-keyword">for</span> (<span class="tok-keyword">let</span> i = <span class="tok-number">0</span>; i &lt; <span class="tok-number">4</span>; i++) { tail(<span class="tok-number">60</span>); basic.pause(<span class="tok-number">150</span>); tail(<span class="tok-number">120</span>); basic.pause(<span class="tok-number">150</span>) }
+    tail(<span class="tok-number">90</span>)
+}
+<span class="tok-keyword">function</span> bumped(left: boolean, right: boolean) {
+    halt(); squeak(); basic.showIcon(IconNames.Surprised)
+    drive(-<span class="tok-number">50</span>, -<span class="tok-number">50</span>); basic.pause(<span class="tok-number">350</span>)
+    <span class="tok-keyword">if</span> (left) drive(<span class="tok-number">50</span>, -<span class="tok-number">50</span>)          <span class="tok-comment">// whisker on the left: turn right</span>
+    <span class="tok-keyword">else</span> drive(-<span class="tok-number">50</span>, <span class="tok-number">50</span>)               <span class="tok-comment">// otherwise turn left</span>
+    basic.pause(randint(<span class="tok-number">250</span>, <span class="tok-number">500</span>))
+    halt()
+}
+
+input.onButtonPressed(Button.A, () =&gt; { hunting = <span class="tok-keyword">false</span>; basic.showIcon(IconNames.Happy); squeak() })
+input.onButtonPressed(Button.B, () =&gt; { hunting = <span class="tok-keyword">true</span>; lastSignal = -<span class="tok-number">128</span>; basic.showIcon(IconNames.Target) })
+input.onSound(DetectedSound.Loud, () =&gt; {   <span class="tok-comment">// a clap: run away!</span>
+    scared = <span class="tok-keyword">true</span>
+    squeak(); basic.showIcon(IconNames.Surprised)
+    drive(-<span class="tok-number">80</span>, -<span class="tok-number">80</span>); basic.pause(<span class="tok-number">500</span>)
+    drive(<span class="tok-number">80</span>, -<span class="tok-number">80</span>); basic.pause(<span class="tok-number">600</span>)
+    halt(); scared = <span class="tok-keyword">false</span>
+})
+
+<span class="tok-comment">// Cheese beacon: the closer, the stronger the signal</span>
+radio.onReceivedNumber((n) =&gt; {
+    <span class="tok-keyword">if</span> (!hunting) <span class="tok-keyword">return</span>
+    <span class="tok-keyword">let</span> s = radio.receivedPacket(RadioPacketProperty.SignalStrength)
+    <span class="tok-keyword">if</span> (s &gt; -<span class="tok-number">48</span>) {                       <span class="tok-comment">// found it!</span>
+        hunting = <span class="tok-keyword">false</span>; halt()
+        basic.showIcon(IconNames.Heart); wagTail(); squeak(); squeak()
+        <span class="tok-keyword">return</span>
+    }
+    <span class="tok-keyword">if</span> (s &lt; lastSignal - <span class="tok-number">2</span>) {            <span class="tok-comment">// getting colder: try another direction</span>
+        drive(<span class="tok-number">45</span>, -<span class="tok-number">45</span>); basic.pause(randint(<span class="tok-number">200</span>, <span class="tok-number">450</span>))
+    }
+    lastSignal = s
+})
+
+basic.forever(() =&gt; {
+    <span class="tok-keyword">if</span> (scared) <span class="tok-keyword">return</span>
+    <span class="tok-keyword">if</span> (input.lightLevel() &lt; <span class="tok-number">15</span>) {       <span class="tok-comment">// dark: freeze and sleep</span>
+        halt(); basic.showIcon(IconNames.Asleep); basic.pause(<span class="tok-number">300</span>); <span class="tok-keyword">return</span>
+    }
+    <span class="tok-keyword">let</span> l = whiskerLeft()
+    <span class="tok-keyword">let</span> r = whiskerRight()
+    <span class="tok-keyword">if</span> (l || r) { bumped(l, r); <span class="tok-keyword">return</span> }
+    <span class="tok-keyword">if</span> (hunting) {
+        drive(<span class="tok-number">40</span>, <span class="tok-number">40</span>); basic.pause(<span class="tok-number">60</span>)
+    } <span class="tok-keyword">else</span> {                             <span class="tok-comment">// scurry, pause, sniff, scurry</span>
+        basic.showIcon(IconNames.Happy)
+        <span class="tok-keyword">let</span> turn = randint(-<span class="tok-number">20</span>, <span class="tok-number">20</span>)
+        drive(<span class="tok-number">55</span> + turn, <span class="tok-number">55</span> - turn); basic.pause(randint(<span class="tok-number">200</span>, <span class="tok-number">600</span>))
+        <span class="tok-keyword">if</span> (randint(<span class="tok-number">0</span>, <span class="tok-number">4</span>) == <span class="tok-number">0</span>) { halt(); basic.pause(randint(<span class="tok-number">300</span>, <span class="tok-number">900</span>)) }
+    }
+})
+basic.showIcon(IconNames.Happy)
+</code></pre>
+  <p class="program-tip">Numbers in <span class="tok-number">orange</span> near the top are your kid's <b>knobs</b>: change them in MakeCode's Blocks view.</p>
+</figure>
+<figure class="program" id="program-cheese-ts">
+  <figcaption>
+    <span class="program-name">📄 cheese.ts</span>
+    <span class="program-lines">14 lines</span>
+    <button type="button" class="btn btn-copy" data-copy="program-cheese-ts-code">📋 Copy</button>
+  </figcaption>
+  <pre><code id="program-cheese-ts-code"><span class="tok-comment">// Bonus · Robot Mouse — CHEESE beacon (second micro:bit, hide it in a cardboard cheese)</span>
+radio.setGroup(<span class="tok-number">99</span>)
+radio.setTransmitPower(<span class="tok-number">7</span>)
+basic.showLeds(<span class="tok-string">`
+    . . . . #
+    . . . # #
+    . . # . #
+    . # . . #
+    # # # # #
+    `</span>)
+basic.forever(() =&gt; {
+    radio.sendNumber(<span class="tok-number">1</span>)
+    basic.pause(<span class="tok-number">150</span>)
+})
+</code></pre>
+  <p class="program-tip">Numbers in <span class="tok-number">orange</span> near the top are your kid's <b>knobs</b>: change them in MakeCode's Blocks view.</p>
+</figure>
+<figure class="program" id="program-diy-mouse-ts">
+  <figcaption>
+    <span class="program-name">📄 diy-mouse.ts</span>
+    <span class="program-lines">87 lines</span>
+    <button type="button" class="btn btn-copy" data-copy="program-diy-mouse-ts-code">📋 Copy</button>
+  </figcaption>
+  <pre><code id="program-diy-mouse-ts-code"><span class="tok-comment">// Bonus · Robot Mouse — DIY version</span>
+<span class="tok-comment">// Kitronik Motor Driver Board (extension &quot;kitronik-motor-driver&quot;), 2 N20 motors,</span>
+<span class="tok-comment">// paper-clip whiskers on P1 (left) and P2 (right), common wire to GND.</span>
+<span class="tok-comment">// ---- Kit adapter ----</span>
+<span class="tok-keyword">function</span> motor(m: kitronik_motor_driver.Motors, speed: number) {
+    <span class="tok-keyword">if</span> (speed == <span class="tok-number">0</span>) kitronik_motor_driver.motorOff(m)
+    <span class="tok-keyword">else</span> <span class="tok-keyword">if</span> (speed &gt; <span class="tok-number">0</span>) kitronik_motor_driver.motorOn(m, kitronik_motor_driver.MotorDirection.Forward, Math.min(speed, <span class="tok-number">100</span>))
+    <span class="tok-keyword">else</span> kitronik_motor_driver.motorOn(m, kitronik_motor_driver.MotorDirection.Reverse, Math.min(-speed, <span class="tok-number">100</span>))
+}
+<span class="tok-keyword">function</span> drive(left: number, right: number) {
+    motor(kitronik_motor_driver.Motors.Motor1, left)
+    motor(kitronik_motor_driver.Motors.Motor2, right)
+}
+<span class="tok-keyword">function</span> halt() { drive(<span class="tok-number">0</span>, <span class="tok-number">0</span>) }
+<span class="tok-keyword">function</span> tail(angle: number) { }   <span class="tok-comment">// no free servo pin on this board (motors use P0, P8, P12, P16)</span>
+pins.setPull(DigitalPin.P1, PinPullMode.PullUp)
+pins.setPull(DigitalPin.P2, PinPullMode.PullUp)
+<span class="tok-keyword">function</span> whiskerLeft(): boolean { <span class="tok-keyword">return</span> pins.digitalReadPin(DigitalPin.P1) == <span class="tok-number">0</span> }   <span class="tok-comment">// touching = 0</span>
+<span class="tok-keyword">function</span> whiskerRight(): boolean { <span class="tok-keyword">return</span> pins.digitalReadPin(DigitalPin.P2) == <span class="tok-number">0</span> }
+
+<span class="tok-comment">// ---- Mouse brain (same for both versions) ----</span>
+radio.setGroup(<span class="tok-number">99</span>)
+input.setSoundThreshold(SoundThreshold.Loud, <span class="tok-number">160</span>)
+<span class="tok-keyword">let</span> hunting = <span class="tok-keyword">false</span>          <span class="tok-comment">// button B: hunt for the cheese</span>
+<span class="tok-keyword">let</span> lastSignal = -<span class="tok-number">128</span>
+<span class="tok-keyword">let</span> scared = <span class="tok-keyword">false</span>
+
+<span class="tok-keyword">function</span> squeak() {
+    music.playTone(<span class="tok-number">2093</span>, music.beat(BeatFraction.Sixteenth))
+    music.playTone(<span class="tok-number">2637</span>, music.beat(BeatFraction.Sixteenth))
+}
+<span class="tok-keyword">function</span> wagTail() {
+    <span class="tok-keyword">for</span> (<span class="tok-keyword">let</span> i = <span class="tok-number">0</span>; i &lt; <span class="tok-number">4</span>; i++) { tail(<span class="tok-number">60</span>); basic.pause(<span class="tok-number">150</span>); tail(<span class="tok-number">120</span>); basic.pause(<span class="tok-number">150</span>) }
+    tail(<span class="tok-number">90</span>)
+}
+<span class="tok-keyword">function</span> bumped(left: boolean, right: boolean) {
+    halt(); squeak(); basic.showIcon(IconNames.Surprised)
+    drive(-<span class="tok-number">50</span>, -<span class="tok-number">50</span>); basic.pause(<span class="tok-number">350</span>)
+    <span class="tok-keyword">if</span> (left) drive(<span class="tok-number">50</span>, -<span class="tok-number">50</span>)          <span class="tok-comment">// whisker on the left: turn right</span>
+    <span class="tok-keyword">else</span> drive(-<span class="tok-number">50</span>, <span class="tok-number">50</span>)               <span class="tok-comment">// otherwise turn left</span>
+    basic.pause(randint(<span class="tok-number">250</span>, <span class="tok-number">500</span>))
+    halt()
+}
+
+input.onButtonPressed(Button.A, () =&gt; { hunting = <span class="tok-keyword">false</span>; basic.showIcon(IconNames.Happy); squeak() })
+input.onButtonPressed(Button.B, () =&gt; { hunting = <span class="tok-keyword">true</span>; lastSignal = -<span class="tok-number">128</span>; basic.showIcon(IconNames.Target) })
+input.onSound(DetectedSound.Loud, () =&gt; {   <span class="tok-comment">// a clap: run away!</span>
+    scared = <span class="tok-keyword">true</span>
+    squeak(); basic.showIcon(IconNames.Surprised)
+    drive(-<span class="tok-number">80</span>, -<span class="tok-number">80</span>); basic.pause(<span class="tok-number">500</span>)
+    drive(<span class="tok-number">80</span>, -<span class="tok-number">80</span>); basic.pause(<span class="tok-number">600</span>)
+    halt(); scared = <span class="tok-keyword">false</span>
+})
+
+<span class="tok-comment">// Cheese beacon: the closer, the stronger the signal</span>
+radio.onReceivedNumber((n) =&gt; {
+    <span class="tok-keyword">if</span> (!hunting) <span class="tok-keyword">return</span>
+    <span class="tok-keyword">let</span> s = radio.receivedPacket(RadioPacketProperty.SignalStrength)
+    <span class="tok-keyword">if</span> (s &gt; -<span class="tok-number">48</span>) {                       <span class="tok-comment">// found it!</span>
+        hunting = <span class="tok-keyword">false</span>; halt()
+        basic.showIcon(IconNames.Heart); wagTail(); squeak(); squeak()
+        <span class="tok-keyword">return</span>
+    }
+    <span class="tok-keyword">if</span> (s &lt; lastSignal - <span class="tok-number">2</span>) {            <span class="tok-comment">// getting colder: try another direction</span>
+        drive(<span class="tok-number">45</span>, -<span class="tok-number">45</span>); basic.pause(randint(<span class="tok-number">200</span>, <span class="tok-number">450</span>))
+    }
+    lastSignal = s
+})
+
+basic.forever(() =&gt; {
+    <span class="tok-keyword">if</span> (scared) <span class="tok-keyword">return</span>
+    <span class="tok-keyword">if</span> (input.lightLevel() &lt; <span class="tok-number">15</span>) {       <span class="tok-comment">// dark: freeze and sleep</span>
+        halt(); basic.showIcon(IconNames.Asleep); basic.pause(<span class="tok-number">300</span>); <span class="tok-keyword">return</span>
+    }
+    <span class="tok-keyword">let</span> l = whiskerLeft()
+    <span class="tok-keyword">let</span> r = whiskerRight()
+    <span class="tok-keyword">if</span> (l || r) { bumped(l, r); <span class="tok-keyword">return</span> }
+    <span class="tok-keyword">if</span> (hunting) {
+        drive(<span class="tok-number">40</span>, <span class="tok-number">40</span>); basic.pause(<span class="tok-number">60</span>)
+    } <span class="tok-keyword">else</span> {                             <span class="tok-comment">// scurry, pause, sniff, scurry</span>
+        basic.showIcon(IconNames.Happy)
+        <span class="tok-keyword">let</span> turn = randint(-<span class="tok-number">20</span>, <span class="tok-number">20</span>)
+        drive(<span class="tok-number">55</span> + turn, <span class="tok-number">55</span> - turn); basic.pause(randint(<span class="tok-number">200</span>, <span class="tok-number">600</span>))
+        <span class="tok-keyword">if</span> (randint(<span class="tok-number">0</span>, <span class="tok-number">4</span>) == <span class="tok-number">0</span>) { halt(); basic.pause(randint(<span class="tok-number">300</span>, <span class="tok-number">900</span>)) }
+    }
+})
+basic.showIcon(IconNames.Happy)
+</code></pre>
+  <p class="program-tip">Numbers in <span class="tok-number">orange</span> near the top are your kid's <b>knobs</b>: change them in MakeCode's Blocks view.</p>
+</figure>
+</section>
+<section class="sec sec-play" aria-labelledby="play">
+  <h2 id="play"><span class="sec-icon" aria-hidden="true">🎮</span> Play <span class="sec-tag">Kid time</span></h2>
+  <table>
+<thead>
+<tr>
+<th>Do this</th>
+<th>The mouse...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Leave it alone</td>
+<td>Scurries, stops to sniff, scurries again</td>
+</tr>
+<tr>
+<td>Whisker touches a wall</td>
+<td>Squeaks, backs up and turns away</td>
+</tr>
+<tr>
+<td>Clap loudly</td>
+<td>Runs away and spins</td>
+</tr>
+<tr>
+<td>Turn off the lights</td>
+<td>Freezes and falls asleep</td>
+</tr>
+<tr>
+<td>Press B</td>
+<td>Hunts for the cheese. When it finds it: heart, tail wag, double squeak</td>
+</tr>
+<tr>
+<td>Press A</td>
+<td>Stops hunting and goes back to wandering</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Games:</strong> hide the cheese in a cardboard maze and time the hunt. Play "cat": your kid claps when the mouse gets too close to the cat's corner. Build a mouse hole from a shoebox and see if it finds its way home.</p>
+</section>
+<section class="sec sec-talk-about-it" aria-labelledby="talk-about-it">
+  <h2 id="talk-about-it"><span class="sec-icon" aria-hidden="true">💬</span> Talk about it <span class="sec-tag">Together</span></h2>
+  <blockquote>
+<p>How does the mouse know it touched something? How do real mice do it?</p>
+</blockquote>
+<p>Real mice use their whiskers to feel their way in the dark, just like this robot.</p>
+</section>
+<section class="sec sec-level-up" aria-labelledby="level-up">
+  <h2 id="level-up"><span class="sec-icon" aria-hidden="true">⭐</span> Level up <span class="sec-tag">Kid time</span></h2>
+  <ul>
+<li>Make the mouse squeak louder (more notes) the closer it gets to the cheese.</li>
+<li>Add a "hungry" counter that grows over time: the hungrier it is, the faster it scurries.</li>
+<li>Build a second mouse and have them chase each other by radio, like week 39.</li>
+<li>Parent challenge: turn it into a wall-following maze mouse, the first step towards <a href="https://en.wikipedia.org/wiki/Micromouse" target="_blank" rel="noopener">Micromouse</a>.</li>
+</ul>
+</section>
+<section class="sec sec-tuning-knobs" aria-labelledby="tuning-knobs">
+  <h2 id="tuning-knobs"><span class="sec-icon" aria-hidden="true">🎛️</span> Tuning knobs <span class="sec-tag">Together</span></h2>
+  <ul>
+<li><code>whiskerCm</code> (Cutebot): how close something must be before the mouse "feels" it.</li>
+<li><code>SoundThreshold.Loud, 160</code>: raise it if the mouse runs away from normal talking.</li>
+<li><code>s &gt; -48</code>: how close counts as "found the cheese". Lower it (e.g. <code>-55</code>) if it never finds it.</li>
+<li><code>lightLevel() &lt; 15</code>: how dark before it sleeps.</li>
+</ul>
+</section>
+<section class="sec sec-words-this-week" aria-labelledby="words-this-week">
+  <h2 id="words-this-week"><span class="sec-icon" aria-hidden="true">📖</span> Words this week <span class="sec-tag">For grown-ups</span></h2>
+  <table>
+<thead>
+<tr>
+<th>Word</th>
+<th>What it means</th>
+<th>Say it to your kid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sensor</strong></td>
+<td>A part that lets the robot notice the world: light, heat, distance, sound, movement.</td>
+<td>The robot's eyes, ears and skin.</td>
+</tr>
+<tr>
+<td><strong>Behavior</strong></td>
+<td>One thing the robot does in response to something, like 'back away when it's loud'.</td>
+<td>Something the robot does when something happens.</td>
+</tr>
+<tr>
+<td><strong>Radio</strong></td>
+<td>micro:bits can send short messages to each other through the air, no wires needed, across a house.</td>
+<td>Invisible messages through the air.</td>
+</tr>
+<tr>
+<td><strong>Signal strength</strong></td>
+<td>How strong a radio message is when it arrives. Closer usually means stronger.</td>
+<td>Louder when close, quieter when far.</td>
+</tr>
+<tr>
+<td><strong>Whisker sensor</strong></td>
+<td>A springy wire that touches another wire when it bends, closing a circuit the micro:bit can feel. A homemade touch sensor.</td>
+<td>When the whisker bumps something, the robot feels it.</td>
+</tr>
+<tr>
+<td><strong>Cutebot</strong></td>
+<td>The robot car kit this project uses. The micro:bit slots in as its brain.</td>
+<td>Our robot car.</td>
+</tr>
+<tr>
+<td><strong>Chassis</strong></td>
+<td>The base of a vehicle that everything else is attached to.</td>
+<td>The robot's skeleton.</td>
+</tr>
+<tr>
+<td><strong>Ultrasonic sensor</strong></td>
+<td>The two round 'eyes' on the front of the Cutebot. They send out a sound too high to hear and time the echo to measure distance.</td>
+<td>The robot squeaks and listens for the echo, like a bat.</td>
+</tr>
+<tr>
+<td><strong>V2</strong></td>
+<td>The newer micro:bit, with a speaker, a microphone and a touch-sensitive logo. This project needs it.</td>
+<td>The newer micro:bit that can hear and talk.</td>
+</tr>
+<tr>
+<td><strong>Servo</strong></td>
+<td>A motor that turns to an exact angle and holds still there, instead of spinning round and round.</td>
+<td>A motor that points instead of spins.</td>
+</tr>
+<tr>
+<td><strong>S1</strong></td>
+<td>A socket on the Cutebot labeled S1 where you plug in a servo.</td>
+<td>The servo's plug spot.</td>
+</tr>
+<tr>
+<td><strong>Motor driver board</strong></td>
+<td>A board that gives motors enough power, with the micro:bit telling it what to do.</td>
+<td>The muscles helper for the motors.</td>
+</tr>
+<tr>
+<td><strong>Gear motor</strong></td>
+<td>A motor with gears inside: slower but stronger, good for turning wheels.</td>
+<td>A slow, strong motor for wheels.</td>
+</tr>
+<tr>
+<td><strong>RPM</strong></td>
+<td>Revolutions per minute: how many full turns a motor makes in one minute.</td>
+<td>How fast a wheel spins.</td>
+</tr>
+<tr>
+<td><strong>Volts (V)</strong></td>
+<td>How hard a battery pushes electricity. One AA battery is 1.5 V; two make 3 V.</td>
+<td>How strong the battery's push is.</td>
+</tr>
+<tr>
+<td><strong>Ball caster</strong></td>
+<td>A small ball in a holder that lets the front of a robot slide in any direction.</td>
+<td>A rolling ball foot.</td>
+</tr>
+<tr>
+<td><strong>Switch</strong></td>
+<td>Something that opens or closes a gap in a circuit, to turn things off and on.</td>
+<td>A little door for electricity: open means off, closed means on.</td>
+</tr>
+<tr>
+<td><strong>Jumper wire</strong></td>
+<td>A short wire for connecting parts, often with clips or pins on the ends.</td>
+<td>A short connecting wire.</td>
+</tr>
+<tr>
+<td><strong>Alligator clip</strong></td>
+<td>A wire with a spring clip at each end, for connecting parts without tools.</td>
+<td>A wire with crocodile teeth.</td>
+</tr>
+<tr>
+<td><strong>Servo horn</strong></td>
+<td>The small plastic arm that clips onto the servo and moves with it.</td>
+<td>The servo's little arm.</td>
+</tr>
+<tr>
+<td><strong>Shaft</strong></td>
+<td>The metal rod that sticks out of a motor and spins.</td>
+<td>The motor's spinning nose.</td>
+</tr>
+<tr>
+<td><strong>Balance</strong></td>
+<td>How weight is spread out. Low and heavy robots are harder to tip over.</td>
+<td>Low and heavy is hard to push over.</td>
+</tr>
+<tr>
+<td><strong>Pins (P1, P2, GND)</strong></td>
+<td>The metal strips along the micro:bit's bottom edge. P1 and P2 can feel when they're connected to GND (the minus side).</td>
+<td>The micro:bit's fingers along the bottom.</td>
+</tr>
+</tbody>
+</table>
+<p>Loading words like <em>micro:bit</em>, <em>MakeCode</em>, <em>extension</em> and <em>Blocks</em> are in the <a href="../../start-here.html#word-list">Start here word list</a>. All words: <a href="../../glossary.html">glossary</a>.</p>
+</section>
+<section class="sec sec-robot-journal" aria-labelledby="robot-journal">
+  <h2 id="robot-journal"><span class="sec-icon" aria-hidden="true">✏️</span> Robot Journal <span class="sec-tag">Kid time</span></h2>
+  <p>Draw the mouse and the cheese. Where was the best hiding place?</p><div class="journal-pad" data-key="bonus-robot-mouse"></div><div class="print-draw-box" aria-hidden="true"></div>
+</section>
+  <p class="print-only print-url">Programs and more: https://pandagardenio.github.io/robokids/web/bonus/robot-mouse/</p>
+  <nav class="pager" aria-label="Weeks"><span></span><span></span></nav>
+</article>
+</main>
+<footer class="footer">
+  <p>A Year of Robots · Code: MIT · Activity text: CC BY 4.0 · <a href="https://github.com/pandagardenio/robokids" target="_blank" rel="noopener">Source on GitHub</a></p>
+  <p class="footer-note">Your ticks and drawings are saved only in this browser.</p>
+</footer>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

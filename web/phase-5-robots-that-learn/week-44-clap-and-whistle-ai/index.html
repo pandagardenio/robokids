@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Week 44: Clap and Whistle AI · A Year of Robots</title>
+<meta name="description" content="Week 44 of A Year of Robots: Clap and Whistle AI. Skill: Training with sound.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🤖%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../../assets/style.css">
+
+</head>
+<body class="phase-5">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <a class="brand" href="../../index.html"><span class="brand-bot" aria-hidden="true">🤖</span> A Year of Robots</a>
+  <nav aria-label="Main"><a href="../../index.html#calendar"><span aria-hidden="true">🗓️</span> Weeks</a><a href="../../start-here.html"><span aria-hidden="true">👋</span> Start here</a><a href="../../print/index.html"><span aria-hidden="true">🖨️</span> Printables</a><a href="../../parent-guide.html"><span aria-hidden="true">🧑‍🧒</span> Grown-ups</a></nav>
+</header>
+<main id="main">
+
+<article class="week" data-week="w44">
+  <header class="week-head">
+    <div class="week-badge" aria-hidden="true">44</div>
+    <div>
+      <p class="week-chips"><a class="chip" href="../index.html">🧠 Phase 5 · Robots That Learn</a></p>
+      <h1><span class="week-label">Week 44</span> Clap and Whistle AI</h1>
+      <p class="week-meta"><span>⏱️ ~45 min build + short play sessions during the week</span> <span>🎯 <b>Skill:</b> Training with sound</span></p>
+      <div class="week-actions">
+        <button type="button" class="btn btn-done" data-done="w44" aria-pressed="false"><span class="done-off">☐ Mark as done</span><span class="done-on">✅ Done! Great job</span></button>
+        <button type="button" class="btn btn-ghost" data-print>🖨️ Print this week</button>
+      </div>
+    </div>
+  </header>
+  
+  <section class="sec sec-you-need" aria-labelledby="you-need">
+  <h2 id="you-need"><span class="sec-icon" aria-hidden="true">🧰</span> You need </h2>
+  <ul>
+<li>Laptop with mic</li>
+<li>Robot car + USB relay micro:bit (from week 43)</li>
+</ul>
+</section>
+<section class="sec sec-build-together" aria-labelledby="build-together">
+  <h2 id="build-together"><span class="sec-icon" aria-hidden="true">🔧</span> Build together <span class="sec-tag">Together</span></h2>
+  <ol>
+<li>Teachable Machine → Audio Project. Classes: <code>Background Noise</code> (required), <code>clap</code>, <code>whistle</code>.</li>
+<li>Export the model, paste the link into the <a href="https://pandagardenio.github.io/robokids/ai/bridge.html" target="_blank" rel="noopener">AI bridge</a> and choose <strong>Audio</strong>.</li>
+</ol>
+</section>
+<section class="sec sec-play" aria-labelledby="play">
+  <h2 id="play"><span class="sec-icon" aria-hidden="true">🎮</span> Play <span class="sec-tag">Kid time</span></h2>
+  <p>Clap = dance, whistle = come back. Play 'robot dog'.</p>
+</section>
+<section class="sec sec-talk-about-it" aria-labelledby="talk-about-it">
+  <h2 id="talk-about-it"><span class="sec-icon" aria-hidden="true">💬</span> Talk about it <span class="sec-tag">Together</span></h2>
+  <blockquote>
+<p>How is this different from week 33 (just loudness)?</p>
+</blockquote>
+</section>
+<section class="sec sec-level-up" aria-labelledby="level-up">
+  <h2 id="level-up"><span class="sec-icon" aria-hidden="true">⭐</span> Level up <span class="sec-tag">Kid time</span></h2>
+  <p>Add a <code>snap</code> sound for spinning.</p>
+</section>
+<section class="sec sec-load-the-program" aria-labelledby="load-the-program">
+  <h2 id="load-the-program"><span class="sec-icon" aria-hidden="true">💻</span> Load the program <span class="sec-tag">Grown-up job</span></h2>
+  <p>Program for the car: <a href="#program-main-ts"><code>main.ts</code></a> · needs the <strong>Cutebot</strong> extension</p>
+<p>The micro:bit plugged into the laptop keeps <a href="../week-43-gesture-car/index.html#program-relay-ts"><code>relay.ts</code> from week 43</a>. If you reused it for something else, load that again too.</p>
+<ol>
+<li>Click the green <strong>📋 Copy</strong> button on the program (below these steps).</li>
+<li>Go to <a href="https://makecode.microbit.org" target="_blank" rel="noopener">makecode.microbit.org</a>, click <strong>New Project</strong> and name it <code>Week 44</code>.</li>
+<li>Click <strong>Extensions</strong> at the bottom of the block list, search <code>cutebot</code> and click <strong>Cutebot</strong>.</li>
+<li>Click <strong>JavaScript</strong> at the top, select all the text (<strong>Ctrl+A</strong>, Mac: <strong>Cmd+A</strong>) and paste (<strong>Ctrl+V</strong>, Mac: <strong>Cmd+V</strong>).</li>
+<li>Click <strong>Blocks</strong> to see the colorful version your kid can change, then click <strong>Download</strong>.</li>
+</ol>
+<p>First time, or something went wrong? See <a href="../../start-here.html#load-a-program">Start here</a>.</p>
+<p>Then open the <a href="https://pandagardenio.github.io/robokids/ai/bridge.html" target="_blank" rel="noopener">AI bridge</a> in Chrome or Edge and follow the <a href="../../ai/index.html">AI bridge guide</a>. Close MakeCode first.</p>
+<p>In Teachable Machine, name the classes exactly like this, lowercase: <code>clap</code>, <code>whistle</code>, <code>snap</code> (plus <em>Background Noise</em>).</p>
+<figure class="program" id="program-main-ts">
+  <figcaption>
+    <span class="program-name">📄 main.ts</span>
+    <span class="program-lines">25 lines</span>
+    <button type="button" class="btn btn-copy" data-copy="program-main-ts-code">📋 Copy</button>
+  </figcaption>
+  <pre><code id="program-main-ts-code"><span class="tok-comment">// ---- Kit adapter: Elecfreaks Cutebot (add extension &quot;cutebot&quot;) ----</span>
+<span class="tok-comment">// Using another car kit? Only change these three functions.</span>
+<span class="tok-keyword">function</span> drive(left: number, right: number) { cuteBot.motors(left, right) }
+<span class="tok-keyword">function</span> halt() { cuteBot.stopcar() }
+<span class="tok-keyword">function</span> lights(color: number) { cuteBot.colorLight(cuteBot.RGBLights.ALL, color) }
+<span class="tok-keyword">function</span> distanceCm(): number {
+    <span class="tok-keyword">let</span> d = cuteBot.ultrasonic(cuteBot.SonarUnit.Centimeters)
+    <span class="tok-keyword">return</span> d == <span class="tok-number">0</span> ? <span class="tok-number">999</span> : d   <span class="tok-comment">// 0 means &quot;no echo&quot; = nothing in front</span>
+}
+<span class="tok-comment">// ---------------------------------------------------------------------</span>
+
+<span class="tok-comment">// Week 44 · Clap and Whistle AI (CAR side; use relay.ts from week 43 on the USB micro:bit)</span>
+radio.setGroup(<span class="tok-number">43</span>)
+radio.onReceivedString((label) =&gt; {
+    <span class="tok-keyword">if</span> (label == <span class="tok-string">&quot;clap&quot;</span>) {           <span class="tok-comment">// dance</span>
+        lights(0xff00ff)
+        <span class="tok-keyword">for</span> (<span class="tok-keyword">let</span> i = <span class="tok-number">0</span>; i &lt; <span class="tok-number">4</span>; i++) { drive(<span class="tok-number">50</span>, -<span class="tok-number">50</span>); basic.pause(<span class="tok-number">250</span>); drive(-<span class="tok-number">50</span>, <span class="tok-number">50</span>); basic.pause(<span class="tok-number">250</span>) }
+        halt(); lights(<span class="tok-number">0</span>)
+    } <span class="tok-keyword">else</span> <span class="tok-keyword">if</span> (label == <span class="tok-string">&quot;whistle&quot;</span>) { <span class="tok-comment">// come back</span>
+        lights(0x00ff00); drive(-<span class="tok-number">45</span>, -<span class="tok-number">45</span>); basic.pause(<span class="tok-number">1000</span>); halt(); lights(<span class="tok-number">0</span>)
+    } <span class="tok-keyword">else</span> <span class="tok-keyword">if</span> (label == <span class="tok-string">&quot;snap&quot;</span>) {    <span class="tok-comment">// spin</span>
+        drive(<span class="tok-number">60</span>, -<span class="tok-number">60</span>); basic.pause(<span class="tok-number">1200</span>); halt()
+    }
+})
+basic.showIcon(IconNames.EighthNote)
+</code></pre>
+  <p class="program-tip">Numbers in <span class="tok-number">orange</span> near the top are your kid's <b>knobs</b>: change them in MakeCode's Blocks view.</p>
+</figure>
+</section>
+<section class="sec sec-words-this-week" aria-labelledby="words-this-week">
+  <h2 id="words-this-week"><span class="sec-icon" aria-hidden="true">📖</span> Words this week <span class="sec-tag">For grown-ups</span></h2>
+  <table>
+<thead>
+<tr>
+<th>Word</th>
+<th>What it means</th>
+<th>Say it to your kid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AI</strong></td>
+<td>Artificial intelligence: a computer program that learns from examples instead of following rules someone wrote.</td>
+<td>A computer that learns by looking at examples.</td>
+</tr>
+<tr>
+<td><strong>Training</strong></td>
+<td>Showing the AI lots of examples so it learns to tell things apart.</td>
+<td>Teaching the AI by showing it.</td>
+</tr>
+<tr>
+<td><strong>Microphone</strong></td>
+<td>The micro:bit V2 can measure how loud it is. It hears loudness, not words.</td>
+<td>The robot's ear. It hears loud and quiet, not words.</td>
+</tr>
+<tr>
+<td><strong>USB</strong></td>
+<td>The cable between the laptop and the micro:bit. It carries messages, not just power.</td>
+<td>The cable that lets the laptop talk to the robot.</td>
+</tr>
+<tr>
+<td><strong>Relay</strong></td>
+<td>A micro:bit in the middle that passes messages on: it gets them from the laptop by USB and sends them to the car by radio.</td>
+<td>A messenger in the middle.</td>
+</tr>
+<tr>
+<td><strong>Teachable Machine</strong></td>
+<td>A free Google website where you teach an AI by showing it examples with the webcam or microphone.</td>
+<td>The website where we teach the computer.</td>
+</tr>
+<tr>
+<td><strong>Background Noise</strong></td>
+<td>A class of normal room sounds in a Teachable Machine audio project, so the AI knows what 'nothing special' sounds like.</td>
+<td>What quiet sounds like.</td>
+</tr>
+<tr>
+<td><strong>Export</strong></td>
+<td>In Teachable Machine: saving the trained model online so you get a link to paste into the AI bridge.</td>
+<td>Sending the AI's memory to the internet so the robot can use it.</td>
+</tr>
+<tr>
+<td><strong>Model</strong></td>
+<td>What the AI ends up with after training: its 'memory' of what it learned. Exporting it gives you a link.</td>
+<td>The AI's memory.</td>
+</tr>
+<tr>
+<td><strong>AI bridge</strong></td>
+<td>A page from this project that passes what the AI sees or hears to the micro:bit. See the <a href="../../ai/index.html">AI bridge guide</a>.</td>
+<td>The messenger between the AI and the robot.</td>
+</tr>
+</tbody>
+</table>
+<p>Loading words like <em>micro:bit</em>, <em>MakeCode</em>, <em>extension</em> and <em>Blocks</em> are in the <a href="../../start-here.html#word-list">Start here word list</a>. All words: <a href="../../glossary.html">glossary</a>.</p>
+</section>
+<section class="sec sec-robot-journal" aria-labelledby="robot-journal">
+  <h2 id="robot-journal"><span class="sec-icon" aria-hidden="true">✏️</span> Robot Journal <span class="sec-tag">Kid time</span></h2>
+  <p>Draw this week's robot. Write (or dictate) one thing it can do.</p><div class="journal-pad" data-key="w44"></div><div class="print-draw-box" aria-hidden="true"></div>
+</section>
+  <p class="print-only print-url">Programs and more: https://pandagardenio.github.io/robokids/web/phase-5-robots-that-learn/week-44-clap-and-whistle-ai/</p>
+  <nav class="pager" aria-label="Weeks"><a class="pager-link prev" href="../week-43-gesture-car/index.html"><small>← Previous</small><span>Week 43: Gesture-Controlled Car</span></a><a class="pager-link next" href="../week-45-toy-sorter/index.html"><small>Next →</small><span>Week 45: Toy Sorter</span></a></nav>
+</article>
+</main>
+<footer class="footer">
+  <p>A Year of Robots · Code: MIT · Activity text: CC BY 4.0 · <a href="https://github.com/pandagardenio/robokids" target="_blank" rel="noopener">Source on GitHub</a></p>
+  <p class="footer-note">Your ticks and drawings are saved only in this browser.</p>
+</footer>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

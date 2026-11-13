@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Week 26: Line Follower · A Year of Robots</title>
+<meta name="description" content="Week 26 of A Year of Robots: Line Follower. Skill: Sensors + if/else.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🤖%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../../assets/style.css">
+
+</head>
+<body class="phase-3">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <a class="brand" href="../../index.html"><span class="brand-bot" aria-hidden="true">🤖</span> A Year of Robots</a>
+  <nav aria-label="Main"><a href="../../index.html#calendar"><span aria-hidden="true">🗓️</span> Weeks</a><a href="../../start-here.html"><span aria-hidden="true">👋</span> Start here</a><a href="../../print/index.html"><span aria-hidden="true">🖨️</span> Printables</a><a href="../../parent-guide.html"><span aria-hidden="true">🧑‍🧒</span> Grown-ups</a></nav>
+</header>
+<main id="main">
+
+<article class="week" data-week="w26">
+  <header class="week-head">
+    <div class="week-badge" aria-hidden="true">26</div>
+    <div>
+      <p class="week-chips"><a class="chip" href="../index.html">🚗 Phase 3 · The Robot Car</a></p>
+      <h1><span class="week-label">Week 26</span> Line Follower</h1>
+      <p class="week-meta"><span>⏱️ ~45 min build + short play sessions during the week</span> <span>🎯 <b>Skill:</b> Sensors + if/else</span></p>
+      <div class="week-actions">
+        <button type="button" class="btn btn-done" data-done="w26" aria-pressed="false"><span class="done-off">☐ Mark as done</span><span class="done-on">✅ Done! Great job</span></button>
+        <button type="button" class="btn btn-ghost" data-print>🖨️ Print this week</button>
+      </div>
+    </div>
+  </header>
+  
+  <section class="sec sec-you-need" aria-labelledby="you-need">
+  <h2 id="you-need"><span class="sec-icon" aria-hidden="true">🧰</span> You need </h2>
+  <ul>
+<li>Robot car</li>
+<li>Black electrical tape (2 cm wide)</li>
+<li>Big white paper or light floor</li>
+</ul>
+</section>
+<section class="sec sec-build-together" aria-labelledby="build-together">
+  <h2 id="build-together"><span class="sec-icon" aria-hidden="true">🔧</span> Build together <span class="sec-tag">Together</span></h2>
+  <ol>
+<li>Make a closed loop track with gentle curves.</li>
+<li>Load this week's program (steps below). Put the robot on the line and press A.</li>
+</ol>
+</section>
+<section class="sec sec-play" aria-labelledby="play">
+  <h2 id="play"><span class="sec-icon" aria-hidden="true">🎮</span> Play <span class="sec-tag">Kid time</span></h2>
+  <p>Kid designs new tracks each day. Add a 'station' where the robot should stop (you can add that in code).</p>
+</section>
+<section class="sec sec-talk-about-it" aria-labelledby="talk-about-it">
+  <h2 id="talk-about-it"><span class="sec-icon" aria-hidden="true">💬</span> Talk about it <span class="sec-tag">Together</span></h2>
+  <blockquote>
+<p>How does the robot know it's leaving the line?</p>
+</blockquote>
+</section>
+<section class="sec sec-level-up" aria-labelledby="level-up">
+  <h2 id="level-up"><span class="sec-icon" aria-hidden="true">⭐</span> Level up <span class="sec-tag">Kid time</span></h2>
+  <p>Make a figure-8 track. Does it still work?</p>
+</section>
+<section class="sec sec-load-the-program" aria-labelledby="load-the-program">
+  <h2 id="load-the-program"><span class="sec-icon" aria-hidden="true">💻</span> Load the program <span class="sec-tag">Grown-up job</span></h2>
+  <p>Program: <a href="#program-main-ts"><code>main.ts</code></a> · needs the <strong>Cutebot</strong> extension</p>
+<ol>
+<li>Click the green <strong>📋 Copy</strong> button on the program (below these steps).</li>
+<li>Go to <a href="https://makecode.microbit.org" target="_blank" rel="noopener">makecode.microbit.org</a>, click <strong>New Project</strong> and name it <code>Week 26</code>.</li>
+<li>Click <strong>Extensions</strong> at the bottom of the block list, search <code>cutebot</code> and click <strong>Cutebot</strong>.</li>
+<li>Click <strong>JavaScript</strong> at the top, select all the text (<strong>Ctrl+A</strong>, Mac: <strong>Cmd+A</strong>) and paste (<strong>Ctrl+V</strong>, Mac: <strong>Cmd+V</strong>).</li>
+<li>Click <strong>Blocks</strong> to see the colorful version your kid can change, then click <strong>Download</strong>.</li>
+</ol>
+<p>First time, or something went wrong? See <a href="../../start-here.html#load-a-program">Start here</a>.</p>
+<figure class="program" id="program-main-ts">
+  <figcaption>
+    <span class="program-name">📄 main.ts</span>
+    <span class="program-lines">28 lines</span>
+    <button type="button" class="btn btn-copy" data-copy="program-main-ts-code">📋 Copy</button>
+  </figcaption>
+  <pre><code id="program-main-ts-code"><span class="tok-comment">// ---- Kit adapter: Elecfreaks Cutebot (add extension &quot;cutebot&quot;) ----</span>
+<span class="tok-comment">// Using another car kit? Only change these three functions.</span>
+<span class="tok-keyword">function</span> drive(left: number, right: number) { cuteBot.motors(left, right) }
+<span class="tok-keyword">function</span> halt() { cuteBot.stopcar() }
+<span class="tok-keyword">function</span> lights(color: number) { cuteBot.colorLight(cuteBot.RGBLights.ALL, color) }
+<span class="tok-keyword">function</span> distanceCm(): number {
+    <span class="tok-keyword">let</span> d = cuteBot.ultrasonic(cuteBot.SonarUnit.Centimeters)
+    <span class="tok-keyword">return</span> d == <span class="tok-number">0</span> ? <span class="tok-number">999</span> : d   <span class="tok-comment">// 0 means &quot;no echo&quot; = nothing in front</span>
+}
+<span class="tok-comment">// ---------------------------------------------------------------------</span>
+
+<span class="tok-comment">// Week 26 · Line Follower (black tape on a light floor)</span>
+<span class="tok-keyword">let</span> running = <span class="tok-keyword">false</span>
+<span class="tok-keyword">let</span> speed = <span class="tok-number">35</span>
+input.onButtonPressed(Button.A, () =&gt; { running = <span class="tok-keyword">true</span> })
+input.onButtonPressed(Button.B, () =&gt; { running = <span class="tok-keyword">false</span>; halt() })
+basic.forever(() =&gt; {
+    <span class="tok-keyword">if</span> (!running) <span class="tok-keyword">return</span>
+    <span class="tok-keyword">if</span> (cuteBot.tracking(cuteBot.TrackingState.L_R_line)) {
+        drive(speed, speed)                 <span class="tok-comment">// both sensors on the line: straight</span>
+    } <span class="tok-keyword">else</span> <span class="tok-keyword">if</span> (cuteBot.tracking(cuteBot.TrackingState.L_line_R_unline)) {
+        drive(<span class="tok-number">0</span>, speed)                     <span class="tok-comment">// drifting right: turn left</span>
+    } <span class="tok-keyword">else</span> <span class="tok-keyword">if</span> (cuteBot.tracking(cuteBot.TrackingState.L_unline_R_line)) {
+        drive(speed, <span class="tok-number">0</span>)                     <span class="tok-comment">// drifting left: turn right</span>
+    } <span class="tok-keyword">else</span> {
+        drive(-<span class="tok-number">25</span>, -<span class="tok-number">25</span>)                     <span class="tok-comment">// lost the line: back up a bit</span>
+    }
+})
+</code></pre>
+  <p class="program-tip">Numbers in <span class="tok-number">orange</span> near the top are your kid's <b>knobs</b>: change them in MakeCode's Blocks view.</p>
+</figure>
+</section>
+<section class="sec sec-words-this-week" aria-labelledby="words-this-week">
+  <h2 id="words-this-week"><span class="sec-icon" aria-hidden="true">📖</span> Words this week <span class="sec-tag">For grown-ups</span></h2>
+  <table>
+<thead>
+<tr>
+<th>Word</th>
+<th>What it means</th>
+<th>Say it to your kid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>If / else</strong></td>
+<td>The program checks something: IF it's true, do one thing, ELSE (otherwise) do another.</td>
+<td>If it rains, take an umbrella, else take sunglasses.</td>
+</tr>
+<tr>
+<td><strong>Line sensor</strong></td>
+<td>Two small sensors under the car that see whether the floor below is dark or light.</td>
+<td>The robot's eyes looking at the floor.</td>
+</tr>
+<tr>
+<td><strong>Code</strong></td>
+<td>Another word for the program: the instructions the robot follows.</td>
+<td>The robot's instructions.</td>
+</tr>
+</tbody>
+</table>
+<p>Loading words like <em>micro:bit</em>, <em>MakeCode</em>, <em>extension</em> and <em>Blocks</em> are in the <a href="../../start-here.html#word-list">Start here word list</a>. All words: <a href="../../glossary.html">glossary</a>.</p>
+</section>
+<section class="sec sec-robot-journal" aria-labelledby="robot-journal">
+  <h2 id="robot-journal"><span class="sec-icon" aria-hidden="true">✏️</span> Robot Journal <span class="sec-tag">Kid time</span></h2>
+  <p>Draw this week's robot. Write (or dictate) one thing it can do.</p><div class="journal-pad" data-key="w26"></div><div class="print-draw-box" aria-hidden="true"></div>
+</section>
+  <p class="print-only print-url">Programs and more: https://pandagardenio.github.io/robokids/web/phase-3-robot-car/week-26-line-follower/</p>
+  <nav class="pager" aria-label="Weeks"><a class="pager-link prev" href="../week-25-headlights/index.html"><small>← Previous</small><span>Week 25: Disco Headlights</span></a><a class="pager-link next" href="../week-27-obstacle-avoider/index.html"><small>Next →</small><span>Week 27: Obstacle Avoider</span></a></nav>
+</article>
+</main>
+<footer class="footer">
+  <p>A Year of Robots · Code: MIT · Activity text: CC BY 4.0 · <a href="https://github.com/pandagardenio/robokids" target="_blank" rel="noopener">Source on GitHub</a></p>
+  <p class="footer-note">Your ticks and drawings are saved only in this browser.</p>
+</footer>
+<script src="../../assets/site.js"></script>
+</body>
+</html>
