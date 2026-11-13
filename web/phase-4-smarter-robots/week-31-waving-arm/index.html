@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Week 31: Waving Robot Arm · A Year of Robots</title>
+<meta name="description" content="Week 31 of A Year of Robots: Waving Robot Arm. Skill: Servo motors.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🤖%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../../assets/style.css">
+
+</head>
+<body class="phase-4">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <a class="brand" href="../../index.html"><span class="brand-bot" aria-hidden="true">🤖</span> A Year of Robots</a>
+  <nav aria-label="Main"><a href="../../index.html#calendar"><span aria-hidden="true">🗓️</span> Weeks</a><a href="../../start-here.html"><span aria-hidden="true">👋</span> Start here</a><a href="../../print/index.html"><span aria-hidden="true">🖨️</span> Printables</a><a href="../../parent-guide.html"><span aria-hidden="true">🧑‍🧒</span> Grown-ups</a></nav>
+</header>
+<main id="main">
+
+<article class="week" data-week="w31">
+  <header class="week-head">
+    <div class="week-badge" aria-hidden="true">31</div>
+    <div>
+      <p class="week-chips"><a class="chip" href="../index.html">🦾 Phase 4 · Smarter Robots</a></p>
+      <h1><span class="week-label">Week 31</span> Waving Robot Arm</h1>
+      <p class="week-meta"><span>⏱️ ~45 min build + short play sessions during the week</span> <span>🎯 <b>Skill:</b> Servo motors</span></p>
+      <div class="week-actions">
+        <button type="button" class="btn btn-done" data-done="w31" aria-pressed="false"><span class="done-off">☐ Mark as done</span><span class="done-on">✅ Done! Great job</span></button>
+        <button type="button" class="btn btn-ghost" data-print>🖨️ Print this week</button>
+      </div>
+    </div>
+  </header>
+  
+  <section class="sec sec-you-need" aria-labelledby="you-need">
+  <h2 id="you-need"><span class="sec-icon" aria-hidden="true">🧰</span> You need </h2>
+  <ul>
+<li>Robot car</li>
+<li>Small servo (SG90) plugged into Cutebot S1</li>
+<li>Cardboard arm + hand</li>
+</ul>
+</section>
+<section class="sec sec-build-together" aria-labelledby="build-together">
+  <h2 id="build-together"><span class="sec-icon" aria-hidden="true">🔧</span> Build together <span class="sec-tag">Together</span></h2>
+  <ol>
+<li>Attach the cardboard arm to the servo horn.</li>
+<li>Load this week's program (steps below). A = wave hello, B = high five position.</li>
+</ol>
+</section>
+<section class="sec sec-play" aria-labelledby="play">
+  <h2 id="play"><span class="sec-icon" aria-hidden="true">🎮</span> Play <span class="sec-tag">Kid time</span></h2>
+  <p>Robot greets everyone who comes home.</p>
+</section>
+<section class="sec sec-talk-about-it" aria-labelledby="talk-about-it">
+  <h2 id="talk-about-it"><span class="sec-icon" aria-hidden="true">💬</span> Talk about it <span class="sec-tag">Together</span></h2>
+  <blockquote>
+<p>How is a servo different from a wheel motor?</p>
+</blockquote>
+</section>
+<section class="sec sec-level-up" aria-labelledby="level-up">
+  <h2 id="level-up"><span class="sec-icon" aria-hidden="true">⭐</span> Level up <span class="sec-tag">Kid time</span></h2>
+  <p>Make it wave faster when it's 'excited'.</p>
+</section>
+<section class="sec sec-load-the-program" aria-labelledby="load-the-program">
+  <h2 id="load-the-program"><span class="sec-icon" aria-hidden="true">💻</span> Load the program <span class="sec-tag">Grown-up job</span></h2>
+  <p>Program: <a href="#program-main-ts"><code>main.ts</code></a> · needs the <strong>Cutebot</strong> extension</p>
+<ol>
+<li>Click the green <strong>📋 Copy</strong> button on the program (below these steps).</li>
+<li>Go to <a href="https://makecode.microbit.org" target="_blank" rel="noopener">makecode.microbit.org</a>, click <strong>New Project</strong> and name it <code>Week 31</code>.</li>
+<li>Click <strong>Extensions</strong> at the bottom of the block list, search <code>cutebot</code> and click <strong>Cutebot</strong>.</li>
+<li>Click <strong>JavaScript</strong> at the top, select all the text (<strong>Ctrl+A</strong>, Mac: <strong>Cmd+A</strong>) and paste (<strong>Ctrl+V</strong>, Mac: <strong>Cmd+V</strong>).</li>
+<li>Click <strong>Blocks</strong> to see the colorful version your kid can change, then click <strong>Download</strong>.</li>
+</ol>
+<p>First time, or something went wrong? See <a href="../../start-here.html#load-a-program">Start here</a>.</p>
+<figure class="program" id="program-main-ts">
+  <figcaption>
+    <span class="program-name">📄 main.ts</span>
+    <span class="program-lines">24 lines</span>
+    <button type="button" class="btn btn-copy" data-copy="program-main-ts-code">📋 Copy</button>
+  </figcaption>
+  <pre><code id="program-main-ts-code"><span class="tok-comment">// ---- Kit adapter: Elecfreaks Cutebot (add extension &quot;cutebot&quot;) ----</span>
+<span class="tok-comment">// Using another car kit? Only change these three functions.</span>
+<span class="tok-keyword">function</span> drive(left: number, right: number) { cuteBot.motors(left, right) }
+<span class="tok-keyword">function</span> halt() { cuteBot.stopcar() }
+<span class="tok-keyword">function</span> lights(color: number) { cuteBot.colorLight(cuteBot.RGBLights.ALL, color) }
+<span class="tok-keyword">function</span> distanceCm(): number {
+    <span class="tok-keyword">let</span> d = cuteBot.ultrasonic(cuteBot.SonarUnit.Centimeters)
+    <span class="tok-keyword">return</span> d == <span class="tok-number">0</span> ? <span class="tok-number">999</span> : d   <span class="tok-comment">// 0 means &quot;no echo&quot; = nothing in front</span>
+}
+<span class="tok-comment">// ---------------------------------------------------------------------</span>
+
+<span class="tok-comment">// Week 31 · Waving Robot Arm (servo on S1)</span>
+<span class="tok-keyword">function</span> arm(angle: number) { cuteBot.setServo(cuteBot.ServoList.S1, angle) }
+<span class="tok-keyword">let</span> waveSpeed = <span class="tok-number">250</span>   <span class="tok-comment">// smaller = more excited</span>
+input.onButtonPressed(Button.A, () =&gt; {
+    basic.showIcon(IconNames.Happy)
+    <span class="tok-keyword">for</span> (<span class="tok-keyword">let</span> i = <span class="tok-number">0</span>; i &lt; <span class="tok-number">3</span>; i++) {
+        arm(<span class="tok-number">45</span>); basic.pause(waveSpeed)
+        arm(<span class="tok-number">135</span>); basic.pause(waveSpeed)
+    }
+    arm(<span class="tok-number">90</span>)
+})
+input.onButtonPressed(Button.B, () =&gt; { arm(<span class="tok-number">170</span>); basic.showString(<span class="tok-string">&quot;5!&quot;</span>) })   <span class="tok-comment">// high five</span>
+arm(<span class="tok-number">90</span>)
+</code></pre>
+  <p class="program-tip">Numbers in <span class="tok-number">orange</span> near the top are your kid's <b>knobs</b>: change them in MakeCode's Blocks view.</p>
+</figure>
+</section>
+<section class="sec sec-words-this-week" aria-labelledby="words-this-week">
+  <h2 id="words-this-week"><span class="sec-icon" aria-hidden="true">📖</span> Words this week <span class="sec-tag">For grown-ups</span></h2>
+  <table>
+<thead>
+<tr>
+<th>Word</th>
+<th>What it means</th>
+<th>Say it to your kid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Servo</strong></td>
+<td>A motor that turns to an exact angle and holds still there, instead of spinning round and round.</td>
+<td>A motor that points instead of spins.</td>
+</tr>
+<tr>
+<td><strong>Cutebot</strong></td>
+<td>The robot car kit this project uses. The micro:bit slots in as its brain.</td>
+<td>Our robot car.</td>
+</tr>
+<tr>
+<td><strong>S1</strong></td>
+<td>A socket on the Cutebot labeled S1 where you plug in a servo.</td>
+<td>The servo's plug spot.</td>
+</tr>
+<tr>
+<td><strong>Servo horn</strong></td>
+<td>The small plastic arm that clips onto the servo and moves with it.</td>
+<td>The servo's little arm.</td>
+</tr>
+</tbody>
+</table>
+<p>Loading words like <em>micro:bit</em>, <em>MakeCode</em>, <em>extension</em> and <em>Blocks</em> are in the <a href="../../start-here.html#word-list">Start here word list</a>. All words: <a href="../../glossary.html">glossary</a>.</p>
+</section>
+<section class="sec sec-robot-journal" aria-labelledby="robot-journal">
+  <h2 id="robot-journal"><span class="sec-icon" aria-hidden="true">✏️</span> Robot Journal <span class="sec-tag">Kid time</span></h2>
+  <p>Draw this week's robot. Write (or dictate) one thing it can do.</p><div class="journal-pad" data-key="w31"></div><div class="print-draw-box" aria-hidden="true"></div>
+</section>
+  <p class="print-only print-url">Programs and more: https://pandagardenio.github.io/robokids/web/phase-4-smarter-robots/week-31-waving-arm/</p>
+  <nav class="pager" aria-label="Weeks"><a class="pager-link prev" href="../../phase-3-robot-car/week-30-showcase-robot-olympics/index.html"><small>← Previous</small><span>Week 30: Showcase: Robot Olympics</span></a><a class="pager-link next" href="../week-32-bulldozer/index.html"><small>Next →</small><span>Week 32: Bulldozer</span></a></nav>
+</article>
+</main>
+<footer class="footer">
+  <p>A Year of Robots · Code: MIT · Activity text: CC BY 4.0 · <a href="https://github.com/pandagardenio/robokids" target="_blank" rel="noopener">Source on GitHub</a></p>
+  <p class="footer-note">Your ticks and drawings are saved only in this browser.</p>
+</footer>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

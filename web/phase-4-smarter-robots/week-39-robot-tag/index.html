@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Week 39: Robot Tag · A Year of Robots</title>
+<meta name="description" content="Week 39 of A Year of Robots: Robot Tag. Skill: Two robots talking.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🤖%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../../assets/style.css">
+
+</head>
+<body class="phase-4">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <a class="brand" href="../../index.html"><span class="brand-bot" aria-hidden="true">🤖</span> A Year of Robots</a>
+  <nav aria-label="Main"><a href="../../index.html#calendar"><span aria-hidden="true">🗓️</span> Weeks</a><a href="../../start-here.html"><span aria-hidden="true">👋</span> Start here</a><a href="../../print/index.html"><span aria-hidden="true">🖨️</span> Printables</a><a href="../../parent-guide.html"><span aria-hidden="true">🧑‍🧒</span> Grown-ups</a></nav>
+</header>
+<main id="main">
+
+<article class="week" data-week="w39">
+  <header class="week-head">
+    <div class="week-badge" aria-hidden="true">39</div>
+    <div>
+      <p class="week-chips"><a class="chip" href="../index.html">🦾 Phase 4 · Smarter Robots</a></p>
+      <h1><span class="week-label">Week 39</span> Robot Tag</h1>
+      <p class="week-meta"><span>⏱️ ~45 min build + short play sessions during the week</span> <span>🎯 <b>Skill:</b> Two robots talking</span></p>
+      <div class="week-actions">
+        <button type="button" class="btn btn-done" data-done="w39" aria-pressed="false"><span class="done-off">☐ Mark as done</span><span class="done-on">✅ Done! Great job</span></button>
+        <button type="button" class="btn btn-ghost" data-print>🖨️ Print this week</button>
+      </div>
+    </div>
+  </header>
+  
+  <section class="sec sec-you-need" aria-labelledby="you-need">
+  <h2 id="you-need"><span class="sec-icon" aria-hidden="true">🧰</span> You need </h2>
+  <ul>
+<li>2 micro:bits (one on the car, one handheld 'tagger')</li>
+</ul>
+</section>
+<section class="sec sec-build-together" aria-labelledby="build-together">
+  <h2 id="build-together"><span class="sec-icon" aria-hidden="true">🔧</span> Build together <span class="sec-tag">Together</span></h2>
+  <ol>
+<li>Load <code>main.ts</code> onto the car and <code>tagger.ts</code> onto the handheld.</li>
+<li>The car runs around; when the tagger is very close (strong radio signal) the car is 'it' and flashes red.</li>
+</ol>
+</section>
+<section class="sec sec-play" aria-labelledby="play">
+  <h2 id="play"><span class="sec-icon" aria-hidden="true">🎮</span> Play <span class="sec-tag">Kid time</span></h2>
+  <p>Chase the robot around the living room with the tagger.</p>
+</section>
+<section class="sec sec-talk-about-it" aria-labelledby="talk-about-it">
+  <h2 id="talk-about-it"><span class="sec-icon" aria-hidden="true">💬</span> Talk about it <span class="sec-tag">Together</span></h2>
+  <blockquote>
+<p>How does the robot know you're close without seeing you?</p>
+</blockquote>
+</section>
+<section class="sec sec-level-up" aria-labelledby="level-up">
+  <h2 id="level-up"><span class="sec-icon" aria-hidden="true">⭐</span> Level up <span class="sec-tag">Kid time</span></h2>
+  <p>Swap: the robot chases you.</p>
+</section>
+<section class="sec sec-load-the-program" aria-labelledby="load-the-program">
+  <h2 id="load-the-program"><span class="sec-icon" aria-hidden="true">💻</span> Load the program <span class="sec-tag">Grown-up job</span></h2>
+  <p>Each program goes on a different micro:bit. Load them one at a time, with that micro:bit plugged in.</p>
+<table>
+<thead>
+<tr>
+<th>Program</th>
+<th>Goes on</th>
+<th>Extension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#program-main-ts"><code>main.ts</code></a></td>
+<td>the car</td>
+<td>Cutebot</td>
+</tr>
+<tr>
+<td><a href="#program-tagger-ts"><code>tagger.ts</code></a></td>
+<td>the hand-held tagger</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Click the green <strong>📋 Copy</strong> button on the program (below these steps).</li>
+<li>Go to <a href="https://makecode.microbit.org" target="_blank" rel="noopener">makecode.microbit.org</a>, click <strong>New Project</strong> and name it after the week and program (for example <code>Week 39 tagger</code>).</li>
+<li>Click <strong>Extensions</strong> at the bottom of the block list, search <code>cutebot</code> and click <strong>Cutebot</strong> (only for programs that need it).</li>
+<li>Click <strong>JavaScript</strong> at the top, select all the text (<strong>Ctrl+A</strong>, Mac: <strong>Cmd+A</strong>) and paste (<strong>Ctrl+V</strong>, Mac: <strong>Cmd+V</strong>).</li>
+<li>Click <strong>Blocks</strong> to see the colorful version your kid can change, then click <strong>Download</strong>.</li>
+</ol>
+<p>First time, or something went wrong? See <a href="../../start-here.html#load-a-program">Start here</a>.</p>
+<figure class="program" id="program-main-ts">
+  <figcaption>
+    <span class="program-name">📄 main.ts</span>
+    <span class="program-lines">30 lines</span>
+    <button type="button" class="btn btn-copy" data-copy="program-main-ts-code">📋 Copy</button>
+  </figcaption>
+  <pre><code id="program-main-ts-code"><span class="tok-comment">// ---- Kit adapter: Elecfreaks Cutebot (add extension &quot;cutebot&quot;) ----</span>
+<span class="tok-comment">// Using another car kit? Only change these three functions.</span>
+<span class="tok-keyword">function</span> drive(left: number, right: number) { cuteBot.motors(left, right) }
+<span class="tok-keyword">function</span> halt() { cuteBot.stopcar() }
+<span class="tok-keyword">function</span> lights(color: number) { cuteBot.colorLight(cuteBot.RGBLights.ALL, color) }
+<span class="tok-keyword">function</span> distanceCm(): number {
+    <span class="tok-keyword">let</span> d = cuteBot.ultrasonic(cuteBot.SonarUnit.Centimeters)
+    <span class="tok-keyword">return</span> d == <span class="tok-number">0</span> ? <span class="tok-number">999</span> : d   <span class="tok-comment">// 0 means &quot;no echo&quot; = nothing in front</span>
+}
+<span class="tok-comment">// ---------------------------------------------------------------------</span>
+
+<span class="tok-comment">// Week 39 · Robot Tag — CAR (flash tagger.ts to the handheld)</span>
+radio.setGroup(<span class="tok-number">39</span>)
+<span class="tok-keyword">let</span> it = <span class="tok-keyword">false</span>
+radio.onReceivedNumber((n) =&gt; {
+    <span class="tok-keyword">let</span> s = radio.receivedPacket(RadioPacketProperty.SignalStrength)
+    <span class="tok-keyword">if</span> (s &gt; -<span class="tok-number">55</span> &amp;&amp; !it) {
+        it = <span class="tok-keyword">true</span>
+        halt(); lights(0xff0000); basic.showIcon(IconNames.Angry)
+        music.startMelody(music.builtInMelody(Melodies.Wawawawaa), MelodyOptions.Once)
+        basic.pause(<span class="tok-number">3000</span>)
+        lights(<span class="tok-number">0</span>); it = <span class="tok-keyword">false</span>
+    }
+})
+basic.forever(() =&gt; {
+    <span class="tok-keyword">if</span> (it) <span class="tok-keyword">return</span>
+    <span class="tok-keyword">if</span> (distanceCm() &lt; <span class="tok-number">15</span>) { drive(-<span class="tok-number">40</span>, -<span class="tok-number">40</span>); basic.pause(<span class="tok-number">300</span>); drive(<span class="tok-number">50</span>, -<span class="tok-number">50</span>); basic.pause(<span class="tok-number">400</span>) }
+    <span class="tok-keyword">else</span> drive(randint(<span class="tok-number">30</span>, <span class="tok-number">60</span>), randint(<span class="tok-number">30</span>, <span class="tok-number">60</span>))   <span class="tok-comment">// wander</span>
+    basic.pause(<span class="tok-number">300</span>)
+})
+</code></pre>
+  <p class="program-tip">Numbers in <span class="tok-number">orange</span> near the top are your kid's <b>knobs</b>: change them in MakeCode's Blocks view.</p>
+</figure>
+<figure class="program" id="program-tagger-ts">
+  <figcaption>
+    <span class="program-name">📄 tagger.ts</span>
+    <span class="program-lines">7 lines</span>
+    <button type="button" class="btn btn-copy" data-copy="program-tagger-ts-code">📋 Copy</button>
+  </figcaption>
+  <pre><code id="program-tagger-ts-code"><span class="tok-comment">// Week 39 · Robot Tag — TAGGER (handheld)</span>
+radio.setGroup(<span class="tok-number">39</span>)
+basic.showIcon(IconNames.Target)
+basic.forever(() =&gt; {
+    radio.sendNumber(<span class="tok-number">1</span>)
+    basic.pause(<span class="tok-number">100</span>)
+})
+</code></pre>
+  <p class="program-tip">Numbers in <span class="tok-number">orange</span> near the top are your kid's <b>knobs</b>: change them in MakeCode's Blocks view.</p>
+</figure>
+</section>
+<section class="sec sec-words-this-week" aria-labelledby="words-this-week">
+  <h2 id="words-this-week"><span class="sec-icon" aria-hidden="true">📖</span> Words this week <span class="sec-tag">For grown-ups</span></h2>
+  <table>
+<thead>
+<tr>
+<th>Word</th>
+<th>What it means</th>
+<th>Say it to your kid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Radio</strong></td>
+<td>micro:bits can send short messages to each other through the air, no wires needed, across a house.</td>
+<td>Invisible messages through the air.</td>
+</tr>
+<tr>
+<td><strong>Signal strength</strong></td>
+<td>How strong a radio message is when it arrives. Closer usually means stronger.</td>
+<td>Louder when close, quieter when far.</td>
+</tr>
+</tbody>
+</table>
+<p>Loading words like <em>micro:bit</em>, <em>MakeCode</em>, <em>extension</em> and <em>Blocks</em> are in the <a href="../../start-here.html#word-list">Start here word list</a>. All words: <a href="../../glossary.html">glossary</a>.</p>
+</section>
+<section class="sec sec-robot-journal" aria-labelledby="robot-journal">
+  <h2 id="robot-journal"><span class="sec-icon" aria-hidden="true">✏️</span> Robot Journal <span class="sec-tag">Kid time</span></h2>
+  <p>Draw this week's robot. Write (or dictate) one thing it can do.</p><div class="journal-pad" data-key="w39"></div><div class="print-draw-box" aria-hidden="true"></div>
+</section>
+  <p class="print-only print-url">Programs and more: https://pandagardenio.github.io/robokids/web/phase-4-smarter-robots/week-39-robot-tag/</p>
+  <nav class="pager" aria-label="Weeks"><a class="pager-link prev" href="../week-38-drawing-robot/index.html"><small>← Previous</small><span>Week 38: Drawing Robot</span></a><a class="pager-link next" href="../week-40-showcase-smart-show/index.html"><small>Next →</small><span>Week 40: Showcase: Smart Robot Show</span></a></nav>
+</article>
+</main>
+<footer class="footer">
+  <p>A Year of Robots · Code: MIT · Activity text: CC BY 4.0 · <a href="https://github.com/pandagardenio/robokids" target="_blank" rel="noopener">Source on GitHub</a></p>
+  <p class="footer-note">Your ticks and drawings are saved only in this browser.</p>
+</footer>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

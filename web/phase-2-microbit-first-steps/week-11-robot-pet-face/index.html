@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Week 11: Robot Pet Face · A Year of Robots</title>
+<meta name="description" content="Week 11 of A Year of Robots: Robot Pet Face. Skill: Inputs and outputs.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🤖%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../../assets/style.css">
+
+</head>
+<body class="phase-2">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <a class="brand" href="../../index.html"><span class="brand-bot" aria-hidden="true">🤖</span> A Year of Robots</a>
+  <nav aria-label="Main"><a href="../../index.html#calendar"><span aria-hidden="true">🗓️</span> Weeks</a><a href="../../start-here.html"><span aria-hidden="true">👋</span> Start here</a><a href="../../print/index.html"><span aria-hidden="true">🖨️</span> Printables</a><a href="../../parent-guide.html"><span aria-hidden="true">🧑‍🧒</span> Grown-ups</a></nav>
+</header>
+<main id="main">
+
+<article class="week" data-week="w11">
+  <header class="week-head">
+    <div class="week-badge" aria-hidden="true">11</div>
+    <div>
+      <p class="week-chips"><a class="chip" href="../index.html">📟 Phase 2 · micro:bit First Steps</a></p>
+      <h1><span class="week-label">Week 11</span> Robot Pet Face</h1>
+      <p class="week-meta"><span>⏱️ ~45 min build + short play sessions during the week</span> <span>🎯 <b>Skill:</b> Inputs and outputs</span></p>
+      <div class="week-actions">
+        <button type="button" class="btn btn-done" data-done="w11" aria-pressed="false"><span class="done-off">☐ Mark as done</span><span class="done-on">✅ Done! Great job</span></button>
+        <button type="button" class="btn btn-ghost" data-print>🖨️ Print this week</button>
+      </div>
+    </div>
+  </header>
+  
+  <section class="sec sec-you-need" aria-labelledby="you-need">
+  <h2 id="you-need"><span class="sec-icon" aria-hidden="true">🧰</span> You need </h2>
+  <ul>
+<li>BBC micro:bit V2 + USB cable</li>
+<li>Battery pack (2×AAA)</li>
+<li>Cardboard pet body</li>
+</ul>
+</section>
+<section class="sec sec-build-together" aria-labelledby="build-together">
+  <h2 id="build-together"><span class="sec-icon" aria-hidden="true">🔧</span> Build together <span class="sec-tag">Together</span></h2>
+  <ol>
+<li>Plug in the micro:bit and load this week's program (steps below).</li>
+<li>Build a cardboard pet with a window for the LED screen.</li>
+</ol>
+</section>
+<section class="sec sec-play" aria-labelledby="play">
+  <h2 id="play"><span class="sec-icon" aria-hidden="true">🎮</span> Play <span class="sec-tag">Kid time</span></h2>
+  <p>Button A = happy, B = sad, A+B = surprised, shake = dizzy. Kid decides what each one means for the pet.</p>
+</section>
+<section class="sec sec-talk-about-it" aria-labelledby="talk-about-it">
+  <h2 id="talk-about-it"><span class="sec-icon" aria-hidden="true">💬</span> Talk about it <span class="sec-tag">Together</span></h2>
+  <blockquote>
+<p>What are the pet's inputs? What are its outputs?</p>
+</blockquote>
+</section>
+<section class="sec sec-level-up" aria-labelledby="level-up">
+  <h2 id="level-up"><span class="sec-icon" aria-hidden="true">⭐</span> Level up <span class="sec-tag">Kid time</span></h2>
+  <p>Change the icons. Draw your own face with the LED editor.</p>
+</section>
+<section class="sec sec-load-the-program" aria-labelledby="load-the-program">
+  <h2 id="load-the-program"><span class="sec-icon" aria-hidden="true">💻</span> Load the program <span class="sec-tag">Grown-up job</span></h2>
+  <p>Program: <a href="#program-main-ts"><code>main.ts</code></a></p>
+<ol>
+<li>Click the green <strong>📋 Copy</strong> button on the program (below these steps).</li>
+<li>Go to <a href="https://makecode.microbit.org" target="_blank" rel="noopener">makecode.microbit.org</a>, click <strong>New Project</strong> and name it <code>Week 11</code>.</li>
+<li>Click <strong>JavaScript</strong> at the top, select all the text (<strong>Ctrl+A</strong>, Mac: <strong>Cmd+A</strong>) and paste (<strong>Ctrl+V</strong>, Mac: <strong>Cmd+V</strong>).</li>
+<li>Click <strong>Blocks</strong> to see the colorful version your kid can change, then click <strong>Download</strong>.</li>
+</ol>
+<p>First time, or something went wrong? See <a href="../../start-here.html#load-a-program">Start here</a>.</p>
+<figure class="program" id="program-main-ts">
+  <figcaption>
+    <span class="program-name">📄 main.ts</span>
+    <span class="program-lines">9 lines</span>
+    <button type="button" class="btn btn-copy" data-copy="program-main-ts-code">📋 Copy</button>
+  </figcaption>
+  <pre><code id="program-main-ts-code"><span class="tok-comment">// Week 11 · Robot Pet Face</span>
+input.onButtonPressed(Button.A, () =&gt; basic.showIcon(IconNames.Happy))
+input.onButtonPressed(Button.B, () =&gt; basic.showIcon(IconNames.Sad))
+input.onButtonPressed(Button.AB, () =&gt; basic.showIcon(IconNames.Surprised))
+input.onGesture(Gesture.Shake, () =&gt; {
+    basic.showIcon(IconNames.Confused)
+    music.playTone(Note.C5, music.beat(BeatFraction.Quarter))
+})
+basic.showIcon(IconNames.Asleep)
+</code></pre>
+  <p class="program-tip">Numbers in <span class="tok-number">orange</span> near the top are your kid's <b>knobs</b>: change them in MakeCode's Blocks view.</p>
+</figure>
+</section>
+<section class="sec sec-words-this-week" aria-labelledby="words-this-week">
+  <h2 id="words-this-week"><span class="sec-icon" aria-hidden="true">📖</span> Words this week <span class="sec-tag">For grown-ups</span></h2>
+  <table>
+<thead>
+<tr>
+<th>Word</th>
+<th>What it means</th>
+<th>Say it to your kid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Input</strong></td>
+<td>Something that goes into the robot: a button press, a shake, light, sound.</td>
+<td>What the robot feels.</td>
+</tr>
+<tr>
+<td><strong>Output</strong></td>
+<td>Something the robot does: lights, sounds, moving.</td>
+<td>What the robot does.</td>
+</tr>
+<tr>
+<td><strong>V2</strong></td>
+<td>The newer micro:bit, with a speaker, a microphone and a touch-sensitive logo. This project needs it.</td>
+<td>The newer micro:bit that can hear and talk.</td>
+</tr>
+<tr>
+<td><strong>USB</strong></td>
+<td>The cable between the laptop and the micro:bit. It carries messages, not just power.</td>
+<td>The cable that lets the laptop talk to the robot.</td>
+</tr>
+<tr>
+<td><strong>LED screen</strong></td>
+<td>The 25 little lights on the front of the micro:bit that show pictures, numbers and letters.</td>
+<td>The robot's face.</td>
+</tr>
+<tr>
+<td><strong>Accelerometer</strong></td>
+<td>The sensor that feels movement: shaking, tilting, falling.</td>
+<td>It feels when you shake or tip the robot.</td>
+</tr>
+<tr>
+<td><strong>Icon</strong></td>
+<td>A small picture shown on the LED screen, like a heart or a smiley.</td>
+<td>A tiny picture made of lights.</td>
+</tr>
+</tbody>
+</table>
+<p>Loading words like <em>micro:bit</em>, <em>MakeCode</em>, <em>extension</em> and <em>Blocks</em> are in the <a href="../../start-here.html#word-list">Start here word list</a>. All words: <a href="../../glossary.html">glossary</a>.</p>
+</section>
+<section class="sec sec-robot-journal" aria-labelledby="robot-journal">
+  <h2 id="robot-journal"><span class="sec-icon" aria-hidden="true">✏️</span> Robot Journal <span class="sec-tag">Kid time</span></h2>
+  <p>Draw this week's robot. Write (or dictate) one thing it can do.</p><div class="journal-pad" data-key="w11"></div><div class="print-draw-box" aria-hidden="true"></div>
+</section>
+  <p class="print-only print-url">Programs and more: https://pandagardenio.github.io/robokids/web/phase-2-microbit-first-steps/week-11-robot-pet-face/</p>
+  <nav class="pager" aria-label="Weeks"><a class="pager-link prev" href="../../phase-1-circuits-and-motors/week-10-showcase-robot-zoo/index.html"><small>← Previous</small><span>Week 10: Showcase: The Robot Zoo</span></a><a class="pager-link next" href="../week-12-shake-dice/index.html"><small>Next →</small><span>Week 12: Shake Dice</span></a></nav>
+</article>
+</main>
+<footer class="footer">
+  <p>A Year of Robots · Code: MIT · Activity text: CC BY 4.0 · <a href="https://github.com/pandagardenio/robokids" target="_blank" rel="noopener">Source on GitHub</a></p>
+  <p class="footer-note">Your ticks and drawings are saved only in this browser.</p>
+</footer>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

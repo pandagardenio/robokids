@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Week 45: Toy Sorter · A Year of Robots</title>
+<meta name="description" content="Week 45 of A Year of Robots: Toy Sorter. Skill: Categories.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🤖%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../../assets/style.css">
+
+</head>
+<body class="phase-5">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <a class="brand" href="../../index.html"><span class="brand-bot" aria-hidden="true">🤖</span> A Year of Robots</a>
+  <nav aria-label="Main"><a href="../../index.html#calendar"><span aria-hidden="true">🗓️</span> Weeks</a><a href="../../start-here.html"><span aria-hidden="true">👋</span> Start here</a><a href="../../print/index.html"><span aria-hidden="true">🖨️</span> Printables</a><a href="../../parent-guide.html"><span aria-hidden="true">🧑‍🧒</span> Grown-ups</a></nav>
+</header>
+<main id="main">
+
+<article class="week" data-week="w45">
+  <header class="week-head">
+    <div class="week-badge" aria-hidden="true">45</div>
+    <div>
+      <p class="week-chips"><a class="chip" href="../index.html">🧠 Phase 5 · Robots That Learn</a></p>
+      <h1><span class="week-label">Week 45</span> Toy Sorter</h1>
+      <p class="week-meta"><span>⏱️ ~45 min build + short play sessions during the week</span> <span>🎯 <b>Skill:</b> Categories</span></p>
+      <div class="week-actions">
+        <button type="button" class="btn btn-done" data-done="w45" aria-pressed="false"><span class="done-off">☐ Mark as done</span><span class="done-on">✅ Done! Great job</span></button>
+        <button type="button" class="btn btn-ghost" data-print>🖨️ Print this week</button>
+      </div>
+    </div>
+  </header>
+  
+  <section class="sec sec-you-need" aria-labelledby="you-need">
+  <h2 id="you-need"><span class="sec-icon" aria-hidden="true">🧰</span> You need </h2>
+  <ul>
+<li>Laptop + webcam</li>
+<li>3 kinds of toys (e.g. teddy, car, ball)</li>
+<li>micro:bit by USB</li>
+</ul>
+</section>
+<section class="sec sec-build-together" aria-labelledby="build-together">
+  <h2 id="build-together"><span class="sec-icon" aria-hidden="true">🔧</span> Build together <span class="sec-tag">Together</span></h2>
+  <ol>
+<li>Train classes <code>teddy</code>, <code>car</code>, <code>ball</code>, <code>nothing</code>.</li>
+<li>Load <code>main.ts</code>. The micro:bit shows an icon and plays a sound for each toy.</li>
+</ol>
+</section>
+<section class="sec sec-play" aria-labelledby="play">
+  <h2 id="play"><span class="sec-icon" aria-hidden="true">🎮</span> Play <span class="sec-tag">Kid time</span></h2>
+  <p>Toy parade: kid shows toys one by one; the robot names them. Then mystery toys it never saw.</p>
+</section>
+<section class="sec sec-talk-about-it" aria-labelledby="talk-about-it">
+  <h2 id="talk-about-it"><span class="sec-icon" aria-hidden="true">💬</span> Talk about it <span class="sec-tag">Together</span></h2>
+  <blockquote>
+<p>What does the AI do with a toy it never learned?</p>
+</blockquote>
+</section>
+<section class="sec sec-level-up" aria-labelledby="level-up">
+  <h2 id="level-up"><span class="sec-icon" aria-hidden="true">⭐</span> Level up <span class="sec-tag">Kid time</span></h2>
+  <p>Add a 4th toy and retrain.</p>
+</section>
+<section class="sec sec-load-the-program" aria-labelledby="load-the-program">
+  <h2 id="load-the-program"><span class="sec-icon" aria-hidden="true">💻</span> Load the program <span class="sec-tag">Grown-up job</span></h2>
+  <p>Program: <a href="#program-main-ts"><code>main.ts</code></a></p>
+<ol>
+<li>Click the green <strong>📋 Copy</strong> button on the program (below these steps).</li>
+<li>Go to <a href="https://makecode.microbit.org" target="_blank" rel="noopener">makecode.microbit.org</a>, click <strong>New Project</strong> and name it <code>Week 45</code>.</li>
+<li>Click <strong>JavaScript</strong> at the top, select all the text (<strong>Ctrl+A</strong>, Mac: <strong>Cmd+A</strong>) and paste (<strong>Ctrl+V</strong>, Mac: <strong>Cmd+V</strong>).</li>
+<li>Click <strong>Blocks</strong> to see the colorful version your kid can change, then click <strong>Download</strong>.</li>
+</ol>
+<p>First time, or something went wrong? See <a href="../../start-here.html#load-a-program">Start here</a>.</p>
+<p>Then open the <a href="https://pandagardenio.github.io/robokids/ai/bridge.html" target="_blank" rel="noopener">AI bridge</a> in Chrome or Edge and follow the <a href="../../ai/index.html">AI bridge guide</a>. Close MakeCode first.</p>
+<p>In Teachable Machine, name the classes exactly like this, lowercase: <code>teddy</code>, <code>car</code>, <code>ball</code> (plus <code>nothing</code>).</p>
+<p>Keep this micro:bit plugged into the laptop with its USB cable.</p>
+<figure class="program" id="program-main-ts">
+  <figcaption>
+    <span class="program-name">📄 main.ts</span>
+    <span class="program-lines">11 lines</span>
+    <button type="button" class="btn btn-copy" data-copy="program-main-ts-code">📋 Copy</button>
+  </figcaption>
+  <pre><code id="program-main-ts-code"><span class="tok-comment">// Week 45 · Toy Sorter</span>
+<span class="tok-comment">// Receives class labels from ai/bridge.html over USB serial (one label per line)</span>
+serial.setBaudRate(BaudRate.BaudRate115200)
+serial.onDataReceived(serial.delimiters(Delimiters.NewLine), () =&gt; {
+    <span class="tok-keyword">let</span> label = serial.readUntil(serial.delimiters(Delimiters.NewLine)).trim()
+    <span class="tok-keyword">if</span> (label == <span class="tok-string">&quot;teddy&quot;</span>) { basic.showIcon(IconNames.Heart); music.playTone(Note.C5, music.beat(BeatFraction.Half)) }
+    <span class="tok-keyword">else</span> <span class="tok-keyword">if</span> (label == <span class="tok-string">&quot;car&quot;</span>) { basic.showIcon(IconNames.Square); music.playTone(Note.E5, music.beat(BeatFraction.Half)) }
+    <span class="tok-keyword">else</span> <span class="tok-keyword">if</span> (label == <span class="tok-string">&quot;ball&quot;</span>) { basic.showIcon(IconNames.Target); music.playTone(Note.G5, music.beat(BeatFraction.Half)) }
+    <span class="tok-keyword">else</span> basic.showIcon(IconNames.Confused)   <span class="tok-comment">// nothing or unsure</span>
+})
+basic.showString(<span class="tok-string">&quot;?&quot;</span>)
+</code></pre>
+  <p class="program-tip">Numbers in <span class="tok-number">orange</span> near the top are your kid's <b>knobs</b>: change them in MakeCode's Blocks view.</p>
+</figure>
+</section>
+<section class="sec sec-words-this-week" aria-labelledby="words-this-week">
+  <h2 id="words-this-week"><span class="sec-icon" aria-hidden="true">📖</span> Words this week <span class="sec-tag">For grown-ups</span></h2>
+  <table>
+<thead>
+<tr>
+<th>Word</th>
+<th>What it means</th>
+<th>Say it to your kid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>USB</strong></td>
+<td>The cable between the laptop and the micro:bit. It carries messages, not just power.</td>
+<td>The cable that lets the laptop talk to the robot.</td>
+</tr>
+<tr>
+<td><strong>Training</strong></td>
+<td>Showing the AI lots of examples so it learns to tell things apart.</td>
+<td>Teaching the AI by showing it.</td>
+</tr>
+<tr>
+<td><strong>Class</strong></td>
+<td>One of the things the AI learns to tell apart, like <code>thumbsup</code> or <code>teddy</code>. Names must match the week's page exactly.</td>
+<td>One thing the AI learns to spot.</td>
+</tr>
+<tr>
+<td><strong>Icon</strong></td>
+<td>A small picture shown on the LED screen, like a heart or a smiley.</td>
+<td>A tiny picture made of lights.</td>
+</tr>
+<tr>
+<td><strong>AI</strong></td>
+<td>Artificial intelligence: a computer program that learns from examples instead of following rules someone wrote.</td>
+<td>A computer that learns by looking at examples.</td>
+</tr>
+</tbody>
+</table>
+<p>Loading words like <em>micro:bit</em>, <em>MakeCode</em>, <em>extension</em> and <em>Blocks</em> are in the <a href="../../start-here.html#word-list">Start here word list</a>. All words: <a href="../../glossary.html">glossary</a>.</p>
+</section>
+<section class="sec sec-robot-journal" aria-labelledby="robot-journal">
+  <h2 id="robot-journal"><span class="sec-icon" aria-hidden="true">✏️</span> Robot Journal <span class="sec-tag">Kid time</span></h2>
+  <p>Draw this week's robot. Write (or dictate) one thing it can do.</p><div class="journal-pad" data-key="w45"></div><div class="print-draw-box" aria-hidden="true"></div>
+</section>
+  <p class="print-only print-url">Programs and more: https://pandagardenio.github.io/robokids/web/phase-5-robots-that-learn/week-45-toy-sorter/</p>
+  <nav class="pager" aria-label="Weeks"><a class="pager-link prev" href="../week-44-clap-and-whistle-ai/index.html"><small>← Previous</small><span>Week 44: Clap and Whistle AI</span></a><a class="pager-link next" href="../week-46-bad-data-experiment/index.html"><small>Next →</small><span>Week 46: The Bad Data Experiment</span></a></nav>
+</article>
+</main>
+<footer class="footer">
+  <p>A Year of Robots · Code: MIT · Activity text: CC BY 4.0 · <a href="https://github.com/pandagardenio/robokids" target="_blank" rel="noopener">Source on GitHub</a></p>
+  <p class="footer-note">Your ticks and drawings are saved only in this browser.</p>
+</footer>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

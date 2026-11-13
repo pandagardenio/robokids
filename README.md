@@ -4,6 +4,9 @@ A 50-week electronics and robotics calendar for any parent and a curious 6-year-
 
 It starts with LEDs and motors, moves to the [BBC micro:bit](https://microbit.org), then a micro:bit robot car, and ends with robots controlled by AI models your kid trains themselves.
 
+> ### 🌐 [Open the website](https://pandagardenio.github.io/robokids/) · 🖨️ [Printables](https://pandagardenio.github.io/robokids/web/print/)
+> The same calendar as a kid-friendly website (tick off weeks, copy programs with one click, draw in the Robot Journal) and as printable PDFs: an activity book with a journal page for every week, a fridge poster, the certificate and a grown-ups handbook.
+
 > ### 👉 New here? [Start here](START-HERE.md)
 > **No coding experience needed.** Every program is ready to use: you copy it into a free website and press a button. [Start here](START-HERE.md) sets up your laptop (Windows, Mac, Linux or Chromebook) in about 15 minutes and shows how to get step-by-step help from Claude, ChatGPT or another AI assistant.
 >

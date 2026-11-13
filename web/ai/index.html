@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI bridge guide · A Year of Robots</title>
+<meta name="description" content="A 50-week electronics and robotics calendar for a parent and a curious 6-year-old.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🤖%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/style.css">
+
+</head>
+<body class="">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <a class="brand" href="../index.html"><span class="brand-bot" aria-hidden="true">🤖</span> A Year of Robots</a>
+  <nav aria-label="Main"><a href="../index.html#calendar"><span aria-hidden="true">🗓️</span> Weeks</a><a href="../start-here.html"><span aria-hidden="true">👋</span> Start here</a><a href="../print/index.html"><span aria-hidden="true">🖨️</span> Printables</a><a href="../parent-guide.html"><span aria-hidden="true">🧑‍🧒</span> Grown-ups</a></nav>
+</header>
+<main id="main">
+<article class="doc card"><p class="doc-actions"><button type="button" class="btn btn-ghost" data-print>🖨️ Print this page</button></p><h1 id="ai-bridge">AI bridge</h1>
+<p>In weeks 42–48 your kid's AI (trained in <a href="https://teachablemachine.withgoogle.com" target="_blank" rel="noopener">Teachable Machine</a>) controls the robot. The <strong>AI bridge</strong> is a page from this project that passes what the AI sees or hears to the micro:bit.</p>
+<pre><code>camera / microphone → your kid's AI → AI bridge page → USB cable → micro:bit
+                                                          └─ radio → robot car (weeks 43–44)
+</code></pre>
+<h2 id="open-the-bridge">Open the bridge</h2>
+<p>👉 <strong><a href="https://pandagardenio.github.io/robokids/ai/bridge.html" target="_blank" rel="noopener">Open the AI bridge</a></strong> in <strong>Chrome or Edge</strong> on a computer. It doesn't work in Safari, Firefox or on phones.</p>
+<details>
+<summary>The link doesn't open? Use a downloaded copy instead</summary>
+<ol>
+<li>Open <a href="https://github.com/pandagardenio/robokids/blob/main/ai/bridge.html" target="_blank" rel="noopener"><code>bridge.html</code> on GitHub</a> and click the <strong>Download raw file</strong> button (an arrow pointing down, top right).</li>
+<li>Find <code>bridge.html</code> in your Downloads folder, right-click it → <strong>Open with</strong> → <strong>Chrome</strong> (or Edge).</li>
+</ol>
+</details>
+<h2 id="use-it">Use it</h2>
+<p><strong>Before you start:</strong> load the week's program onto the micro:bit (see the week's page), keep it plugged into the laptop with its USB cable, and <strong>close the MakeCode tab</strong>. Only one page can talk to the micro:bit at a time.</p>
+<ol>
+<li><strong>Get your AI's link.</strong> In Teachable Machine, after training, click <strong>Export Model</strong> → <strong>Upload my model</strong> → <strong>Copy</strong> the link it shows.</li>
+<li><strong>In the bridge,</strong> choose the model type (<em>Image</em> for the camera, <em>Audio</em> for sounds) and paste the link.</li>
+<li>Click <strong>Connect micro:bit</strong>, pick the micro:bit from the list (it may be called <em>BBC micro:bit CMSIS-DAP</em> or <em>mbed Serial Port</em>) and click <strong>Connect</strong>. The dot turns green.</li>
+<li>Click <strong>Start AI</strong> and allow the camera or microphone when the browser asks.</li>
+</ol>
+<p>The big word shows what the AI thinks it sees; the micro:bit reacts to it. You can also type a class name in <strong>Test without AI</strong> and click <strong>Send</strong> to check the robot without the AI.</p>
+<h2 id="tips">Tips</h2>
+<ul>
+<li><strong>Name the classes exactly as the week's page says</strong>, lowercase and without spaces (<code>go</code>, <code>thumbsup</code>). If the names don't match, the robot ignores them.</li>
+<li><strong>Always add a <code>nothing</code> class</strong> (camera models: your kid out of view) or keep <strong>Background Noise</strong> (sound models). It stops the robot doing random things.</li>
+<li><strong>Robot acting jumpy?</strong> Move the "at least this sure" slider to the right. The bridge then only sends a class when the AI is more confident, and sends <code>unsure</code> otherwise.</li>
+<li><strong>Privacy:</strong> "Upload my model" stores the trained model (not your photos) on Google's servers so the link works. Read Teachable Machine's privacy notes before uploading a model trained on your kid's face.</li>
+</ul>
+<h2 id="not-working">Not working?</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>What you see</th>
+<th>What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"Could not connect" or no micro:bit in the list</td>
+<td>Close every MakeCode tab, unplug and replug the micro:bit, try again. On Linux, do the <a href="../start-here.html#linux-only-allow-the-microbit">one-time USB step</a>.</td>
+</tr>
+<tr>
+<td>The camera stays black</td>
+<td>Click the camera icon in the address bar and allow the camera. Close other apps using it (video calls).</td>
+</tr>
+<tr>
+<td>The AI works but the robot doesn't react</td>
+<td>Check the class names match the week's page exactly. In weeks 43–44, check the car is switched on and has the week's program.</td>
+</tr>
+<tr>
+<td>"This page only works in Chrome or Edge"</td>
+<td>Open the link in Chrome or Edge on a computer.</td>
+</tr>
+</tbody>
+</table></div></article>
+</main>
+<footer class="footer">
+  <p>A Year of Robots · Code: MIT · Activity text: CC BY 4.0 · <a href="https://github.com/pandagardenio/robokids" target="_blank" rel="noopener">Source on GitHub</a></p>
+  <p class="footer-note">Your ticks and drawings are saved only in this browser.</p>
+</footer>
+<script src="../assets/site.js"></script>
+</body>
+</html>
