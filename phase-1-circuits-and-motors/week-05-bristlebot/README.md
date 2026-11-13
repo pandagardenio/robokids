@@ -28,6 +28,15 @@ Bristlebot races on a baking tray. Build a little maze with LEGO bricks or penci
 
 Bend the bristles forward or backward. Does it change direction?
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Vibration motor** | A tiny motor with a lopsided weight that makes it shake, like a phone buzzing. | A motor that shakes instead of spins. |
+| **Coin cell (CR2032)** | A flat, round battery the size of a big button. Dangerous if swallowed: grown-ups handle it (see [Safety](../../SAFETY.md)). | A flat battery. Only grown-ups hold it. |
+
+All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

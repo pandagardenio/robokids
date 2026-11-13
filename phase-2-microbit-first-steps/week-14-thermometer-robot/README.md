@@ -9,7 +9,7 @@
 
 ## Build together
 
-1. Flash the code. Press A to see the temperature.
+1. Load this week's program (steps below). Press A to see the temperature.
 
 ## Play
 
@@ -23,11 +23,25 @@ Temperature hunt: fridge door, sunny window, under a blanket. Kid predicts first
 
 Show a snowflake below 15 °C and a sun above 25 °C.
 
-## Code
+## Load the program
 
-[`main.ts`](main.ts)
+Program: [`main.ts`](main.ts)
 
-Open [makecode.microbit.org](https://makecode.microbit.org) → **New Project** → switch to **JavaScript** → paste the file → **Download** and copy to the MICROBIT drive. Switch back to **Blocks** to show your kid the colorful version.
+1. Click the program link, then the **Copy raw file** button (two small squares, top right of the program).
+2. Go to [makecode.microbit.org](https://makecode.microbit.org), click **New Project** and name it `Week 14`.
+3. Click **JavaScript** at the top, select all the text (**Ctrl+A**, Mac: **Cmd+A**) and paste (**Ctrl+V**, Mac: **Cmd+V**).
+4. Click **Blocks** to see the colorful version your kid can change, then click **Download**.
+
+First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
+
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Temperature** | How hot or cold something is, in degrees Celsius (°C). A comfy room is about 20 °C. | How hot or cold. |
+| **Sensor** | A part that lets the robot notice the world: light, heat, distance, sound, movement. | The robot's eyes, ears and skin. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
 
 ## Robot Journal
 

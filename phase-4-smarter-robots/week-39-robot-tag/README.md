@@ -8,7 +8,7 @@
 
 ## Build together
 
-1. Flash `main.ts` to the car and `tagger.ts` to the handheld.
+1. Load `main.ts` onto the car and `tagger.ts` onto the handheld.
 2. The car runs around; when the tagger is very close (strong radio signal) the car is 'it' and flashes red.
 
 ## Play
@@ -23,11 +23,31 @@ Chase the robot around the living room with the tagger.
 
 Swap: the robot chases you.
 
-## Code
+## Load the program
 
-[`main.ts`](main.ts), [`tagger.ts`](tagger.ts)
+Each program goes on a different micro:bit. Load them one at a time, with that micro:bit plugged in.
 
-Open [makecode.microbit.org](https://makecode.microbit.org) → **New Project** → **Extensions** → search `cutebot` and add it → switch to **JavaScript** → paste the file → **Download**. Switch to **Blocks** so your kid can change the numbers.
+| Program | Goes on | Extension |
+| --- | --- | --- |
+| [`main.ts`](main.ts) | the car | Cutebot |
+| [`tagger.ts`](tagger.ts) | the hand-held tagger | none |
+
+1. Click the program link, then the **Copy raw file** button (two small squares, top right of the program).
+2. Go to [makecode.microbit.org](https://makecode.microbit.org), click **New Project** and name it after the week and program (for example `Week 39 tagger`).
+3. Click **Extensions** at the bottom of the block list, search `cutebot` and click **Cutebot** (only for programs that need it).
+4. Click **JavaScript** at the top, select all the text (**Ctrl+A**, Mac: **Cmd+A**) and paste (**Ctrl+V**, Mac: **Cmd+V**).
+5. Click **Blocks** to see the colorful version your kid can change, then click **Download**.
+
+First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
+
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Radio** | micro:bits can send short messages to each other through the air, no wires needed, across a house. | Invisible messages through the air. |
+| **Signal strength** | How strong a radio message is when it arrives. Closer usually means stronger. | Louder when close, quieter when far. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
 
 ## Robot Journal
 

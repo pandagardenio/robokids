@@ -8,7 +8,7 @@
 
 ## Build together
 
-1. Flash the code. Shake to roll 1–6.
+1. Load this week's program (steps below). Shake to roll 1–6.
 
 ## Play
 
@@ -22,11 +22,25 @@ Use the dice for your favorite board game for the whole week.
 
 Make a 1–20 dice, or a dice that shows arrows for the next week's robot car game.
 
-## Code
+## Load the program
 
-[`main.ts`](main.ts)
+Program: [`main.ts`](main.ts)
 
-Open [makecode.microbit.org](https://makecode.microbit.org) → **New Project** → switch to **JavaScript** → paste the file → **Download** and copy to the MICROBIT drive. Switch back to **Blocks** to show your kid the colorful version.
+1. Click the program link, then the **Copy raw file** button (two small squares, top right of the program).
+2. Go to [makecode.microbit.org](https://makecode.microbit.org), click **New Project** and name it `Week 12`.
+3. Click **JavaScript** at the top, select all the text (**Ctrl+A**, Mac: **Cmd+A**) and paste (**Ctrl+V**, Mac: **Cmd+V**).
+4. Click **Blocks** to see the colorful version your kid can change, then click **Download**.
+
+First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
+
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Random** | Picked by chance, so nobody (not even the robot) knows what comes next. | Like rolling a dice. |
+| **Accelerometer** | The sensor that feels movement: shaking, tilting, falling. | It feels when you shake or tip the robot. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
 
 ## Robot Journal
 

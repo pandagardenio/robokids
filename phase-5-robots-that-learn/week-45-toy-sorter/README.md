@@ -11,7 +11,7 @@
 ## Build together
 
 1. Train classes `teddy`, `car`, `ball`, `nothing`.
-2. Flash `main.ts`. The micro:bit shows an icon and plays a sound for each toy.
+2. Load `main.ts`. The micro:bit shows an icon and plays a sound for each toy.
 
 ## Play
 
@@ -25,13 +25,34 @@ Toy parade: kid shows toys one by one; the robot names them. Then mystery toys i
 
 Add a 4th toy and retrain.
 
-## Code
+## Load the program
 
-[`main.ts`](main.ts)
+Program: [`main.ts`](main.ts)
 
-Flash the file(s) as usual (car files need the `cutebot` extension). Then open [`ai/bridge.html`](../../ai/bridge.html) in Chrome or Edge. Class names in Teachable Machine must match the labels in the code exactly (lowercase).
+1. Click the program link, then the **Copy raw file** button (two small squares, top right of the program).
+2. Go to [makecode.microbit.org](https://makecode.microbit.org), click **New Project** and name it `Week 45`.
+3. Click **JavaScript** at the top, select all the text (**Ctrl+A**, Mac: **Cmd+A**) and paste (**Ctrl+V**, Mac: **Cmd+V**).
+4. Click **Blocks** to see the colorful version your kid can change, then click **Download**.
 
-Keep this micro:bit plugged into the laptop by USB.
+First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
+
+Then open the [AI bridge](https://pandagardenio.github.io/robokids/ai/bridge.html) in Chrome or Edge and follow the [AI bridge guide](../../ai/README.md). Close MakeCode first.
+
+In Teachable Machine, name the classes exactly like this, lowercase: `teddy`, `car`, `ball` (plus `nothing`).
+
+Keep this micro:bit plugged into the laptop with its USB cable.
+
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **USB** | The cable between the laptop and the micro:bit. It carries messages, not just power. | The cable that lets the laptop talk to the robot. |
+| **Training** | Showing the AI lots of examples so it learns to tell things apart. | Teaching the AI by showing it. |
+| **Class** | One of the things the AI learns to tell apart, like `thumbsup` or `teddy`. Names must match the week's page exactly. | One thing the AI learns to spot. |
+| **Icon** | A small picture shown on the LED screen, like a heart or a smiley. | A tiny picture made of lights. |
+| **AI** | Artificial intelligence: a computer program that learns from examples instead of following rules someone wrote. | A computer that learns by looking at examples. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
 
 ## Robot Journal
 

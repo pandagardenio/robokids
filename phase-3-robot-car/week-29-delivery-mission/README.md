@@ -25,11 +25,27 @@ Robot delivers a parcel to each house. Did it arrive?
 
 Add a pickup sound at each house.
 
-## Code
+## Load the program
 
-[`main.ts`](main.ts)
+Program: [`main.ts`](main.ts) · needs the **Cutebot** extension
 
-Open [makecode.microbit.org](https://makecode.microbit.org) → **New Project** → **Extensions** → search `cutebot` and add it → switch to **JavaScript** → paste the file → **Download**. Switch to **Blocks** so your kid can change the numbers.
+1. Click the program link, then the **Copy raw file** button (two small squares, top right of the program).
+2. Go to [makecode.microbit.org](https://makecode.microbit.org), click **New Project** and name it `Week 29`.
+3. Click **Extensions** at the bottom of the block list, search `cutebot` and click **Cutebot**.
+4. Click **JavaScript** at the top, select all the text (**Ctrl+A**, Mac: **Cmd+A**) and paste (**Ctrl+V**, Mac: **Cmd+V**).
+5. Click **Blocks** to see the colorful version your kid can change, then click **Download**.
+
+First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
+
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **List** | A set of items in order. The program goes through them one by one. | Like a shopping list for the robot. |
+| **Code** | Another word for the program: the instructions the robot follows. | The robot's instructions. |
+| **Bug** | A mistake that makes a robot do the wrong thing. Finding and fixing it is called debugging. | A mistake we get to find and fix. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
 
 ## Robot Journal
 

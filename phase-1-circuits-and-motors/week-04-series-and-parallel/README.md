@@ -26,6 +26,18 @@ Make a 'sleepy robot' (series, dim) and an 'awake robot' (parallel, bright) and 
 
 Unscrew one LED in each version. What happens to the other one?
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Series** | Parts connected one after the other in a single line. They share the battery's push, so LEDs glow dimmer, and if one goes out they all do. | Holding hands in a line: everyone shares. |
+| **Parallel** | Parts connected side by side, each with its own path to the battery. LEDs glow brighter, and one going out doesn't stop the others. | Everyone gets their own path. |
+| **LED** | A tiny light. It only works one way round: the long leg goes to plus (+). | A tiny light that only works the right way round. |
+| **Switch** | Something that opens or closes a gap in a circuit, to turn things off and on. | A little door for electricity: open means off, closed means on. |
+| **Alligator clip** | A wire with a spring clip at each end, for connecting parts without tools. | A wire with crocodile teeth. |
+
+All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

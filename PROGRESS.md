@@ -1,6 +1,6 @@
 # Progress
 
-Tick each week when done. Edit this file on GitHub or locally.
+Tick each week when done. Easiest: print this page (**Ctrl+P**, Mac: **Cmd+P**), stick it on the fridge and let your kid tick the boxes.
 
 ## Phase 1 · Circuits and Motors
 

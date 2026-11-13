@@ -25,6 +25,14 @@ Sumo: both bots start in the ring, last one inside wins. Best of five.
 
 Design a bumper that pushes better (cardboard plow, rubber band).
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Balance** | How weight is spread out. Low and heavy robots are harder to tip over. | Low and heavy is hard to push over. |
+
+All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

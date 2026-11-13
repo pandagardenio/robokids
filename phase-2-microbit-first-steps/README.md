@@ -1,6 +1,6 @@
 # Phase 2 · micro:bit First Steps (weeks 11–20)
 
-A tiny computer that senses and reacts. You write the program skeleton; your kid changes icons, numbers and sounds.
+A tiny computer that senses and reacts. The programs are ready-made; your kid changes icons, numbers and sounds.
 
 | Week | Project | Skill | Code |
 | --- | --- | --- | --- |

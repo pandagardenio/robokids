@@ -94,7 +94,7 @@ $("th").oninput = () => $("thv").textContent = $("th").value + "%";
 
 // ---------- micro:bit over Web Serial ----------
 $("connect").onclick = async () => {
-  if (!("serial" in navigator)) { log("Web Serial needs Chrome or Edge on a computer."); return; }
+  if (!("serial" in navigator)) { log("This page only works in Chrome or Edge on a computer (not Safari, Firefox, phones or tablets)."); return; }
   try {
     port = await navigator.serial.requestPort({ filters: [{ usbVendorId: 0x0d28 }] });
     await port.open({ baudRate: 115200 });
@@ -102,7 +102,7 @@ $("connect").onclick = async () => {
     writer = enc.writable.getWriter();
     $("dot").classList.add("on"); $("stat").textContent = "micro:bit connected";
     readLoop();
-  } catch (e) { log("Could not connect: " + e.message + ". Close MakeCode tabs that use the micro:bit and try again."); }
+  } catch (e) { log("Could not connect: " + e.message + ". Close MakeCode tabs, unplug and replug the micro:bit, and try again. On Linux, do the one-time USB step in START-HERE.md."); }
 };
 
 async function readLoop(){

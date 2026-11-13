@@ -29,6 +29,17 @@ Give the glowing card to someone in the family. Can they figure out how it works
 
 Add a second LED eye on the same two lines.
 
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **LED** | A tiny light. It only works one way round: the long leg goes to plus (+). | A tiny light that only works the right way round. |
+| **Coin cell (CR2032)** | A flat, round battery the size of a big button. Dangerous if swallowed: grown-ups handle it (see [Safety](../../SAFETY.md)). | A flat battery. Only grown-ups hold it. |
+| **Copper tape** | Sticky metal tape that electricity can travel along, like a flat wire. | Sticky tape that electricity can walk on. |
+| **Plus (+) and minus (−)** | The two ends of a battery. Electricity leaves from one end and has to find its way back to the other. | The battery's way out and way back in. |
+
+All words: [glossary](../../GLOSSARY.md).
+
 ## Robot Journal
 
 Draw this week's robot. Write (or dictate) one thing it can do.

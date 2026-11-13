@@ -8,7 +8,7 @@
 
 ## Build together
 
-1. Flash the code. Dark = sleepy (dim, slow). Shake = dizzy (spins). Loud = scared (backs away). Button A = happy dance.
+1. Load this week's program (steps below). Dark = sleepy (dim, slow). Shake = dizzy (spins). Loud = scared (backs away). Button A = happy dance.
 
 ## Play
 
@@ -22,11 +22,26 @@ Kid tells a story and makes the robot feel each mood.
 
 Add a new mood with a new sensor (temperature: cold = shivering).
 
-## Code
+## Load the program
 
-[`main.ts`](main.ts)
+Program: [`main.ts`](main.ts) · needs the **Cutebot** extension
 
-Open [makecode.microbit.org](https://makecode.microbit.org) → **New Project** → **Extensions** → search `cutebot` and add it → switch to **JavaScript** → paste the file → **Download**. Switch to **Blocks** so your kid can change the numbers.
+1. Click the program link, then the **Copy raw file** button (two small squares, top right of the program).
+2. Go to [makecode.microbit.org](https://makecode.microbit.org), click **New Project** and name it `Week 36`.
+3. Click **Extensions** at the bottom of the block list, search `cutebot` and click **Cutebot**.
+4. Click **JavaScript** at the top, select all the text (**Ctrl+A**, Mac: **Cmd+A**) and paste (**Ctrl+V**, Mac: **Cmd+V**).
+5. Click **Blocks** to see the colorful version your kid can change, then click **Download**.
+
+First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
+
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Sensor** | A part that lets the robot notice the world: light, heat, distance, sound, movement. | The robot's eyes, ears and skin. |
+| **Temperature** | How hot or cold something is, in degrees Celsius (°C). A comfy room is about 20 °C. | How hot or cold. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
 
 ## Robot Journal
 

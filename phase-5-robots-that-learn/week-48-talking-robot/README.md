@@ -5,11 +5,11 @@
 ## You need
 
 - Robot car or micro:bit by USB
-- Laptop with speakers + bridge
+- Laptop with speakers and the [AI bridge](https://pandagardenio.github.io/robokids/ai/bridge.html)
 
 ## Build together
 
-1. Flash `main.ts`. Open the bridge and connect (no model needed).
+1. Load `main.ts`. Close MakeCode, open the [AI bridge](https://pandagardenio.github.io/robokids/ai/bridge.html), choose **No model (talking robot only)** and click **Connect micro:bit**.
 2. The robot sends `say:` lines to the laptop, which speaks them.
 
 ## Play
@@ -24,13 +24,34 @@ Interview the robot: A = 'What's your name?', B = 'Tell a joke', shake = 'What's
 
 Kid writes the robot's answers (you type them in).
 
-## Code
+## Load the program
 
-[`main.ts`](main.ts)
+Program: [`main.ts`](main.ts)
 
-Flash the file(s) as usual (car files need the `cutebot` extension). Then open [`ai/bridge.html`](../../ai/bridge.html) in Chrome or Edge. Class names in Teachable Machine must match the labels in the code exactly (lowercase).
+1. Click the program link, then the **Copy raw file** button (two small squares, top right of the program).
+2. Go to [makecode.microbit.org](https://makecode.microbit.org), click **New Project** and name it `Week 48`.
+3. Click **JavaScript** at the top, select all the text (**Ctrl+A**, Mac: **Cmd+A**) and paste (**Ctrl+V**, Mac: **Cmd+V**).
+4. Click **Blocks** to see the colorful version your kid can change, then click **Download**.
 
-Keep this micro:bit plugged into the laptop by USB.
+First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
+
+Then open the [AI bridge](https://pandagardenio.github.io/robokids/ai/bridge.html) in Chrome or Edge and follow the [AI bridge guide](../../ai/README.md). Close MakeCode first.
+
+Keep this micro:bit plugged into the laptop with its USB cable.
+
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **Speech** | The laptop reads text out loud with a computer voice. | The laptop reads the robot's words out loud. |
+| **Output** | Something the robot does: lights, sounds, moving. | What the robot does. |
+| **USB** | The cable between the laptop and the micro:bit. It carries messages, not just power. | The cable that lets the laptop talk to the robot. |
+| **AI** | Artificial intelligence: a computer program that learns from examples instead of following rules someone wrote. | A computer that learns by looking at examples. |
+| **AI bridge** | A page from this project that passes what the AI sees or hears to the micro:bit. See the [AI bridge guide](../../ai/README.md). | The messenger between the AI and the robot. |
+| **Model** | What the AI ends up with after training: its 'memory' of what it learned. Exporting it gives you a link. | The AI's memory. |
+| **Accelerometer** | The sensor that feels movement: shaking, tilting, falling. | It feels when you shake or tip the robot. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
 
 ## Robot Journal
 

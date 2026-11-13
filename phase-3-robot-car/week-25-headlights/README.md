@@ -9,7 +9,7 @@
 
 ## Build together
 
-1. Flash the code. Each button press changes the headlight color.
+1. Load this week's program (steps below). Each button press changes the headlight color.
 
 ## Play
 
@@ -23,11 +23,25 @@ Disco: robot flashes colors to music while dancing.
 
 Choose colors for 'happy', 'angry' and 'sleepy'.
 
-## Code
+## Load the program
 
-[`main.ts`](main.ts)
+Program: [`main.ts`](main.ts) · needs the **Cutebot** extension
 
-Open [makecode.microbit.org](https://makecode.microbit.org) → **New Project** → **Extensions** → search `cutebot` and add it → switch to **JavaScript** → paste the file → **Download**. Switch to **Blocks** so your kid can change the numbers.
+1. Click the program link, then the **Copy raw file** button (two small squares, top right of the program).
+2. Go to [makecode.microbit.org](https://makecode.microbit.org), click **New Project** and name it `Week 25`.
+3. Click **Extensions** at the bottom of the block list, search `cutebot` and click **Cutebot**.
+4. Click **JavaScript** at the top, select all the text (**Ctrl+A**, Mac: **Cmd+A**) and paste (**Ctrl+V**, Mac: **Cmd+V**).
+5. Click **Blocks** to see the colorful version your kid can change, then click **Download**.
+
+First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
+
+## Words this week
+
+| Word | What it means | Say it to your kid |
+| --- | --- | --- |
+| **RGB** | Red, Green, Blue. Mixing these three colors of light makes every other color. | Three colors that mix into all the others. |
+
+Loading words like *micro:bit*, *MakeCode*, *extension* and *Blocks* are in the [Start here word list](../../START-HERE.md#word-list). All words: [glossary](../../GLOSSARY.md).
 
 ## Robot Journal
 
