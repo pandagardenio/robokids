@@ -1,14 +1,19 @@
 # 🤖 A Year of Robots
 
-A 50-week electronics and robotics calendar for a parent who codes and a curious 6-year-old. One project per week: you prepare the code, your kid builds, plays and tweaks.
+A 50-week electronics and robotics calendar for any parent and a curious 6-year-old. One project per week: you get things ready, your kid builds, plays and tweaks.
 
 It starts with LEDs and motors, moves to the [BBC micro:bit](https://microbit.org), then a micro:bit robot car, and ends with robots controlled by AI models your kid trains themselves.
+
+> ### 👉 New here? [Start here](START-HERE.md)
+> **No coding experience needed.** Every program is ready to use: you copy it into a free website and press a button. [Start here](START-HERE.md) sets up your laptop (Windows, Mac, Linux or Chromebook) in about 15 minutes and shows how to get step-by-step help from Claude, ChatGPT or another AI assistant.
+>
+> Weeks 1–10 need no laptop at all, so you can start [week 1](phase-1-circuits-and-motors/week-01-led-robot-eyes/README.md) today.
 
 ## How it works
 
 - **One build session per week** (30–45 min), plus one or two 10–15 minute play sessions.
 - **Every week has the same shape:** Build → Play → Talk about it → Level up → Robot Journal.
-- **Kid leads, parent assists.** They choose names, colors, rules and numbers. You handle batteries, wiring, flashing and debugging.
+- **Kid leads, parent assists.** They choose names, colors, rules and numbers. You handle batteries, wiring and loading the programs.
 - **Weeks 10, 20, 30, 40 and 50 are showcases** with slack built in. Skip or repeat any week.
 - **Track progress** with the [progress checklist](PROGRESS.md).
 
@@ -33,7 +38,7 @@ Electricity flows in a loop and makes things glow and move. You handle batteries
 
 ### [Phase 2 · micro:bit First Steps](phase-2-microbit-first-steps/README.md)
 
-A tiny computer that senses and reacts. You write the program skeleton; your kid changes icons, numbers and sounds.
+A tiny computer that senses and reacts. The programs are ready-made; your kid changes icons, numbers and sounds.
 
 | Week | Project | Skill |
 | --- | --- | --- |
@@ -107,16 +112,18 @@ Your kid trains AI models by showing examples; the robot acts on what the model 
 
 ## Before you start
 
+- [Start here: set up your laptop, no coding needed](START-HERE.md)
 - [Materials and shopping list](MATERIALS.md)
 - [Parent guide: code, AI and how much to hand over](PARENT-GUIDE.md)
 - [Safety](SAFETY.md)
-- [AI bridge: connecting Teachable Machine to the micro:bit](ai/README.md)
+- [AI bridge: connecting your kid's AI to the micro:bit](ai/README.md)
 
-## Code conventions
+## About the programs
 
-- All programs are MakeCode **TypeScript** (`.ts`), pasted into the JavaScript view of [MakeCode](https://makecode.microbit.org). They convert to Blocks for your kid.
-- Car programs target the **Elecfreaks Cutebot** and start with a small *kit adapter* (`drive`, `halt`, `lights`, `distanceCm`). Using a different car? Change only those functions.
-- Tunable numbers (speed, time, distance) sit at the top of each file: those are the kid's knobs.
+- Every program is ready to use. Each week's page shows how to load it, and [Start here](START-HERE.md#load-a-program) explains it step by step.
+- The numbers at the top of each program are your kid's **knobs**: speed, time, distance, sounds. Changing them in MakeCode's colorful Blocks view is all the "coding" a 6-year-old needs.
+- Car programs are written for the **Elecfreaks Cutebot**. Using a different car? Ask your AI assistant to adapt them ([how](START-HERE.md#get-your-ai-helper-ready)).
+- Know how to code and want to tinker or contribute? See the [technical notes](TECHNICAL.md).
 
 ## License
 

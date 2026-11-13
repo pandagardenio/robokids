@@ -1,6 +1,6 @@
 # Materials
 
-Buy each phase's items when you get there. Prices are rough estimates in euros. Links go to the official manufacturer store or reseller finder; generic parts (LEDs, tape, batteries, SG90 servo) are sold by any electronics shop.
+Buy each phase's items when you get there. From week 11 you also need a laptop (Windows, Mac, Linux or Chromebook) with Chrome or Edge; see [Start here](START-HERE.md). Prices are rough estimates in euros. Links go to the official manufacturer store or reseller finder; generic parts (LEDs, tape, batteries, SG90 servo) are sold by any electronics shop.
 
 | Phase | Items | Approx. cost |
 | --- | --- | --- |
@@ -8,7 +8,7 @@ Buy each phase's items when you get there. Prices are rough estimates in euros. 
 | 2 · micro:bit First Steps | 2× [BBC micro:bit **V2** Go kit](https://microbit.org/buy/bbc-microbit-go/) (micro:bit V2 + USB cable + 2×AAA battery pack; needs V2 for speaker, microphone and touch logo). The second one is only needed from week 19 (see note below) | 25–50 € |
 | 3 · The Robot Car | [Elecfreaks Cutebot](https://shop.elecfreaks.com/products/elecfreaks-micro-bit-smart-cutebot-kit-without-micro-bit-board) (includes ultrasonic sensor, line sensors, RGB headlights, servo ports), 3×AAA batteries, black electrical tape | ~45 € |
 | 4 · Smarter Robots | SG90 micro servo, felt-tip markers, foam/Duplo blocks | ~5 € |
-| 5 · Robots That Learn | Laptop with webcam and microphone, Chrome or Edge browser. [Teachable Machine](https://teachablemachine.withgoogle.com) is free | 0 € |
+| 5 · Robots That Learn | Laptop with webcam and microphone (the same laptop as before). [Teachable Machine](https://teachablemachine.withgoogle.com) is free | 0 € |
 
 **Shopping shortcut:** two [micro:bit V2 "Go" kits](https://microbit.org/buy/bbc-microbit-go/), a [Cutebot](https://shop.elecfreaks.com/products/elecfreaks-micro-bit-smart-cutebot-kit-without-micro-bit-board) and a basic electronics starter pack cover the whole year.
 
@@ -25,6 +25,6 @@ Buy each phase's items when you get there. Prices are rough estimates in euros. 
 
 Every other week needs just one, so you can buy the second kit later, around week 19.
 
-**Other car kit:** [DFRobot Maqueen](https://www.dfrobot.com/product-1783.html) also works. Rewrite the kit adapter at the top of each car file; line and distance sensor calls may differ.
+**Other car kit:** [DFRobot Maqueen](https://www.dfrobot.com/product-1783.html) also works. The programs are written for the Cutebot, so ask your AI assistant to adapt each car program: paste the program and say *"Change this MakeCode program so it works with a DFRobot Maqueen instead of a Cutebot."*
 
-**Want to go deeper?** The [Elecfreaks Cutebot Pro](https://shop.elecfreaks.com/products/elecfreaks-smart-cutebot-pro-v2-programming-robot-car-for-micro-bit) is a pricier upgrade with encoder motors for precise distances and turns, and 4 line sensors instead of 2. It uses its own `cutebot-pro` extension, so rewrite the kit adapter the same way.
+**Want to go deeper?** The [Elecfreaks Cutebot Pro](https://shop.elecfreaks.com/products/elecfreaks-smart-cutebot-pro-v2-programming-robot-car-for-micro-bit) is a pricier upgrade with encoder motors for precise distances and turns, and 4 line sensors instead of 2. It uses its own **Cutebot Pro** extension, so the programs need adapting the same way.

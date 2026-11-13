@@ -11,7 +11,7 @@
 ## Build together
 
 1. Train classes `teddy`, `car`, `ball`, `nothing`.
-2. Flash `main.ts`. The micro:bit shows an icon and plays a sound for each toy.
+2. Load `main.ts`. The micro:bit shows an icon and plays a sound for each toy.
 
 ## Play
 
@@ -25,13 +25,22 @@ Toy parade: kid shows toys one by one; the robot names them. Then mystery toys i
 
 Add a 4th toy and retrain.
 
-## Code
+## Load the program
 
-[`main.ts`](main.ts)
+Program: [`main.ts`](main.ts)
 
-Flash the file(s) as usual (car files need the `cutebot` extension). Then open [`ai/bridge.html`](../../ai/bridge.html) in Chrome or Edge. Class names in Teachable Machine must match the labels in the code exactly (lowercase).
+1. Click the program link, then the **Copy raw file** button (two small squares, top right of the program).
+2. Go to [makecode.microbit.org](https://makecode.microbit.org), click **New Project** and name it `Week 45`.
+3. Click **JavaScript** at the top, select all the text (**Ctrl+A**, Mac: **Cmd+A**) and paste (**Ctrl+V**, Mac: **Cmd+V**).
+4. Click **Blocks** to see the colorful version your kid can change, then click **Download**.
 
-Keep this micro:bit plugged into the laptop by USB.
+First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
+
+Then open the [AI bridge](https://pandagardenio.github.io/robokids/ai/bridge.html) in Chrome or Edge and follow the [AI bridge guide](../../ai/README.md). Close MakeCode first.
+
+In Teachable Machine, name the classes exactly like this, lowercase: `teddy`, `car`, `ball` (plus `nothing`).
+
+Keep this micro:bit plugged into the laptop with its USB cable.
 
 ## Robot Journal
 

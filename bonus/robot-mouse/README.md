@@ -13,7 +13,7 @@ A little mouse that scurries around, squeaks when its whiskers touch something, 
 | Whiskers | Ultrasonic sensor (feels things before touching) | Real paper-clip whiskers |
 | Size | ~10 cm | ~12 cm (rat-sized is easier than mouse-sized) |
 | Extra cost | ~0 € | ~25 € |
-| Code | [`main.ts`](main.ts) | [`diy-mouse.ts`](diy-mouse.ts) |
+| Program | [`main.ts`](main.ts) | [`diy-mouse.ts`](diy-mouse.ts) |
 
 Both use [`cheese.ts`](cheese.ts) on a second micro:bit as the hidden cheese.
 
@@ -41,7 +41,7 @@ Both use [`cheese.ts`](cheese.ts) on a second micro:bit as the hidden cheese.
 2. Glue on ears and googly eyes at the front, above the ultrasonic sensor (its two "eyes" stay uncovered).
 3. Tape the shell over the car, leaving the micro:bit screen visible as the mouse's "heart window".
 4. Optional tail: tape a pipe cleaner to the servo horn on S1.
-5. Flash `main.ts` (extension `cutebot`).
+5. Load `main.ts` with the **Cutebot** extension (see [Load the programs](#load-the-programs)).
 
 ## Build: DIY mouse
 
@@ -49,12 +49,30 @@ Both use [`cheese.ts`](cheese.ts) on a second micro:bit as the hidden cheese.
 2. **Balance:** glue the ball caster under the front. The mouse should sit level.
 3. **Electronics:** plug the micro:bit into the motor board and glue the board on top. Wire the left motor to Motor 1 and the right motor to Motor 2. Battery pack under or behind the board.
 4. **Whiskers:** bend each paper clip into a long, springy whisker and fix one to each front corner. Connect the left whisker to **P1**, the right to **P2**. Run a bare GND wire across the front, just behind both whiskers, so a bent whisker touches it. (Check your board's labels for where P1, P2 and GND are broken out; crocodile clips on the micro:bit's edge pads also work.)
-5. **Test before decorating:** flash `diy-mouse.ts` (extension `kitronik-motor-driver`). If the mouse spins instead of driving forward, swap one motor's two wires.
+5. **Test before decorating:** load `diy-mouse.ts` with the **Kitronik Motor Driver** extension (see [Load the programs](#load-the-programs)). If the mouse spins instead of driving forward, swap one motor's two wires.
 6. **Costume:** felt body over the top, ears, eyes, tail. Keep the whiskers free to move.
 
 ## Cheese
 
-Flash `cheese.ts` to the second micro:bit and hide it inside the cardboard cheese wedge.
+Load `cheese.ts` onto the second micro:bit and hide it inside the cardboard cheese wedge.
+
+## Load the programs
+
+Each program goes on a different micro:bit. Load them one at a time, with that micro:bit plugged in.
+
+| Program | Goes on | Extension |
+| --- | --- | --- |
+| [`main.ts`](main.ts) | the Cutebot mouse | Cutebot |
+| [`diy-mouse.ts`](diy-mouse.ts) | the DIY mouse | Kitronik Motor Driver |
+| [`cheese.ts`](cheese.ts) | the hidden cheese | none |
+
+1. Click the program link, then the **Copy raw file** button (two small squares, top right of the program).
+2. Go to [makecode.microbit.org](https://makecode.microbit.org), click **New Project** and name it (for example `Mouse` or `Cheese`).
+3. Mouse only: click **Extensions** at the bottom of the block list, search for the extension in the table (`cutebot` or `kitronik motor driver`) and click it.
+4. Click **JavaScript** at the top, select all the text (**Ctrl+A**, Mac: **Cmd+A**) and paste (**Ctrl+V**, Mac: **Cmd+V**).
+5. Click **Blocks** to see the colorful version your kid can change, then click **Download**.
+
+First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
 
 ## Play
 

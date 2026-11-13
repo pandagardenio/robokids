@@ -5,11 +5,11 @@
 ## You need
 
 - Robot car or micro:bit by USB
-- Laptop with speakers + bridge
+- Laptop with speakers and the [AI bridge](https://pandagardenio.github.io/robokids/ai/bridge.html)
 
 ## Build together
 
-1. Flash `main.ts`. Open the bridge and connect (no model needed).
+1. Load `main.ts`. Close MakeCode, open the [AI bridge](https://pandagardenio.github.io/robokids/ai/bridge.html), choose **No model (talking robot only)** and click **Connect micro:bit**.
 2. The robot sends `say:` lines to the laptop, which speaks them.
 
 ## Play
@@ -24,13 +24,20 @@ Interview the robot: A = 'What's your name?', B = 'Tell a joke', shake = 'What's
 
 Kid writes the robot's answers (you type them in).
 
-## Code
+## Load the program
 
-[`main.ts`](main.ts)
+Program: [`main.ts`](main.ts)
 
-Flash the file(s) as usual (car files need the `cutebot` extension). Then open [`ai/bridge.html`](../../ai/bridge.html) in Chrome or Edge. Class names in Teachable Machine must match the labels in the code exactly (lowercase).
+1. Click the program link, then the **Copy raw file** button (two small squares, top right of the program).
+2. Go to [makecode.microbit.org](https://makecode.microbit.org), click **New Project** and name it `Week 48`.
+3. Click **JavaScript** at the top, select all the text (**Ctrl+A**, Mac: **Cmd+A**) and paste (**Ctrl+V**, Mac: **Cmd+V**).
+4. Click **Blocks** to see the colorful version your kid can change, then click **Download**.
 
-Keep this micro:bit plugged into the laptop by USB.
+First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
+
+Then open the [AI bridge](https://pandagardenio.github.io/robokids/ai/bridge.html) in Chrome or Edge and follow the [AI bridge guide](../../ai/README.md). Close MakeCode first.
+
+Keep this micro:bit plugged into the laptop with its USB cable.
 
 ## Robot Journal
 

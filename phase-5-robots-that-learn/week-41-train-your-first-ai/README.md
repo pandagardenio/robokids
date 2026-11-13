@@ -25,9 +25,9 @@ Trick the AI: half thumbs, gloves, a toy's hand. When does it fail?
 
 Add a third class: `nothing` (empty background). Does it get better?
 
-## Code
+## Load the program
 
-No code this week, only training. Keep the model: you will use it next week.
+Nothing to load this week, only training. Keep the model: you'll use it next week.
 
 ## Robot Journal
 

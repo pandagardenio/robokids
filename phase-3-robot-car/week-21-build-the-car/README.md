@@ -13,7 +13,7 @@
 
 1. Unbox together and name every part: wheels, motors, sensors, lights, brain (micro:bit).
 2. Insert batteries (parent), slot the micro:bit in, screen facing forward.
-3. Flash `main.ts`: the car says hello, lights up, and wiggles.
+3. Load `main.ts`: the car says hello, lights up, and wiggles.
 
 ## Play
 
@@ -27,11 +27,17 @@ Name the robot and make a cardboard name plate.
 
 Draw the robot in the Robot Journal and label the parts.
 
-## Code
+## Load the program
 
-[`main.ts`](main.ts)
+Program: [`main.ts`](main.ts) · needs the **Cutebot** extension
 
-Open [makecode.microbit.org](https://makecode.microbit.org) → **New Project** → **Extensions** → search `cutebot` and add it → switch to **JavaScript** → paste the file → **Download**. Switch to **Blocks** so your kid can change the numbers.
+1. Click the program link, then the **Copy raw file** button (two small squares, top right of the program).
+2. Go to [makecode.microbit.org](https://makecode.microbit.org), click **New Project** and name it `Week 21`.
+3. Click **Extensions** at the bottom of the block list, search `cutebot` and click **Cutebot**.
+4. Click **JavaScript** at the top, select all the text (**Ctrl+A**, Mac: **Cmd+A**) and paste (**Ctrl+V**, Mac: **Cmd+V**).
+5. Click **Blocks** to see the colorful version your kid can change, then click **Download**.
+
+First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
 
 ## Robot Journal
 

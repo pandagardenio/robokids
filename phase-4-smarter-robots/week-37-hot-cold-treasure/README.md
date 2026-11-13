@@ -9,7 +9,7 @@
 
 ## Build together
 
-1. Flash `beacon.ts` to the hidden micro:bit and `main.ts` to the seeker (car or handheld).
+1. Load `beacon.ts` onto the hidden micro:bit and `main.ts` onto the seeker (car or handheld).
 
 ## Play
 
@@ -23,11 +23,21 @@ Hide the beacon. The seeker's screen fills up the closer it gets. Find it!
 
 Hide it inside a metal pot. What happens?
 
-## Code
+## Load the program
 
-[`main.ts`](main.ts), [`beacon.ts`](beacon.ts)
+Each program goes on a different micro:bit. Load them one at a time, with that micro:bit plugged in.
 
-Open [makecode.microbit.org](https://makecode.microbit.org) → **New Project** → **Extensions** → search `cutebot` and add it → switch to **JavaScript** → paste the file → **Download**. Switch to **Blocks** so your kid can change the numbers.
+| Program | Goes on | Extension |
+| --- | --- | --- |
+| [`main.ts`](main.ts) | the seeker (car or hand-held) | none |
+| [`beacon.ts`](beacon.ts) | the hidden micro:bit | none |
+
+1. Click the program link, then the **Copy raw file** button (two small squares, top right of the program).
+2. Go to [makecode.microbit.org](https://makecode.microbit.org), click **New Project** and name it after the week and program (for example `Week 37 beacon`).
+3. Click **JavaScript** at the top, select all the text (**Ctrl+A**, Mac: **Cmd+A**) and paste (**Ctrl+V**, Mac: **Cmd+V**).
+4. Click **Blocks** to see the colorful version your kid can change, then click **Download**.
+
+First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
 
 ## Robot Journal
 

@@ -9,7 +9,7 @@
 
 ## Build together
 
-1. Flash the same code to both.
+1. Load the same program onto both micro:bits (steps below).
 2.  A sends a heart, B sends a smiley, shake sends a skull for 'danger'.
 
 ## Play
@@ -24,11 +24,16 @@ Spy game: one person hides in another room. Agree on a code (heart = 'come here'
 
 Change the radio group number so nobody else can listen.
 
-## Code
+## Load the program
 
-[`main.ts`](main.ts)
+Program: [`main.ts`](main.ts)
 
-Open [makecode.microbit.org](https://makecode.microbit.org) → **New Project** → switch to **JavaScript** → paste the file → **Download** and copy to the MICROBIT drive. Switch back to **Blocks** to show your kid the colorful version.
+1. Click the program link, then the **Copy raw file** button (two small squares, top right of the program).
+2. Go to [makecode.microbit.org](https://makecode.microbit.org), click **New Project** and name it `Week 19`.
+3. Click **JavaScript** at the top, select all the text (**Ctrl+A**, Mac: **Cmd+A**) and paste (**Ctrl+V**, Mac: **Cmd+V**).
+4. Click **Blocks** to see the colorful version your kid can change, then click **Download**.
+
+First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
 
 ## Robot Journal
 

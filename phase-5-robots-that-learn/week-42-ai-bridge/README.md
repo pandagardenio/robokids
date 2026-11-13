@@ -10,8 +10,8 @@
 
 ## Build together
 
-1. Flash `main.ts` to the micro:bit and keep it plugged in by USB.
-2. Open `ai/bridge.html` (see the ai folder), paste the model link, click Connect micro:bit, then Start.
+1. Load `main.ts` onto the micro:bit and keep it plugged in by USB.
+2. Close MakeCode, open the [AI bridge](https://pandagardenio.github.io/robokids/ai/bridge.html), paste the model link, click **Connect micro:bit**, then **Start AI** ([full steps](../../ai/README.md#use-it)).
 3. The micro:bit shows ✓ or ✗ depending on your thumb.
 
 ## Play
@@ -26,13 +26,22 @@ Silent game: answer yes/no questions with thumbs only; the robot shows the answe
 
 Make a happy and sad face instead of ✓ and ✗.
 
-## Code
+## Load the program
 
-[`main.ts`](main.ts)
+Program: [`main.ts`](main.ts)
 
-Flash the file(s) as usual (car files need the `cutebot` extension). Then open [`ai/bridge.html`](../../ai/bridge.html) in Chrome or Edge. Class names in Teachable Machine must match the labels in the code exactly (lowercase).
+1. Click the program link, then the **Copy raw file** button (two small squares, top right of the program).
+2. Go to [makecode.microbit.org](https://makecode.microbit.org), click **New Project** and name it `Week 42`.
+3. Click **JavaScript** at the top, select all the text (**Ctrl+A**, Mac: **Cmd+A**) and paste (**Ctrl+V**, Mac: **Cmd+V**).
+4. Click **Blocks** to see the colorful version your kid can change, then click **Download**.
 
-Keep this micro:bit plugged into the laptop by USB.
+First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
+
+Then open the [AI bridge](https://pandagardenio.github.io/robokids/ai/bridge.html) in Chrome or Edge and follow the [AI bridge guide](../../ai/README.md). Close MakeCode first.
+
+In Teachable Machine, name the classes exactly like this, lowercase: `thumbsup`, `thumbsdown` (plus `nothing`).
+
+Keep this micro:bit plugged into the laptop with its USB cable.
 
 ## Robot Journal
 

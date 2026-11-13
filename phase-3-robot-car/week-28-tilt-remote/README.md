@@ -9,7 +9,7 @@
 
 ## Build together
 
-1. Flash `remote.ts` to the hand micro:bit and `main.ts` to the car.
+1. Load `remote.ts` onto the hand micro:bit and `main.ts` onto the car.
 2. Tilt forward to drive, tilt sideways to turn, press A to stop.
 
 ## Play
@@ -24,11 +24,22 @@ Treasure hunt: drive the car to pick up paper 'treasure' with a cardboard scoop.
 
 Press B to honk.
 
-## Code
+## Load the program
 
-[`main.ts`](main.ts), [`remote.ts`](remote.ts)
+Each program goes on a different micro:bit. Load them one at a time, with that micro:bit plugged in.
 
-Open [makecode.microbit.org](https://makecode.microbit.org) → **New Project** → **Extensions** → search `cutebot` and add it → switch to **JavaScript** → paste the file → **Download**. Switch to **Blocks** so your kid can change the numbers.
+| Program | Goes on | Extension |
+| --- | --- | --- |
+| [`main.ts`](main.ts) | the car | Cutebot |
+| [`remote.ts`](remote.ts) | the hand-held remote | none |
+
+1. Click the program link, then the **Copy raw file** button (two small squares, top right of the program).
+2. Go to [makecode.microbit.org](https://makecode.microbit.org), click **New Project** and name it after the week and program (for example `Week 28 remote`).
+3. Click **Extensions** at the bottom of the block list, search `cutebot` and click **Cutebot** (only for programs that need it).
+4. Click **JavaScript** at the top, select all the text (**Ctrl+A**, Mac: **Cmd+A**) and paste (**Ctrl+V**, Mac: **Cmd+V**).
+5. Click **Blocks** to see the colorful version your kid can change, then click **Download**.
+
+First time, or something went wrong? See [Start here](../../START-HERE.md#load-a-program).
 
 ## Robot Journal
 
